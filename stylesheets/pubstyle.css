@@ -1,0 +1,15 @@
+/* Make sure abstract does not disply by default*/
+.abstract{
+	font-family: "Gill Sans", sans-serif;
+    display:none;
+}
+
+.bibtex{
+	font-family: "Gill Sans", sans-serif;
+    display:none;
+}
+
+.publication{
+	width:480px;
+	margin-bottom: 30px;
+}
