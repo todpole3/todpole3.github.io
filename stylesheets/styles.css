@@ -2,7 +2,7 @@
 
 body {
   padding:50px;
-  font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font:16px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#333;
   font-weight:300;
 }
@@ -179,6 +179,8 @@ hr {
 footer {
   margin-top: 50px;
 }
+
+.news .
 
 @media print, screen and (max-width: 960px) {
 
