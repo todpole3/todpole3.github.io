@@ -122,7 +122,7 @@ header ul.github {
 }
 
 header ul.github li {
-  width:72px;
+  width:74px;
   float:left;
   border-right:1px solid #d2d2d2;
   height:40px;
@@ -144,13 +144,13 @@ strong {
 }
 
 header ul.github li + li {
-  width:71px;
+  width:73px;
   border-left:1px solid #fff;
 }
 
 header ul.github li + li + li {
   border-right:none;
-  width:72px;
+  width:74px;
 }
 
 header ul.github a strong {
