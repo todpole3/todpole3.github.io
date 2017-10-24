@@ -3,7 +3,8 @@
    <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="chrome=1">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">  
+      <link rel="stylesheet" href="lib/font-awesome-4.7.0 2/css/font-awesome.min.css">    
       <link rel="stylesheet" href="stylesheets/styles.css">
       <link rel="stylesheet" href="stylesheets/pubstyle.css">
       <meta name="viewport" content="width=device-width">
@@ -39,16 +40,20 @@
                         <li><span class="event-date">Mar. 1, 2017</span> We released a <a href="pubs/tellina_tr170510.pdf">technical report</a> about <a href="http://tellina.rocks">Tellina</a>, the natural language to command line translation tool we've been developing!</li>
                      </ul>
                   </div>
-                  <h4>Navigation</h4>
-                  <ul>
-                     <li><a href="">Home</a></li>
-                     <li><a href="misc/cv.pdf">CV</a></li>
-                     <li><a href="">Blog</a></li>
-                  </ul>
+		  <div class="navbar hidden-xs">
+                     <h4>Navigation</h4>
+                     <ul>
+                     	<li><a href="">Home</a></li>
+                        <li><a href="misc/cv.pdf">CV</a></li>
+                        <li><a href="">Blog</a></li>
+                     </ul>
+		  </div>
                </header>
-               <footer>
-                  <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-               </footer>
+               <div class="hidden-xs">
+		  <footer>
+                     <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+               	  </footer>
+	       </div>
             </div>
          </div>
 
@@ -57,12 +62,12 @@
                <h3>
                   <a id="about-me" class="anchor" href="#about-me" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>About Me
                </h3>
-               <p>Hi! I am a research scientist at <a href="https://www.salesforce.com/research/">Salesforce Research</a>. <!-- My research area is <a href="https://en.wikipedia.org/wiki/Natural_language_understanding">natural language understanding</a>.--> I'm interested in problems relevant to natural language semantics, including intent prediction, question answering (QA) and information extraction. I develop novel machine learning solutions for these problems.
+               <p>Hi! I am a research scientist at <a href="https://www.salesforce.com/research/">Salesforce Research</a>. <!-- My research area is <a href="https://en.wikipedia.org/wiki/Natural_language_understanding">natural language understanding</a>.--> I'm interested in problems relevant to automatic understanding of natural language semantics, including intent prediction, question answering (QA) and information extraction. I develop novel machine learning solutions for these problems.
                </p>
 
                <p>Previously I was a CS graduate student at <a href="https://www.cs.washington.edu/">University of Washington</a>. I work with <a href="https://homes.cs.washington.edu/~lsz/">Luke Zettlemoyer</a> and <a href="https://homes.cs.washington.edu/~mernst/">Michael D. Ernst</a> on program synthesis from natural language, using data-driven and deep-learning approaches. Our <a href="https://homes.cs.washington.edu/~mernst/pubs/natural-language-snapl2017-abstract.html">goal</a> is to add a layer of natural abstraction to oceans of programming languages and APIs, giving programmers more convenient access to computer systems compared to traditional coding paradigm.
                </p>
-              <h3>
+               <h3>
                   <a id="research-projects" class="anchor" href="#research-projects" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Research Highlights
                </h3>
                <div class="project-snapshot">
@@ -98,10 +103,11 @@
                      <a class="btn btn-default btn-xs" href="pubs/tellina_tr170510.pdf">
                      <i class="fa fa-download"></i> Pdf</a>
                      <a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_lin17_nl2command').slideToggle('fast');return false;">
-                     <i class="fa fa-chevron-down"></i> Abstract </a>
+                     <i class="fa fa-file-text-o"></i> Abstract</a>
                      <a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#bibtex_lin17_nl2command').slideToggle('fast');return false;">
-                     <i class="fa fa-chevron-down"></i> Bibtex </a>
-                     <a class="btn btn-default btn-xs" href="http://tellina.rocks"> Tellina Tool </a>
+                     <i class="fa fa-quote-left"></i> Bibtex</a>
+                     <a class="btn btn-default btn-xs" href="http://tellina.rocks">
+			<i class="fa fa-external-link"></i> Tellina Tool </a>
                      </span>
                      <div id="abstract_lin17_nl2command" class="abstract well">
                         Even if a competent programmer knows what she wants to do and can describe it in English, it can still be difficult to write code to achieve the goal. Existing resources, such as question-and-answer websites, tabulate specific operations that someone has wanted to perform in the past, but they are not effective in generalizing to new tasks, to compound tasks that require combining previous questions, or sometimes even to variations of listed tasks.<br><br>
@@ -142,9 +148,9 @@
                      <a class="btn btn-default btn-xs" href="pubs/relationpaths_acl_2016.pdf">
                      <i class="fa fa-download"></i> Pdf</a>
                      <a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_lin16_pathcomp').slideToggle('fast');return false;">
-                     <i class="fa fa-chevron-down"></i> Abstract </a>
+                     <i class="fa fa-file-text-o"></i> Abstract</a>
                      <a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#bibtex_lin16_pathcomp').slideToggle('fast');return false;">
-                     <i class="fa fa-chevron-down"></i> Bibtex </a>
+                     <i class="fa fa-quote-left"></i> Bibtex</a>
                      </span>
                      <div id="abstract_lin16_pathcomp" class="abstract well">
                         Modeling relation paths has offered significant gains in embedding models for knowledge base (KB) completion. However, enumerating paths between two entities is very expensive, and existing approaches typically resort to approximation with a sampled subset. This problem is particularly acute when text is jointly modeled with KB relations and used to provide direct evidence for facts mentioned in it. In this paper, we propose the first exact dynamic programming algorithm which enables efficient incorporation of all relation paths of bounded length, while modeling both relation types and intermediate nodes in the compositional path representations. We conduct a theoretical analysis of the efficiency gain from the approach. Experiments on two datasets show that it addresses representational limitations in prior approaches and improves accuracy in KB completion.
@@ -177,9 +183,9 @@
                      <a class="btn btn-default btn-xs" href="pubs/prlr_mlnlp_2014.pdf">
                      <i class="fa fa-download"></i> Pdf</a>
                      <a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_lin14_prlr').slideToggle('fast');return false;">
-                     <i class="fa fa-chevron-down"></i> Abstract </a>
+                     <i class="fa fa-file-text-o"></i> Abstract</a>
                      <a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#bibtex_lin14_prlr').slideToggle('fast');return false;">
-                     <i class="fa fa-chevron-down"></i> Bibtex </a>
+                     <i class="fa fa-quote-left"></i> Bibtex</a>
                      </span>
                      <div id="abstract_lin14_prlr" class="abstract well">
                         In many multi-label learning problems, especially as the number of labels grow, it is challenging to gather completely annotated data. This work presents a new approach for multi-label learning from incomplete annotations. The main assumption is that because of label correlation, the true label matrix as well as the soft predictions of classifiers shall be approximately low rank. We introduce a posterior regularization technique which enforces soft constraints on the classifiers, regularizing them to prefer sparse and low-rank predictions. Avoiding strict low-rank constraints results in classifiers which better fit the real data. The model can be trained efficiently using EM and stochastic gradient descent. Experiments in both the image and text domains demonstrate the contributions of each modeling assumption and show that the proposed approach achieves state-of-the-art performance on a number of challenging datasets..
@@ -211,6 +217,11 @@
                   </li>
                </div>
             </div>
+         </div>
+	 <div class="hidden-md hidden-lg hidden-xl">
+             <footer>
+                <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+             </footer>
          </div>
       </div>
 
