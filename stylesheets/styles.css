@@ -180,7 +180,10 @@ footer {
   margin-top: 50px;
 }
 
-.news .
+.news .event-date {
+  font-weight: 600;
+  color:#07a 
+}
 
 @media print, screen and (max-width: 960px) {
 
