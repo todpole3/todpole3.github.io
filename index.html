@@ -16,23 +16,27 @@
    </head>
    <body>
       <div class="row">
-         <div class="col-md-offset-1 col-md-4 col-xs-12">
-            <div style="max-width: 360px; float: right">
+         <div class="side-bar col-md-offset-1 col-md-4 col-xs-12">
+            <div style="max-width: 380px; float: right; padding-right: 20px">
                <header>
-                  <h1 style="font-family: cursive">Victoria Lin (林曦)</h1>
+                  <h1 style="font-family: cursive">Victoria Lin <span lang="zh-Hans" style="font-size: 24px; font-family: 'Hiragino Kaku Gothic Pro'">(林曦)</span></h1>
 
-                  <p class="contacts">
-                     Research Scientist<br>
-                     Salesforce Research<br>
-                     172 University Ave, Palo Alto, California<br>
-                     <a href="mailto:xilin{AT}salesforce.com" style="font-weight: 400">xilin@salesforce.com</a>
-                  <p>
-                  <ul class="github">
-                     <li><a href="https://twitter.com/VictoriaLinML"> Follow<strong>Twitter</strong></a></li>
-                     <li><a href="https://www.linkedin.com/in/xivictorialin"> Connect<strong>LinkedIn</strong></a></li>
-                     <li><a href="https://github.com/todpole3"> Follow<strong>GitHub</strong></a></li>
-                     <li><a href="https://scholar.google.com/citations?user=gYUOJwMAAAAJ&hl=en"> Connect<strong>GScholar</strong></a></li>
-	  	  </ul>
+                  <div class="contacts">
+                     <p>
+			Research Scientist<br>
+                     	Salesforce Research<br>
+                     	172 University Ave, Palo Alto, California<br>
+                     	<a href="mailto:xilin{AT}salesforce.com" style="font-weight: 400">xilin@salesforce.com</a>
+                     </p>
+		  </div>
+		  <div class="social-networks">
+                     <ul class="github">
+                     	<li><a href="https://twitter.com/VictoriaLinML"> Follow<strong>Twitter</strong></a></li>
+                        <li><a href="https://www.linkedin.com/in/xivictorialin"> Connect<strong>LinkedIn</strong></a></li>
+                        <li><a href="https://github.com/todpole3"> Follow<strong>GitHub</strong></a></li>
+                        <li><a href="https://scholar.google.com/citations?user=gYUOJwMAAAAJ&hl=en"> Connect<strong>GScholar</strong></a></li>
+	  	     </ul>
+		  </div>
                   <div class="news">
                      <h4>News</h4>
                      <ul>
@@ -48,17 +52,17 @@
                         <li><a href="">Blog</a></li>
                      </ul>
 		  </div>
+                  <div class="hidden-xs">
+		     <footer>
+                        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+               	     </footer>
+	          </div>
                </header>
-               <div class="hidden-xs">
-		  <footer>
-                     <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-               	  </footer>
-	       </div>
             </div>
          </div>
 
-         <div class="col-md-6 col-xs-12">
-            <div style="max-width: 640px">
+         <div class="col-md-6 col-xs-12 main-body">
+            <div style="max-width: 720px">
                <h3>
                   <a id="about-me" class="anchor" href="#about-me" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>About Me
                </h3>
@@ -228,7 +232,9 @@
       <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       <script src="javascripts/scale.fix.js"></script>
-
-   </body>
+      <script>
+	document.body.style.zoom="110%";
+      </script>   
+</body>
 
 </html>

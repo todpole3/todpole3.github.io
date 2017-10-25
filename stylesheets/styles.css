@@ -21,11 +21,15 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size:28px;
+  font-size:26px;
 }
 
 h2 {
   color:#393939;
+}
+
+h3 {
+  font-size: 22px;
 }
 
 h3, h4, h5, h6 {
@@ -98,7 +102,6 @@ img {
 .sidebar {
   width:308px;
   float:left;
-  position:fixed;
 }
 
 header ul.github {
@@ -177,17 +180,24 @@ hr {
 }
 
 footer {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
-/* .contacts { 
-    font-weight: 400;
-    color: #3E2723
-} */
+.contacts { 
+  font-size: 16px;
+} 
+
+.news >ul{
+    font-size: 14px;
+}
 
 .news .event-date {
   font-weight: 600;
   color:#07a 
+}
+
+.publication {
+  font-size: 16px;
 }
 
 @media print, screen and (max-width: 960px) {
