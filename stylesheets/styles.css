@@ -199,6 +199,10 @@ footer {
   font-size: 16px;
 }
 
+.pubtitle {
+  font-weight: 400;
+}
+
 @media print, screen and (max-width: 960px) {
 
   div.wrapper {
