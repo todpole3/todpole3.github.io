@@ -23,7 +23,6 @@
 
 	  gtag('config', 'UA-108707366-2');
 	</script>
-
    </head>
    <body>
       <div class="container">
@@ -31,7 +30,7 @@
          <div class="side-bar col-md-4 col-xs-12">
             <div style="max-width: 340px; float: right; margin-right: 16px">
                <header>
-                  <h1 style="font-family: cursive">Victoria Lin<span lang="zh-Hans" style="font-size: 24px; font-family: 'Hiragino Kaku Gothic Pro'">(林曦)</span></h1>
+                  <h1 style="font-family: cursive">Victoria Lin<span lang="zh-Hans" style="font-size: 24px; font-family: 'Hiragino Kaku Gothic Pro'"> (林曦)</span></h1>
 
                   <div class="contacts">
                      <p>
@@ -47,7 +46,7 @@
                         <li><a href="https://www.linkedin.com/in/xivictorialin"> Connect<strong>LinkedIn</strong></a></li>
                         <li><a href="https://github.com/todpole3"> Follow<strong>GitHub</strong></a></li>
                         <li><a href="https://scholar.google.com/citations?user=gYUOJwMAAAAJ&hl=en"> Connect<strong>GScholar</strong></a></li>
-	  	     </ul>
+	  	             </ul>
 		  </div>
                   <div class="news">
                      <h4>News</h4>
@@ -59,7 +58,7 @@
 			<!--
 			     <li><span class="event-date">Mar. 1, 2017</span> We released a <a href="pubs/tellina_tr_2017.pdf">technical report</a> about <a href="http://tellina.rocks">Tellina</a>, the natural language to command line translation tool we've been developing!</li>
                      	-->
-		    	<li><a href="">More ...</i></a></li>
+		    	<li><a href="event_announcements.html">More ...</i></a></li>
 		      </ul>
                   </div>
 		  <div class="navbar hidden-xs">
@@ -72,7 +71,7 @@
 		  </div>
                   <div class="hidden-xs">
 		     <footer>
-                        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+                 <p><small>Hosted on GitHub Pages &mdash; Last updated on <a>Mar 19, 2018</a></small></p>
                	     </footer>
 	          </div>
                </header>
@@ -84,11 +83,12 @@
                <h3>
                   <a id="about-me" class="anchor" href="#about-me" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>About Me
                </h3>
-               <p>Hi! I am a research scientist at <a href="https://www.salesforce.com/research/">Salesforce Research</a>. <!-- My research area is <a href="https://en.wikipedia.org/wiki/Natural_language_understanding">natural language understanding</a>.--> I develop novel machine learning solutions for automatic understanding of natural language, including problems such as intent prediction and question answering. <!-- I envision natural language based communication as a ubiquitously adopted form of human-machine communication in the future, especially for repetative everyday tasks. --> I'm also interested in the topic of applying AI to help people become more productive at work, especially in software engineering domains.
+               <p>Hi! I am a research scientist at <a href="https://www.salesforce.com/research/">Salesforce Research</a>. <!-- My research area is <a href="https://en.wikipedia.org/wiki/Natural_language_understanding">natural language understanding</a>.--> I develop novel machine learning solutions for natural language understanding in tasks such as intent prediction and question answering. <!-- I envision natural language based communication as a ubiquitously adopted form of human-machine communication in the future, especially for repetative everyday tasks. -->
+                  I'm broadly interested in the topic of applying AI to help people become more productive in work and everyday life.
                </p>
 
-               <p>Previously I was a CS graduate student at <a href="https://www.cs.washington.edu/">University of Washington, Seattle</a>, working with <a href="https://homes.cs.washington.edu/~lsz/">Luke Zettlemoyer</a> and <a href="https://homes.cs.washington.edu/~mernst/">Michael D. Ernst</a> on data-driven program synthesis from natural language. We develop natural language based programming assistant tools for non-expert programmers by learning from experts and text materials available on the web.
-               </p>
+               <p>Previously I was a CS graduate student at <a href="https://www.cs.washington.edu/">University of Washington, Seattle</a>, working with <a href="https://homes.cs.washington.edu/~lsz/">Luke Zettlemoyer</a> and <a href="https://homes.cs.washington.edu/~mernst/">Michael D. Ernst</a>
+                   on <a href="pubs/tellina_tr_2017.pdf">data-driven natural language programming</a>. We develop natural language based programming assistant tools for non-expert programmers by learning from experts and web materials.
                <h3>
                   <a id="research-projects" class="anchor" href="#research-projects" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Research Highlights
                </h3>
@@ -98,10 +98,17 @@
                         <a href="http://tellina.rocks/developers"><img src="img/tellina.svg" alt="Tellina Logo" style="width:108px; height:108px;"></a>
                      </div>
                      <div class="col-md-9 project-description" style="font-size:14px; padding-left: 0px">
-                        The Tellina project enables natural-language-based assistance for programming in scripting languages. Our initial <a href="http://tellina.rocks">prototype</a> translates an imperative
-                        natural language sentence into an executable one-liner shell command, using neural encoder-decoder models which were augmented with slot-filling and other enhancements.
+                        Tellina is an end-user scripting assistant that can be queried in natural language.
+                        It translates a natural language sentence typed by the user into a piece of short, executable script.
+                        The underlying machine learning models are neural encoder-decoders trained on text-command pairs.
+                        The current <a href="http://tellina.rocks">prototype</a> is instantiated in the Bash domain.<br>
                         <!-- Instantiating neural MT approaches for scripting languages is challenging due to irregularities in the target language design and more importantly the lack of parallel data. -->
-                        We are developing hybrid translation models and expert annotation pipelines that scale to address irregularities in the target language and the lack of parallel training data.
+                        <!-- We are developing hybrid translation models and expert annotation pipelines that scale to address
+                         irregularities in the target language and the lack of parallel training data.-->
+                         The domain poses several challenges, including some shared by many practical semantic parsing problems, such as scalable data
+                         collection, online learning and personalization.
+                        <!-- <i>How to scale up the data collection process or adopt
+                         zero-shot learning to achieve proper semantic coverage of the domain? </i> -->
                      </div>
                   </div>
                   <br>
@@ -117,17 +124,17 @@
                      </span><br>
                      <span class="authors">
                      <span class="author-me"><a href="">Xi Victoria Lin</a></span>, Chenglong Wang, Deric Pang, Kevin Vu, Luke Zettlemoyer, Michael D. Ernst.
-                     </span><br />
+                     </span><br/>
                      <span class="venuetype"></span><span class="venue">University of Washington Department of Computer Science and Engineering technical report UW-CSE-17-03-01.</span><br />
                      <span class="links btn-group">
-                     <a class="btn btn-default btn-xs" href="pubs/tellina_tr_2017.pdf">
-                     <i class="fa fa-download"></i> Pdf</a>
-                     <a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_lin17_nl2command').slideToggle('fast');return false;">
-                     <i class="fa fa-file-text-o"></i> Abstract</a>
-                     <a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#bibtex_lin17_nl2command').slideToggle('fast');return false;">
-                     <i class="fa fa-quote-left"></i> Bibtex</a>
-                     <a class="btn btn-default btn-xs" href="https://github.com/TellinaTool">
-			<i class="fa fa-github"></i> Tellina Tool </a>
+                         <a class="btn btn-default btn-xs" href="pubs/tellina_tr_2017.pdf">
+                         <i class="fa fa-download"></i> Pdf</a>
+                         <a class="btn btn-default btn-xs" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_lin17_nl2command').slideToggle('fast');return false;">
+                         <i class="fa fa-file-text-o"></i> Abstract</a>
+                         <a class="btn btn-default btn-xs" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#bibtex_lin17_nl2command').slideToggle('fast');return false;">
+                         <i class="fa fa-quote-left"></i> Bibtex</a>
+                         <a class="btn btn-default btn-xs" href="https://github.com/TellinaTool">
+                <i class="fa fa-github"></i> Tellina Tool </a>
                      </span>
                      <div id="abstract_lin17_nl2command" class="abstract well">
                         Even if a competent programmer knows what she wants to do and can describe it in English, it can still be difficult to write code to achieve the goal. Existing resources, such as question-and-answer websites, tabulate specific operations that someone has wanted to perform in the past, but they are not effective in generalizing to new tasks, to compound tasks that require combining previous questions, or sometimes even to variations of listed tasks.<br><br>
@@ -160,9 +167,9 @@
                      <span class="links btn-group">
                      <a class="btn btn-default btn-xs" href="pubs/nl2bash.pdf">
                      <i class="fa fa-download"></i> Pdf</a>
-		     <a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_lin18_nl2bash').slideToggle('fast');return false;">
+		             <a class="btn btn-default btn-xs" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_lin18_nl2bash').slideToggle('fast');return false;">
                      <i class="fa fa-file-text-o"></i> Abstract</a>
-                     <a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#bibtex_lin18_nl2bash').slideToggle('fast');return false;">
+                     <a class="btn btn-default btn-xs" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#bibtex_lin18_nl2bash').slideToggle('fast');return false;">
                      <i class="fa fa-quote-left"></i> Bibtex</a>
                      <a class="btn btn-default btn-xs" href="https://github.com/TellinaTool/nl2bash">
                         <i class="fa fa-github"></i> Dataset & Code </a>
@@ -191,9 +198,9 @@
                      <span class="links btn-group">
                      <a class="btn btn-default btn-xs" href="pubs/relationpaths_acl_2016.pdf">
                      <i class="fa fa-download"></i> Pdf</a>
-                     <a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_lin16_pathcomp').slideToggle('fast');return false;">
+                     <a class="btn btn-default btn-xs" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_lin16_pathcomp').slideToggle('fast');return false;">
                      <i class="fa fa-file-text-o"></i> Abstract</a>
-                     <a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#bibtex_lin16_pathcomp').slideToggle('fast');return false;">
+                     <a class="btn btn-default btn-xs" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#bibtex_lin16_pathcomp').slideToggle('fast');return false;">
                      <i class="fa fa-quote-left"></i> Bibtex</a>
                      </span>
                      <div id="abstract_lin16_pathcomp" class="abstract well">
@@ -245,9 +252,9 @@
                      <span class="links btn-group">
                      <a class="btn btn-default btn-xs" href="pubs/prlr_mlnlp_2014.pdf">
                      <i class="fa fa-download"></i> Pdf</a>
-                     <a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_lin14_prlr').slideToggle('fast');return false;">
+                     <a class="btn btn-default btn-xs" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_lin14_prlr').slideToggle('fast');return false;">
                      <i class="fa fa-file-text-o"></i> Abstract</a>
-                     <a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#bibtex_lin14_prlr').slideToggle('fast');return false;">
+                     <a class="btn btn-default btn-xs" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#bibtex_lin14_prlr').slideToggle('fast');return false;">
                      <i class="fa fa-quote-left"></i> Bibtex</a>
                      </span>
                      <div id="abstract_lin14_prlr" class="abstract well">
