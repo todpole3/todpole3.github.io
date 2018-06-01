@@ -3,9 +3,9 @@
 body {
   padding:50px 0 50px 0;
   font:16px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#333;
+  color:#000;
   font-weight:300;
-  background:#ffffff;
+  background:#fff;
 }
 
 h1, h2, h3, h5, h6 {
@@ -75,7 +75,7 @@ code, pre {
 
 pre {
   padding:8px 15px;
-  background: #f8f8f8;
+  background: #fff;
   border-radius:5px;
   border:1px solid #e5e5e5;
   overflow-x: auto;
@@ -112,12 +112,12 @@ header ul.github {
   padding:0;
 
   background: #eee;
-  background: -moz-linear-gradient(top, #f8f8f8 0%, #dddddd 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
-  background: -webkit-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
-  background: -o-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
-  background: -ms-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
-  background: linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
+  background: -moz-linear-gradient(top, #fff 0%, #dddddd 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff), color-stop(100%,#dddddd));
+  background: -webkit-linear-gradient(top, #fff 0%,#dddddd 100%);
+  background: -o-linear-gradient(top, #fff 0%,#dddddd 100%);
+  background: -ms-linear-gradient(top, #fff 0%,#dddddd 100%);
+  background: linear-gradient(top, #fff 0%,#dddddd 100%);
 
   border-radius:5px;
   border:1px solid #d2d2d2;
@@ -181,15 +181,25 @@ hr {
 }
 
 footer {
-  margin-top: 20px;
+  margin-top: 24px;
 }
 
 .contacts { 
   font-size: 16px;
+  font-weight: 300;
 } 
 
-.news >ul{
-    font-size: 14px;
+.section{
+  margin-top: 32px;
+}
+
+.news {
+  margin-top: 36px;
+}
+
+.news ul li {
+  font-size: 15px;
+  margin: 8px 0;
 }
 
 .news .event-date {
@@ -202,12 +212,22 @@ footer {
   color:#07a
 }
 
+.project-snapshot div div p {
+  padding-left: 0px; 
+  margin: 0 12px 0 20px;
+}
+
 .publication {
   font-size: 16px;
 }
 
 .pubtitle {
   font-weight: normal;
+}
+
+
+.side-bar-panel{
+  margin:0 20px 0 0;
 }
 
 @media print, screen and (max-width: 960px) {
@@ -273,9 +293,5 @@ footer {
 
   footer {
     padding: 20px 0 0 12px;
-  }
-
-  .side-bar-panel{
-    margin:0 12px 0 0;
   }
 }
