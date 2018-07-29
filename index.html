@@ -27,19 +27,25 @@
    <body>
       <div class="container">
       <div class="row">
-         <div class="side-bar col-md-4 col-xs-12">
+         <div class="side-bar col-md-4 col-sm-12 col-xs-12">
             <div class="side-bar-panel">
-               <header>
+                <header>
                   <h1 style="font-family: cursive">Victoria Lin<span lang="zh-Hans" style="font-size: 24px; font-family: 'Hiragino Kaku Gothic Pro'"> (林曦)</span></h1>
 
-                  <div class="contacts">
-                     <p>
-                        Research Scientist<br>
-                     	Salesforce Research<br>
-                     	575 High St, Palo Alto, California<br>
-                     	<a href="mailto:xilin{AT}salesforce.com" style="font-weight: 400">xilin@salesforce.com</a>
-                     </p>
+                  <div class="row name-card">
+                    <div class="col-md-6 col-sm-3 col-xs-6">
+                      <img src="img/me-sketch.jpeg" alt="Sketch of me" class="img-circle img-responsive">
+                    </div>
+                    <div class="col-md-6 col-sm-9 col-xs-6 contacts">
+                       <p>
+                          Research Scientist<br>
+                          Salesforce Research<br>
+                          <i class="fa fa-map-marker" aria-hidden="true"></i> 575 High St, Palo Alto, California<br>
+                          <a href="mailto:xilin{AT}salesforce.com" style="font-weight: 400">xilin@salesforce.com</a>
+                       </p>
+                    </div>
                   </div>
+
                   <div class="social-networks">
                      <ul class="github">
                         <li><a href="https://twitter.com/VictoriaLinML"> Follow<strong>Twitter</strong></a></li>
@@ -48,39 +54,41 @@
                         <li><a href="https://scholar.google.com/citations?user=gYUOJwMAAAAJ&hl=en"> Check<strong>GScholar</strong></a></li>
                      </ul>
                   </div>
-                  <div class="news">
-                     <h4>News</h4>
-                     <ul>
-                         <li><span class="event-date">May 10, 2018 (Thu)</span> NL2Bash will appear in the <a href="pubs/nl2bash_lrec2018_poster.pdf">poster</a>+<a href="http://tellina.rocks">demo</a> session of <a href="http://lrec2018.lrec-conf.org/en/">LREC 2018</a>, Miyazaki, Japan. Check out the programme of Day 2 Poster Session <a href="http://lrec2018.lrec-conf.org/media/filer_public/2018/04/17/posterprogramchairsdemoxprint-day2-180410.pdf">here</a>.</li>
-                         <li><span class="event-date">Feb. 2, 2018</span> Presenting NL2Bash (long talk) in <a href="https://nl4se.github.io/">NL4SE Workshop</a>, co-located with <a href="https://aaai.org/Conferences/AAAI-18/">AAAI 2018</a>. (<a href="pubs/tellina_talk_nl4se_aaai.pdf">slides</a>)</li>
-                         <li><span class="event-date">Dec. 13, 2017</span> Our dataset paper "<a href="http://victorialin.net/pubs/nl2bash.pdf">NL2Bash</a>: A Corpus and Semantic Parser for Natural Language Interface to the Linux Operating System" is accepted to <a href="http://lrec2018.lrec-conf.org/en/">LREC 2018</a>!</li>
-                         <!-- Past events -->
-                         <!--
-                            <li><span class="event-date">Mar. 1, 2017</span> We released a <a href="pubs/tellina_tr170510.pdf">technical report</a> about <a href="http://tellina.rocks">Tellina</a>, the natural language to command line translation tool we've been developing!</li>
-                            <li><span class="event-date">Oct. 16, 2017</span> Excited to join <a href="https://www.salesforce.com/products/einstein/ai-research/">Salesforce AI Research</a> (previously MetaMind) as a researcher on deep learning and natural language processing.</li>
-                         -->
-                         <li><a href="event_announcements.html">More ...</a></li>
-                     </ul>
-                  </div>
-                  <div class="navbar hidden-xs">
-                     <h4>Navigation</h4>
-                     <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="misc/cv.pdf">CV</a></li>
-			<li><a href="resources.html">Resources</a></li>
-                        <li><a href="">Blog (coming soon!)</a></li>
-                     </ul>
-                  </div>
-               </header>
-               <div class="hidden-xs hidden-md">
+                </header>
+
+                <div class="news">
+                   <h4>News</h4>
+                   <ul>
+                       <li><span class="event-date">May 10, 2018 (Thu)</span> NL2Bash will appear in the <a href="pubs/nl2bash_lrec2018_poster.pdf">poster</a>+<a href="http://tellina.rocks">demo</a> session of <a href="http://lrec2018.lrec-conf.org/en/">LREC 2018</a>, Miyazaki, Japan. Check out the programme of Day 2 Poster Session <a href="http://lrec2018.lrec-conf.org/media/filer_public/2018/04/17/posterprogramchairsdemoxprint-day2-180410.pdf">here</a>.</li>
+                       <li><span class="event-date">Feb. 2, 2018</span> Presenting NL2Bash (long talk) in <a href="https://nl4se.github.io/">NL4SE Workshop</a>, co-located with <a href="https://aaai.org/Conferences/AAAI-18/">AAAI 2018</a>. (<a href="pubs/tellina_talk_nl4se_aaai.pdf">slides</a>)</li>
+                       <li><span class="event-date">Dec. 13, 2017</span> Our dataset paper "<a href="http://victorialin.net/pubs/nl2bash.pdf">NL2Bash</a>: A Corpus and Semantic Parser for Natural Language Interface to the Linux Operating System" is accepted to <a href="http://lrec2018.lrec-conf.org/en/">LREC 2018</a>!</li>
+                       <!-- Past events -->
+                       <!--
+                          <li><span class="event-date">Mar. 1, 2017</span> We released a <a href="pubs/tellina_tr170510.pdf">technical report</a> about <a href="http://tellina.rocks">Tellina</a>, the natural language to command line translation tool we've been developing!</li>
+                          <li><span class="event-date">Oct. 16, 2017</span> Excited to join <a href="https://www.salesforce.com/products/einstein/ai-research/">Salesforce AI Research</a> (previously MetaMind) as a researcher on deep learning and natural language processing.</li>
+                       -->
+                       <li><a href="event_announcements.html">More ...</a></li>
+                   </ul>
+                </div>
+                <div class="navbar hidden-xs hidden-sm hidden-md">
+                   <h4>Navigation</h4>
+                   <ul>
+                      <li><a href="">Home</a></li>
+                      <li><a href="misc/cv.pdf">CV</a></li>
+		                  <li><a href="resources.html">Resources</a></li>
+                      <li><a href="">Blog (coming soon!)</a></li>
+                   </ul>
+                </div>
+               
+                <div class="hidden-xs hidden-sm hidden-md">
                     <footer>
-                        <p><small>Hosted on GitHub Pages &mdash; Last updated on <a>May 30, 2018</a></small></p>
+                        <p><small>Hosted on GitHub Pages &mdash; Last updated on <a>July 17, 2018</a></small></p>
                     </footer>
-               </div>
+                </div>
             </div>
          </div>
 
-         <div class="col-md-8 col-xs-12 main-body">
+         <div class="col-md-8 col-sm-12 col-xs-12 main-body">
             <div>
                <div>
                  <h3>
@@ -103,7 +111,7 @@
                     <div class="row">
                        <!--<div class="col-md-3 project-logo"></div>-->
                        <div class="figure">
-                          <a href="http://tellina.rocks/developers"><img src="img/tellina.svg" alt="Tellina Logo" style="width:96px; height:96px; float:left; margin: 0 12px 0 8px"></a>
+                          <a href="http://tellina.rocks/developers"><img src="img/tellina.svg" alt="Tellina Logo" style="width:88x; height:88px; float:left; margin: 0 12px 0 8px"></a>
                        </div>
                        <!--<div class="col-md-9 project-description" style="font-size:14px; padding-left: 0px"></div>-->
                        <div>
@@ -309,12 +317,26 @@
             </div>
           </div>
          </div>
+
+         <div class="section hidden-lg hidden-xl">
+           <h3>
+              <a id="misc" class="anchor" href="#misc" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Navigation
+           </h3>
+           <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="misc/cv.pdf">CV</a></li>
+              <li><a href="resources.html">Resources</a></li>
+              <li><a href="">Blog (coming soon!)</a></li>
+           </ul>
+         </div>
        </div>
 	     <div class="hidden-lg hidden-xl">
-             <footer>
-                 <p><small>Hosted on GitHub Pages &mdash; Last updated on <a>May 30, 2018</a></small></p>
-             </footer>
-         </div>
+         <div style="display: inline-block;">
+           <footer>
+               <p><small>Hosted on GitHub Pages &mdash; Last updated on <a>July 17, 2018</a></small></p>
+           </footer>
+        </div>
+       </div>
       </div>
       </div>
       <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>

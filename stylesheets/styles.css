@@ -184,9 +184,14 @@ footer {
   margin-top: 24px;
 }
 
+.name-card {
+  padding-bottom: 16px;
+}
+
 .contacts { 
   font-size: 16px;
   font-weight: 300;
+  padding-top: 16px;
 } 
 
 .section{
