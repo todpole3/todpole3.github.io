@@ -153,6 +153,11 @@ header ul.github li + li {
 }
 
 header ul.github li + li + li {
+  width:75px;
+  border-left:1px solid #fff;
+}
+
+header ul.github li + li + li + li {
   border-right:none;
   width:76px;
 }
