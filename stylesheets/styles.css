@@ -240,6 +240,10 @@ footer {
   margin:0 20px 0 0;
 }
 
+.li-relaxed {
+    margin: 0 0 10px 0;
+}
+
 .icon-cog {
   color: #4c9fc3;
 }
