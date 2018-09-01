@@ -240,6 +240,10 @@ footer {
   margin:0 20px 0 0;
 }
 
+.icon-cog {
+  color: #4c9fc3;
+}
+
 @media print, screen and (max-width: 960px) {
 
   div.wrapper {
