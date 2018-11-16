@@ -164,10 +164,14 @@
                               <i class="fa fa-file-text-o"></i> Abstract</a>
                            <a class="btn btn-default btn-xs" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#bibtex_lin18_multihopkg').slideToggle('fast');return false;">
                               <i class="fa fa-quote-left"></i> Bibtex</a>
-                           <a class="btn btn-default btn-xs" href="pubs/MultiHopKG_emnlp2018_talk.pdf">
-                              <i class="fa fa-film"></i> Slides</a>
-                           <a class="btn btn-default btn-xs" href="pubs/MultiHopKG_emnlp2018_talk.key">
-                              <i class="fa fa-picture-o"></i> Keynote</a>
+                           <div class="btn-group">
+                               <a class="btn btn-default btn-xs dropdown-toggles" data-toggle="dropdown">
+                                   <i class="fa fa-picture-o"></i> Slides <span class="caret"></span></a>
+                               <ul id="slides_menu_lin18_multihopkg" class="dropdown-menu details-panel" role="menu">
+                                   <li><a href="pubs/MultiHopKG_emnlp2018_talk.pdf">Pdf version</a></li>
+                                   <li><a href="pubs/MultiHopKG_emnlp2018_talk.key">Keynote version</a></li>
+                               </ul>
+                           </div>
                            <a class="btn btn-default btn-xs" href="http://github.com/salesforce/MultiHopKG">
                               <i class="fa fa-github"></i> Code </a>
                        </span>
@@ -379,7 +383,7 @@
 	     <div class="hidden-lg hidden-xl">
          <div style="display: inline-block;">
            <footer>
-               <p><small>Hosted on GitHub Pages &mdash; Last updated on <a>November 5, 2018</a></small></p>
+               <p><smasll>Hosted on GitHub Pages &mdash; Last updated on <a>November 5, 2018</a></smasll></p>
            </footer>
         </div>
        </div>

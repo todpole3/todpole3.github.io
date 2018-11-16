@@ -13,3 +13,24 @@
 	width:100%;
 	margin-bottom: 16px;
 }
+
+.details-panel {
+  min-width: 72px;
+  margin: 2px;
+  padding: 2px;
+  font-size: 12px;
+}
+
+.details-panel ul {
+  margin: 0px;
+  border: 0px;
+  padding: 2px;
+  font-size: 12px;
+}
+
+.details-panel li {
+  margin: 0px;
+  border: 0px;
+  padding: 2px;
+  font-size: 12px;
+}
