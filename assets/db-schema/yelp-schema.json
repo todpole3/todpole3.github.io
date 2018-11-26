@@ -1,289 +1,434 @@
 {
-    "name": "yelp",
-    "children": [
+    "schema": {
+        "name": "yelp",
+        "children": [
+            {
+                "id": "BUSINESS",
+                "name": "BUSINESS",
+                "children": [
+                    {
+                        "id": "BUSINESS:::BID",
+                        "name": "BID",
+                        "is_primary_key": 1,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "BUSINESS:::BUSINESS_ID",
+                        "name": "BUSINESS_ID",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    },
+                    {
+                        "id": "BUSINESS:::NAME",
+                        "name": "NAME",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    },
+                    {
+                        "id": "BUSINESS:::FULL_ADDRESS",
+                        "name": "FULL_ADDRESS",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    },
+                    {
+                        "id": "BUSINESS:::CITY",
+                        "name": "CITY",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    },
+                    {
+                        "id": "BUSINESS:::LATITUDE",
+                        "name": "LATITUDE",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    },
+                    {
+                        "id": "BUSINESS:::LONGITUDE",
+                        "name": "LONGITUDE",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    },
+                    {
+                        "id": "BUSINESS:::REVIEW_COUNT",
+                        "name": "REVIEW_COUNT",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " bigint(20)"
+                    },
+                    {
+                        "id": "BUSINESS:::IS_OPEN",
+                        "name": "IS_OPEN",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " tinyint(1)"
+                    },
+                    {
+                        "id": "BUSINESS:::RATING",
+                        "name": "RATING",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " float"
+                    },
+                    {
+                        "id": "BUSINESS:::STATE",
+                        "name": "STATE",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    }
+                ],
+                "is_primary_key": -1,
+                "is_foreign_key": -1,
+                "type": null
+            },
+            {
+                "id": "CATEGORY",
+                "name": "CATEGORY",
+                "children": [
+                    {
+                        "id": "CATEGORY:::ID",
+                        "name": "ID",
+                        "is_primary_key": 1,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "CATEGORY:::BUSINESS_ID",
+                        "name": "BUSINESS_ID",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    },
+                    {
+                        "id": "CATEGORY:::CATEGORY_NAME",
+                        "name": "CATEGORY_NAME",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    }
+                ],
+                "is_primary_key": -1,
+                "is_foreign_key": -1,
+                "type": null
+            },
+            {
+                "id": "CHECKIN",
+                "name": "CHECKIN",
+                "children": [
+                    {
+                        "id": "CHECKIN:::CID",
+                        "name": "CID",
+                        "is_primary_key": 1,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "CHECKIN:::BUSINESS_ID",
+                        "name": "BUSINESS_ID",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    },
+                    {
+                        "id": "CHECKIN:::COUNT",
+                        "name": "COUNT",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "CHECKIN:::DAY",
+                        "name": "DAY",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " varchar(12)"
+                    }
+                ],
+                "is_primary_key": -1,
+                "is_foreign_key": -1,
+                "type": null
+            },
+            {
+                "id": "NEIGHBOURHOOD",
+                "name": "NEIGHBOURHOOD",
+                "children": [
+                    {
+                        "id": "NEIGHBOURHOOD:::ID",
+                        "name": "ID",
+                        "is_primary_key": 1,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "NEIGHBOURHOOD:::BUSINESS_ID",
+                        "name": "BUSINESS_ID",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    },
+                    {
+                        "id": "NEIGHBOURHOOD:::NEIGHBORHOOD_NAME",
+                        "name": "NEIGHBORHOOD_NAME",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    }
+                ],
+                "is_primary_key": -1,
+                "is_foreign_key": -1,
+                "type": null
+            },
+            {
+                "id": "REVIEW",
+                "name": "REVIEW",
+                "children": [
+                    {
+                        "id": "REVIEW:::RID",
+                        "name": "RID",
+                        "is_primary_key": 1,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "REVIEW:::BUSINESS_ID",
+                        "name": "BUSINESS_ID",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    },
+                    {
+                        "id": "REVIEW:::USER_ID",
+                        "name": "USER_ID",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    },
+                    {
+                        "id": "REVIEW:::RATING",
+                        "name": "RATING",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " float"
+                    },
+                    {
+                        "id": "REVIEW:::TEXT",
+                        "name": "TEXT",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " longtext"
+                    },
+                    {
+                        "id": "REVIEW:::YEAR",
+                        "name": "YEAR",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "REVIEW:::MONTH",
+                        "name": "MONTH",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " varchar(10)"
+                    }
+                ],
+                "is_primary_key": -1,
+                "is_foreign_key": -1,
+                "type": null
+            },
+            {
+                "id": "TIP",
+                "name": "TIP",
+                "children": [
+                    {
+                        "id": "TIP:::TIP_ID",
+                        "name": "TIP_ID",
+                        "is_primary_key": 1,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "TIP:::BUSINESS_ID",
+                        "name": "BUSINESS_ID",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    },
+                    {
+                        "id": "TIP:::TEXT",
+                        "name": "TEXT",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " longtext"
+                    },
+                    {
+                        "id": "TIP:::USER_ID",
+                        "name": "USER_ID",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    },
+                    {
+                        "id": "TIP:::LIKES",
+                        "name": "LIKES",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "TIP:::YEAR",
+                        "name": "YEAR",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "TIP:::MONTH",
+                        "name": "MONTH",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " varchar(10)"
+                    }
+                ],
+                "is_primary_key": -1,
+                "is_foreign_key": -1,
+                "type": null
+            },
+            {
+                "id": "USER",
+                "name": "USER",
+                "children": [
+                    {
+                        "id": "USER:::UID",
+                        "name": "UID",
+                        "is_primary_key": 1,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "USER:::USER_ID",
+                        "name": "USER_ID",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    },
+                    {
+                        "id": "USER:::NAME",
+                        "name": "NAME",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    }
+                ],
+                "is_primary_key": -1,
+                "is_foreign_key": -1,
+                "type": null
+            }
+        ]
+    },
+    "join_anchors": [
         {
-            "name": "business",
-            "children": [
-                {
-                    "name": " bid",
-                    "is_primary_key": 1,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " business_id",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                },
-                {
-                    "name": " name",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                },
-                {
-                    "name": " full_address",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                },
-                {
-                    "name": " city",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                },
-                {
-                    "name": " latitude",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                },
-                {
-                    "name": " longitude",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                },
-                {
-                    "name": " review_count",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " bigint(20)"
-                },
-                {
-                    "name": " is_open",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " tinyint(1)"
-                },
-                {
-                    "name": " rating",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " float"
-                },
-                {
-                    "name": " state",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                }
-            ],
-            "is_primary_key": -1,
-            "is_foreign_key": -1,
-            "type": null
+            "source": "BUSINESS:::BUSINESS_ID",
+            "target": "CATEGORY:::BUSINESS_ID"
         },
         {
-            "name": "category",
-            "children": [
-                {
-                    "name": " id",
-                    "is_primary_key": 1,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " business_id",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                },
-                {
-                    "name": " category_name",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                }
-            ],
-            "is_primary_key": -1,
-            "is_foreign_key": -1,
-            "type": null
+            "source": "BUSINESS:::BUSINESS_ID",
+            "target": "CHECKIN:::BUSINESS_ID"
         },
         {
-            "name": "checkin",
-            "children": [
-                {
-                    "name": " cid",
-                    "is_primary_key": 1,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " business_id",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                },
-                {
-                    "name": " count",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " day",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " varchar(12)"
-                }
-            ],
-            "is_primary_key": -1,
-            "is_foreign_key": -1,
-            "type": null
+            "source": "CATEGORY:::BUSINESS_ID",
+            "target": "CHECKIN:::BUSINESS_ID"
         },
         {
-            "name": "neighbourhood",
-            "children": [
-                {
-                    "name": " id",
-                    "is_primary_key": 1,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " business_id",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                },
-                {
-                    "name": " neighborhood_name",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                }
-            ],
-            "is_primary_key": -1,
-            "is_foreign_key": -1,
-            "type": null
+            "source": "CATEGORY:::ID",
+            "target": "NEIGHBOURHOOD:::ID"
         },
         {
-            "name": "review",
-            "children": [
-                {
-                    "name": " rid",
-                    "is_primary_key": 1,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " business_id",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                },
-                {
-                    "name": " user_id",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                },
-                {
-                    "name": " rating",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " float"
-                },
-                {
-                    "name": " text",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " longtext"
-                },
-                {
-                    "name": " year",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " month",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " varchar(10)"
-                }
-            ],
-            "is_primary_key": -1,
-            "is_foreign_key": -1,
-            "type": null
+            "source": "BUSINESS:::BUSINESS_ID",
+            "target": "NEIGHBOURHOOD:::BUSINESS_ID"
         },
         {
-            "name": "tip",
-            "children": [
-                {
-                    "name": " tip_id",
-                    "is_primary_key": 1,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " business_id",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                },
-                {
-                    "name": " text",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " longtext"
-                },
-                {
-                    "name": " user_id",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                },
-                {
-                    "name": " likes",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " year",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " month",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " varchar(10)"
-                }
-            ],
-            "is_primary_key": -1,
-            "is_foreign_key": -1,
-            "type": null
+            "source": "CATEGORY:::BUSINESS_ID",
+            "target": "NEIGHBOURHOOD:::BUSINESS_ID"
         },
         {
-            "name": "user",
-            "children": [
-                {
-                    "name": " uid",
-                    "is_primary_key": 1,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " user_id",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                },
-                {
-                    "name": " name",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                }
-            ],
-            "is_primary_key": -1,
-            "is_foreign_key": -1,
-            "type": null
+            "source": "CHECKIN:::BUSINESS_ID",
+            "target": "NEIGHBOURHOOD:::BUSINESS_ID"
+        },
+        {
+            "source": "BUSINESS:::BUSINESS_ID",
+            "target": "REVIEW:::BUSINESS_ID"
+        },
+        {
+            "source": "CATEGORY:::BUSINESS_ID",
+            "target": "REVIEW:::BUSINESS_ID"
+        },
+        {
+            "source": "CHECKIN:::BUSINESS_ID",
+            "target": "REVIEW:::BUSINESS_ID"
+        },
+        {
+            "source": "NEIGHBOURHOOD:::BUSINESS_ID",
+            "target": "REVIEW:::BUSINESS_ID"
+        },
+        {
+            "source": "BUSINESS:::RATING",
+            "target": "REVIEW:::RATING"
+        },
+        {
+            "source": "BUSINESS:::BUSINESS_ID",
+            "target": "TIP:::BUSINESS_ID"
+        },
+        {
+            "source": "CATEGORY:::BUSINESS_ID",
+            "target": "TIP:::BUSINESS_ID"
+        },
+        {
+            "source": "CHECKIN:::BUSINESS_ID",
+            "target": "TIP:::BUSINESS_ID"
+        },
+        {
+            "source": "NEIGHBOURHOOD:::BUSINESS_ID",
+            "target": "TIP:::BUSINESS_ID"
+        },
+        {
+            "source": "REVIEW:::BUSINESS_ID",
+            "target": "TIP:::BUSINESS_ID"
+        },
+        {
+            "source": "REVIEW:::TEXT",
+            "target": "TIP:::TEXT"
+        },
+        {
+            "source": "REVIEW:::USER_ID",
+            "target": "TIP:::USER_ID"
+        },
+        {
+            "source": "REVIEW:::YEAR",
+            "target": "TIP:::YEAR"
+        },
+        {
+            "source": "REVIEW:::MONTH",
+            "target": "TIP:::MONTH"
+        },
+        {
+            "source": "REVIEW:::USER_ID",
+            "target": "USER:::USER_ID"
+        },
+        {
+            "source": "TIP:::USER_ID",
+            "target": "USER:::USER_ID"
+        },
+        {
+            "source": "BUSINESS:::NAME",
+            "target": "USER:::NAME"
         }
     ]
 }

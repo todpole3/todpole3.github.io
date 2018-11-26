@@ -1,377 +1,638 @@
 {
-    "name": "academic",
-    "children": [
+    "schema": {
+        "name": "academic",
+        "children": [
+            {
+                "id": "AUTHOR",
+                "name": "AUTHOR",
+                "children": [
+                    {
+                        "id": "AUTHOR:::AID",
+                        "name": "AID",
+                        "is_primary_key": 1,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "AUTHOR:::HOMEPAGE",
+                        "name": "HOMEPAGE",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    },
+                    {
+                        "id": "AUTHOR:::NAME",
+                        "name": "NAME",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    },
+                    {
+                        "id": "AUTHOR:::OID",
+                        "name": "OID",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    }
+                ],
+                "is_primary_key": -1,
+                "is_foreign_key": -1,
+                "type": null
+            },
+            {
+                "id": "CITE",
+                "name": "CITE",
+                "children": [
+                    {
+                        "id": "CITE:::CITED",
+                        "name": "CITED",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "CITE:::CITING",
+                        "name": "CITING",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    }
+                ],
+                "is_primary_key": -1,
+                "is_foreign_key": -1,
+                "type": null
+            },
+            {
+                "id": "CONFERENCE",
+                "name": "CONFERENCE",
+                "children": [
+                    {
+                        "id": "CONFERENCE:::CID",
+                        "name": "CID",
+                        "is_primary_key": 1,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "CONFERENCE:::HOMEPAGE",
+                        "name": "HOMEPAGE",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    },
+                    {
+                        "id": "CONFERENCE:::NAME",
+                        "name": "NAME",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    }
+                ],
+                "is_primary_key": -1,
+                "is_foreign_key": -1,
+                "type": null
+            },
+            {
+                "id": "DOMAIN",
+                "name": "DOMAIN",
+                "children": [
+                    {
+                        "id": "DOMAIN:::DID",
+                        "name": "DID",
+                        "is_primary_key": 1,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "DOMAIN:::NAME",
+                        "name": "NAME",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    }
+                ],
+                "is_primary_key": -1,
+                "is_foreign_key": -1,
+                "type": null
+            },
+            {
+                "id": "DOMAIN_AUTHOR",
+                "name": "DOMAIN_AUTHOR",
+                "children": [
+                    {
+                        "id": "DOMAIN_AUTHOR:::AID",
+                        "name": "AID",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "DOMAIN_AUTHOR:::DID",
+                        "name": "DID",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    }
+                ],
+                "is_primary_key": -1,
+                "is_foreign_key": -1,
+                "type": null
+            },
+            {
+                "id": "DOMAIN_CONFERENCE",
+                "name": "DOMAIN_CONFERENCE",
+                "children": [
+                    {
+                        "id": "DOMAIN_CONFERENCE:::CID",
+                        "name": "CID",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "DOMAIN_CONFERENCE:::DID",
+                        "name": "DID",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    }
+                ],
+                "is_primary_key": -1,
+                "is_foreign_key": -1,
+                "type": null
+            },
+            {
+                "id": "DOMAIN_JOURNAL",
+                "name": "DOMAIN_JOURNAL",
+                "children": [
+                    {
+                        "id": "DOMAIN_JOURNAL:::DID",
+                        "name": "DID",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "DOMAIN_JOURNAL:::JID",
+                        "name": "JID",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    }
+                ],
+                "is_primary_key": -1,
+                "is_foreign_key": -1,
+                "type": null
+            },
+            {
+                "id": "DOMAIN_KEYWORD",
+                "name": "DOMAIN_KEYWORD",
+                "children": [
+                    {
+                        "id": "DOMAIN_KEYWORD:::DID",
+                        "name": "DID",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "DOMAIN_KEYWORD:::KID",
+                        "name": "KID",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    }
+                ],
+                "is_primary_key": -1,
+                "is_foreign_key": -1,
+                "type": null
+            },
+            {
+                "id": "DOMAIN_PUBLICATION",
+                "name": "DOMAIN_PUBLICATION",
+                "children": [
+                    {
+                        "id": "DOMAIN_PUBLICATION:::DID",
+                        "name": "DID",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "DOMAIN_PUBLICATION:::PID",
+                        "name": "PID",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    }
+                ],
+                "is_primary_key": -1,
+                "is_foreign_key": -1,
+                "type": null
+            },
+            {
+                "id": "JOURNAL",
+                "name": "JOURNAL",
+                "children": [
+                    {
+                        "id": "JOURNAL:::HOMEPAGE",
+                        "name": "HOMEPAGE",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    },
+                    {
+                        "id": "JOURNAL:::JID",
+                        "name": "JID",
+                        "is_primary_key": 1,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "JOURNAL:::NAME",
+                        "name": "NAME",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    }
+                ],
+                "is_primary_key": -1,
+                "is_foreign_key": -1,
+                "type": null
+            },
+            {
+                "id": "KEYWORD",
+                "name": "KEYWORD",
+                "children": [
+                    {
+                        "id": "KEYWORD:::KEYWORD",
+                        "name": "KEYWORD",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    },
+                    {
+                        "id": "KEYWORD:::KID",
+                        "name": "KID",
+                        "is_primary_key": 1,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    }
+                ],
+                "is_primary_key": -1,
+                "is_foreign_key": -1,
+                "type": null
+            },
+            {
+                "id": "ORGANIZATION",
+                "name": "ORGANIZATION",
+                "children": [
+                    {
+                        "id": "ORGANIZATION:::CONTINENT",
+                        "name": "CONTINENT",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    },
+                    {
+                        "id": "ORGANIZATION:::HOMEPAGE",
+                        "name": "HOMEPAGE",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    },
+                    {
+                        "id": "ORGANIZATION:::NAME",
+                        "name": "NAME",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    },
+                    {
+                        "id": "ORGANIZATION:::OID",
+                        "name": "OID",
+                        "is_primary_key": 1,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    }
+                ],
+                "is_primary_key": -1,
+                "is_foreign_key": -1,
+                "type": null
+            },
+            {
+                "id": "PUBLICATION",
+                "name": "PUBLICATION",
+                "children": [
+                    {
+                        "id": "PUBLICATION:::ABSTRACT",
+                        "name": "ABSTRACT",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    },
+                    {
+                        "id": "PUBLICATION:::CID",
+                        "name": "CID",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "PUBLICATION:::CITATION_NUM",
+                        "name": "CITATION_NUM",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "PUBLICATION:::JID",
+                        "name": "JID",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "PUBLICATION:::PID",
+                        "name": "PID",
+                        "is_primary_key": 1,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "PUBLICATION:::REFERENCE_NUM",
+                        "name": "REFERENCE_NUM",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "PUBLICATION:::TITLE",
+                        "name": "TITLE",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    },
+                    {
+                        "id": "PUBLICATION:::YEAR",
+                        "name": "YEAR",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    }
+                ],
+                "is_primary_key": -1,
+                "is_foreign_key": -1,
+                "type": null
+            },
+            {
+                "id": "PUBLICATION_KEYWORD",
+                "name": "PUBLICATION_KEYWORD",
+                "children": [
+                    {
+                        "id": "PUBLICATION_KEYWORD:::KID",
+                        "name": "KID",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "PUBLICATION_KEYWORD:::PID",
+                        "name": "PID",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    }
+                ],
+                "is_primary_key": -1,
+                "is_foreign_key": -1,
+                "type": null
+            },
+            {
+                "id": "WRITES",
+                "name": "WRITES",
+                "children": [
+                    {
+                        "id": "WRITES:::AID",
+                        "name": "AID",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "WRITES:::PID",
+                        "name": "PID",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    }
+                ],
+                "is_primary_key": -1,
+                "is_foreign_key": -1,
+                "type": null
+            }
+        ]
+    },
+    "join_anchors": [
         {
-            "name": "author",
-            "children": [
-                {
-                    "name": " aid",
-                    "is_primary_key": 1,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " homepage",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                },
-                {
-                    "name": " name",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                },
-                {
-                    "name": " oid",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                }
-            ],
-            "is_primary_key": -1,
-            "is_foreign_key": -1,
-            "type": null
+            "source": "AUTHOR:::HOMEPAGE",
+            "target": "CONFERENCE:::HOMEPAGE"
         },
         {
-            "name": "cite",
-            "children": [
-                {
-                    "name": " cited",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " citing",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                }
-            ],
-            "is_primary_key": -1,
-            "is_foreign_key": -1,
-            "type": null
+            "source": "AUTHOR:::NAME",
+            "target": "CONFERENCE:::NAME"
         },
         {
-            "name": "conference",
-            "children": [
-                {
-                    "name": " cid",
-                    "is_primary_key": 1,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " homepage",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                },
-                {
-                    "name": " name",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                }
-            ],
-            "is_primary_key": -1,
-            "is_foreign_key": -1,
-            "type": null
+            "source": "AUTHOR:::NAME",
+            "target": "DOMAIN:::NAME"
         },
         {
-            "name": "domain",
-            "children": [
-                {
-                    "name": " did",
-                    "is_primary_key": 1,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " name",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                }
-            ],
-            "is_primary_key": -1,
-            "is_foreign_key": -1,
-            "type": null
+            "source": "CONFERENCE:::NAME",
+            "target": "DOMAIN:::NAME"
         },
         {
-            "name": "domain_author",
-            "children": [
-                {
-                    "name": " aid",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " did",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                }
-            ],
-            "is_primary_key": -1,
-            "is_foreign_key": -1,
-            "type": null
+            "source": "AUTHOR:::AID",
+            "target": "DOMAIN_AUTHOR:::AID"
         },
         {
-            "name": "domain_conference",
-            "children": [
-                {
-                    "name": " cid",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " did",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                }
-            ],
-            "is_primary_key": -1,
-            "is_foreign_key": -1,
-            "type": null
+            "source": "DOMAIN:::DID",
+            "target": "DOMAIN_AUTHOR:::DID"
         },
         {
-            "name": "domain_journal",
-            "children": [
-                {
-                    "name": " did",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " jid",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                }
-            ],
-            "is_primary_key": -1,
-            "is_foreign_key": -1,
-            "type": null
+            "source": "CONFERENCE:::CID",
+            "target": "DOMAIN_CONFERENCE:::CID"
         },
         {
-            "name": "domain_keyword",
-            "children": [
-                {
-                    "name": " did",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " kid",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                }
-            ],
-            "is_primary_key": -1,
-            "is_foreign_key": -1,
-            "type": null
+            "source": "DOMAIN:::DID",
+            "target": "DOMAIN_CONFERENCE:::DID"
         },
         {
-            "name": "domain_publication",
-            "children": [
-                {
-                    "name": " did",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " pid",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                }
-            ],
-            "is_primary_key": -1,
-            "is_foreign_key": -1,
-            "type": null
+            "source": "DOMAIN_AUTHOR:::DID",
+            "target": "DOMAIN_CONFERENCE:::DID"
         },
         {
-            "name": "journal",
-            "children": [
-                {
-                    "name": " homepage",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                },
-                {
-                    "name": " jid",
-                    "is_primary_key": 1,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " name",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                }
-            ],
-            "is_primary_key": -1,
-            "is_foreign_key": -1,
-            "type": null
+            "source": "DOMAIN:::DID",
+            "target": "DOMAIN_JOURNAL:::DID"
         },
         {
-            "name": "keyword",
-            "children": [
-                {
-                    "name": " keyword",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                },
-                {
-                    "name": " kid",
-                    "is_primary_key": 1,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                }
-            ],
-            "is_primary_key": -1,
-            "is_foreign_key": -1,
-            "type": null
+            "source": "DOMAIN_AUTHOR:::DID",
+            "target": "DOMAIN_JOURNAL:::DID"
         },
         {
-            "name": "organization",
-            "children": [
-                {
-                    "name": " continent",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                },
-                {
-                    "name": " homepage",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                },
-                {
-                    "name": " name",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                },
-                {
-                    "name": " oid",
-                    "is_primary_key": 1,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                }
-            ],
-            "is_primary_key": -1,
-            "is_foreign_key": -1,
-            "type": null
+            "source": "DOMAIN_CONFERENCE:::DID",
+            "target": "DOMAIN_JOURNAL:::DID"
         },
         {
-            "name": "publication",
-            "children": [
-                {
-                    "name": " abstract",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                },
-                {
-                    "name": " cid",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " citation_num",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " jid",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " pid",
-                    "is_primary_key": 1,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " reference_num",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " title",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                },
-                {
-                    "name": " year",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                }
-            ],
-            "is_primary_key": -1,
-            "is_foreign_key": -1,
-            "type": null
+            "source": "DOMAIN:::DID",
+            "target": "DOMAIN_KEYWORD:::DID"
         },
         {
-            "name": "publication_keyword",
-            "children": [
-                {
-                    "name": " kid",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " pid",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                }
-            ],
-            "is_primary_key": -1,
-            "is_foreign_key": -1,
-            "type": null
+            "source": "DOMAIN_AUTHOR:::DID",
+            "target": "DOMAIN_KEYWORD:::DID"
         },
         {
-            "name": "writes",
-            "children": [
-                {
-                    "name": " aid",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " pid",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                }
-            ],
-            "is_primary_key": -1,
-            "is_foreign_key": -1,
-            "type": null
+            "source": "DOMAIN_CONFERENCE:::DID",
+            "target": "DOMAIN_KEYWORD:::DID"
+        },
+        {
+            "source": "DOMAIN_JOURNAL:::DID",
+            "target": "DOMAIN_KEYWORD:::DID"
+        },
+        {
+            "source": "DOMAIN:::DID",
+            "target": "DOMAIN_PUBLICATION:::DID"
+        },
+        {
+            "source": "DOMAIN_AUTHOR:::DID",
+            "target": "DOMAIN_PUBLICATION:::DID"
+        },
+        {
+            "source": "DOMAIN_CONFERENCE:::DID",
+            "target": "DOMAIN_PUBLICATION:::DID"
+        },
+        {
+            "source": "DOMAIN_JOURNAL:::DID",
+            "target": "DOMAIN_PUBLICATION:::DID"
+        },
+        {
+            "source": "DOMAIN_KEYWORD:::DID",
+            "target": "DOMAIN_PUBLICATION:::DID"
+        },
+        {
+            "source": "AUTHOR:::HOMEPAGE",
+            "target": "JOURNAL:::HOMEPAGE"
+        },
+        {
+            "source": "CONFERENCE:::HOMEPAGE",
+            "target": "JOURNAL:::HOMEPAGE"
+        },
+        {
+            "source": "DOMAIN_JOURNAL:::JID",
+            "target": "JOURNAL:::JID"
+        },
+        {
+            "source": "AUTHOR:::NAME",
+            "target": "JOURNAL:::NAME"
+        },
+        {
+            "source": "CONFERENCE:::NAME",
+            "target": "JOURNAL:::NAME"
+        },
+        {
+            "source": "DOMAIN:::NAME",
+            "target": "JOURNAL:::NAME"
+        },
+        {
+            "source": "DOMAIN_KEYWORD:::KID",
+            "target": "KEYWORD:::KID"
+        },
+        {
+            "source": "AUTHOR:::HOMEPAGE",
+            "target": "ORGANIZATION:::HOMEPAGE"
+        },
+        {
+            "source": "CONFERENCE:::HOMEPAGE",
+            "target": "ORGANIZATION:::HOMEPAGE"
+        },
+        {
+            "source": "JOURNAL:::HOMEPAGE",
+            "target": "ORGANIZATION:::HOMEPAGE"
+        },
+        {
+            "source": "AUTHOR:::NAME",
+            "target": "ORGANIZATION:::NAME"
+        },
+        {
+            "source": "CONFERENCE:::NAME",
+            "target": "ORGANIZATION:::NAME"
+        },
+        {
+            "source": "DOMAIN:::NAME",
+            "target": "ORGANIZATION:::NAME"
+        },
+        {
+            "source": "JOURNAL:::NAME",
+            "target": "ORGANIZATION:::NAME"
+        },
+        {
+            "source": "AUTHOR:::OID",
+            "target": "ORGANIZATION:::OID"
+        },
+        {
+            "source": "CONFERENCE:::CID",
+            "target": "PUBLICATION:::CID"
+        },
+        {
+            "source": "DOMAIN_CONFERENCE:::CID",
+            "target": "PUBLICATION:::CID"
+        },
+        {
+            "source": "DOMAIN_JOURNAL:::JID",
+            "target": "PUBLICATION:::JID"
+        },
+        {
+            "source": "JOURNAL:::JID",
+            "target": "PUBLICATION:::JID"
+        },
+        {
+            "source": "DOMAIN_PUBLICATION:::PID",
+            "target": "PUBLICATION:::PID"
+        },
+        {
+            "source": "DOMAIN_KEYWORD:::KID",
+            "target": "PUBLICATION_KEYWORD:::KID"
+        },
+        {
+            "source": "KEYWORD:::KID",
+            "target": "PUBLICATION_KEYWORD:::KID"
+        },
+        {
+            "source": "DOMAIN_PUBLICATION:::PID",
+            "target": "PUBLICATION_KEYWORD:::PID"
+        },
+        {
+            "source": "PUBLICATION:::PID",
+            "target": "PUBLICATION_KEYWORD:::PID"
+        },
+        {
+            "source": "AUTHOR:::AID",
+            "target": "WRITES:::AID"
+        },
+        {
+            "source": "DOMAIN_AUTHOR:::AID",
+            "target": "WRITES:::AID"
+        },
+        {
+            "source": "DOMAIN_PUBLICATION:::PID",
+            "target": "WRITES:::PID"
+        },
+        {
+            "source": "PUBLICATION:::PID",
+            "target": "WRITES:::PID"
+        },
+        {
+            "source": "PUBLICATION_KEYWORD:::PID",
+            "target": "WRITES:::PID"
         }
     ]
 }

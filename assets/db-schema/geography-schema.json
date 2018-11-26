@@ -1,255 +1,430 @@
 {
-    "name": "geography",
-    "children": [
+    "schema": {
+        "name": "geography",
+        "children": [
+            {
+                "id": "STATE",
+                "name": "STATE",
+                "children": [
+                    {
+                        "id": "STATE:::STATE_NAME",
+                        "name": "STATE_NAME",
+                        "is_primary_key": 1,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    },
+                    {
+                        "id": "STATE:::CAPITAL",
+                        "name": "CAPITAL",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 1,
+                        "type": " varchar(255)"
+                    },
+                    {
+                        "id": "STATE:::POPULATION",
+                        "name": "POPULATION",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "STATE:::AREA",
+                        "name": "AREA",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " double"
+                    },
+                    {
+                        "id": "STATE:::COUNTRY_NAME",
+                        "name": "COUNTRY_NAME",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    },
+                    {
+                        "id": "STATE:::DENSITY",
+                        "name": "DENSITY",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " double"
+                    }
+                ],
+                "is_primary_key": -1,
+                "is_foreign_key": -1,
+                "type": null
+            },
+            {
+                "id": "BORDER_INFO",
+                "name": "BORDER_INFO",
+                "children": [
+                    {
+                        "id": "BORDER_INFO:::STATE_NAME",
+                        "name": "STATE_NAME",
+                        "is_primary_key": 1,
+                        "is_foreign_key": 1,
+                        "type": " varchar(255)"
+                    },
+                    {
+                        "id": "BORDER_INFO:::BORDER",
+                        "name": "BORDER",
+                        "is_primary_key": 1,
+                        "is_foreign_key": 1,
+                        "type": " varchar(255)"
+                    }
+                ],
+                "is_primary_key": -1,
+                "is_foreign_key": -1,
+                "type": null
+            },
+            {
+                "id": "CITY",
+                "name": "CITY",
+                "children": [
+                    {
+                        "id": "CITY:::CITY_NAME",
+                        "name": "CITY_NAME",
+                        "is_primary_key": 1,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    },
+                    {
+                        "id": "CITY:::STATE_NAME",
+                        "name": "STATE_NAME",
+                        "is_primary_key": 1,
+                        "is_foreign_key": 1,
+                        "type": " varchar(255)"
+                    },
+                    {
+                        "id": "CITY:::POPULATION",
+                        "name": "POPULATION",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "CITY:::COUNTRY_NAME",
+                        "name": "COUNTRY_NAME",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    }
+                ],
+                "is_primary_key": -1,
+                "is_foreign_key": -1,
+                "type": null
+            },
+            {
+                "id": "HIGHLOW",
+                "name": "HIGHLOW",
+                "children": [
+                    {
+                        "id": "HIGHLOW:::STATE_NAME",
+                        "name": "STATE_NAME",
+                        "is_primary_key": 1,
+                        "is_foreign_key": 1,
+                        "type": " varchar(255)"
+                    },
+                    {
+                        "id": "HIGHLOW:::HIGHEST_POINT",
+                        "name": "HIGHEST_POINT",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    },
+                    {
+                        "id": "HIGHLOW:::HIGHEST_ELEVATION",
+                        "name": "HIGHEST_ELEVATION",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    },
+                    {
+                        "id": "HIGHLOW:::LOWEST_POINT",
+                        "name": "LOWEST_POINT",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    },
+                    {
+                        "id": "HIGHLOW:::LOWEST_ELEVATION",
+                        "name": "LOWEST_ELEVATION",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    }
+                ],
+                "is_primary_key": -1,
+                "is_foreign_key": -1,
+                "type": null
+            },
+            {
+                "id": "RIVER",
+                "name": "RIVER",
+                "children": [
+                    {
+                        "id": "RIVER:::RIVER_NAME",
+                        "name": "RIVER_NAME",
+                        "is_primary_key": 1,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    },
+                    {
+                        "id": "RIVER:::LENGTH",
+                        "name": "LENGTH",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "RIVER:::TRAVERSE",
+                        "name": "TRAVERSE",
+                        "is_primary_key": 1,
+                        "is_foreign_key": 1,
+                        "type": " varchar(255)"
+                    },
+                    {
+                        "id": "RIVER:::COUNTRY_NAME",
+                        "name": "COUNTRY_NAME",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    }
+                ],
+                "is_primary_key": -1,
+                "is_foreign_key": -1,
+                "type": null
+            },
+            {
+                "id": "MOUNTAIN",
+                "name": "MOUNTAIN",
+                "children": [
+                    {
+                        "id": "MOUNTAIN:::MOUNTAIN_NAME",
+                        "name": "MOUNTAIN_NAME",
+                        "is_primary_key": 1,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    },
+                    {
+                        "id": "MOUNTAIN:::MOUNTAIN_ALTITUDE",
+                        "name": "MOUNTAIN_ALTITUDE",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "MOUNTAIN:::STATE_NAME",
+                        "name": "STATE_NAME",
+                        "is_primary_key": 1,
+                        "is_foreign_key": 1,
+                        "type": " varchar(255)"
+                    },
+                    {
+                        "id": "MOUNTAIN:::COUNTRY_NAME",
+                        "name": "COUNTRY_NAME",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    }
+                ],
+                "is_primary_key": -1,
+                "is_foreign_key": -1,
+                "type": null
+            },
+            {
+                "id": "ROAD",
+                "name": "ROAD",
+                "children": [
+                    {
+                        "id": "ROAD:::ROAD_NAME",
+                        "name": "ROAD_NAME",
+                        "is_primary_key": 1,
+                        "is_foreign_key": 0,
+                        "type": " varchar(10)"
+                    },
+                    {
+                        "id": "ROAD:::STATE_NAME",
+                        "name": "STATE_NAME",
+                        "is_primary_key": 1,
+                        "is_foreign_key": 1,
+                        "type": " varchar(255)"
+                    }
+                ],
+                "is_primary_key": -1,
+                "is_foreign_key": -1,
+                "type": null
+            },
+            {
+                "id": "LAKE",
+                "name": "LAKE",
+                "children": [
+                    {
+                        "id": "LAKE:::LAKE_NAME",
+                        "name": "LAKE_NAME",
+                        "is_primary_key": 1,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    },
+                    {
+                        "id": "LAKE:::AREA",
+                        "name": "AREA",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " double"
+                    },
+                    {
+                        "id": "LAKE:::STATE_NAME",
+                        "name": "STATE_NAME",
+                        "is_primary_key": 1,
+                        "is_foreign_key": 1,
+                        "type": " varchar(255)"
+                    },
+                    {
+                        "id": "LAKE:::COUNTRY_NAME",
+                        "name": "COUNTRY_NAME",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    }
+                ],
+                "is_primary_key": -1,
+                "is_foreign_key": -1,
+                "type": null
+            }
+        ]
+    },
+    "join_anchors": [
         {
-            "name": "STATE",
-            "children": [
-                {
-                    "name": " STATE_NAME",
-                    "is_primary_key": 1,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                },
-                {
-                    "name": " CAPITAL",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 1,
-                    "type": " varchar(255)"
-                },
-                {
-                    "name": " POPULATION",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " AREA",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " double"
-                },
-                {
-                    "name": " COUNTRY_NAME",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                },
-                {
-                    "name": " DENSITY",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " double"
-                }
-            ],
-            "is_primary_key": -1,
-            "is_foreign_key": -1,
-            "type": null
+            "source": "STATE:::STATE_NAME",
+            "target": "BORDER_INFO:::STATE_NAME"
         },
         {
-            "name": "BORDER_INFO",
-            "children": [
-                {
-                    "name": " STATE_NAME",
-                    "is_primary_key": 1,
-                    "is_foreign_key": 1,
-                    "type": " varchar(255)"
-                },
-                {
-                    "name": " BORDER",
-                    "is_primary_key": 1,
-                    "is_foreign_key": 1,
-                    "type": " varchar(255)"
-                }
-            ],
-            "is_primary_key": -1,
-            "is_foreign_key": -1,
-            "type": null
+            "source": "STATE:::STATE_NAME",
+            "target": "CITY:::STATE_NAME"
         },
         {
-            "name": "CITY",
-            "children": [
-                {
-                    "name": " CITY_NAME",
-                    "is_primary_key": 1,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                },
-                {
-                    "name": " STATE_NAME",
-                    "is_primary_key": 1,
-                    "is_foreign_key": 1,
-                    "type": " varchar(255)"
-                },
-                {
-                    "name": " POPULATION",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " COUNTRY_NAME",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                }
-            ],
-            "is_primary_key": -1,
-            "is_foreign_key": -1,
-            "type": null
+            "source": "BORDER_INFO:::STATE_NAME",
+            "target": "CITY:::STATE_NAME"
         },
         {
-            "name": "HIGHLOW",
-            "children": [
-                {
-                    "name": " STATE_NAME",
-                    "is_primary_key": 1,
-                    "is_foreign_key": 1,
-                    "type": " varchar(255)"
-                },
-                {
-                    "name": " HIGHEST_POINT",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                },
-                {
-                    "name": " HIGHEST_ELEVATION",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                },
-                {
-                    "name": " LOWEST_POINT",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                },
-                {
-                    "name": " LOWEST_ELEVATION",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                }
-            ],
-            "is_primary_key": -1,
-            "is_foreign_key": -1,
-            "type": null
+            "source": "STATE:::POPULATION",
+            "target": "CITY:::POPULATION"
         },
         {
-            "name": "RIVER",
-            "children": [
-                {
-                    "name": " RIVER_NAME",
-                    "is_primary_key": 1,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                },
-                {
-                    "name": " LENGTH",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " TRAVERSE",
-                    "is_primary_key": 1,
-                    "is_foreign_key": 1,
-                    "type": " varchar(255)"
-                },
-                {
-                    "name": " COUNTRY_NAME",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                }
-            ],
-            "is_primary_key": -1,
-            "is_foreign_key": -1,
-            "type": null
+            "source": "STATE:::COUNTRY_NAME",
+            "target": "CITY:::COUNTRY_NAME"
         },
         {
-            "name": "MOUNTAIN",
-            "children": [
-                {
-                    "name": " MOUNTAIN_NAME",
-                    "is_primary_key": 1,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                },
-                {
-                    "name": " MOUNTAIN_ALTITUDE",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " STATE_NAME",
-                    "is_primary_key": 1,
-                    "is_foreign_key": 1,
-                    "type": " varchar(255)"
-                },
-                {
-                    "name": " COUNTRY_NAME",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                }
-            ],
-            "is_primary_key": -1,
-            "is_foreign_key": -1,
-            "type": null
+            "source": "STATE:::STATE_NAME",
+            "target": "HIGHLOW:::STATE_NAME"
         },
         {
-            "name": "ROAD",
-            "children": [
-                {
-                    "name": " ROAD_NAME",
-                    "is_primary_key": 1,
-                    "is_foreign_key": 0,
-                    "type": " varchar(10)"
-                },
-                {
-                    "name": " STATE_NAME",
-                    "is_primary_key": 1,
-                    "is_foreign_key": 1,
-                    "type": " varchar(255)"
-                }
-            ],
-            "is_primary_key": -1,
-            "is_foreign_key": -1,
-            "type": null
+            "source": "BORDER_INFO:::STATE_NAME",
+            "target": "HIGHLOW:::STATE_NAME"
         },
         {
-            "name": "LAKE",
-            "children": [
-                {
-                    "name": " LAKE_NAME",
-                    "is_primary_key": 1,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                },
-                {
-                    "name": " AREA",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " double"
-                },
-                {
-                    "name": " STATE_NAME",
-                    "is_primary_key": 1,
-                    "is_foreign_key": 1,
-                    "type": " varchar(255)"
-                },
-                {
-                    "name": " COUNTRY_NAME",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                }
-            ],
-            "is_primary_key": -1,
-            "is_foreign_key": -1,
-            "type": null
+            "source": "CITY:::STATE_NAME",
+            "target": "HIGHLOW:::STATE_NAME"
+        },
+        {
+            "source": "STATE:::COUNTRY_NAME",
+            "target": "RIVER:::COUNTRY_NAME"
+        },
+        {
+            "source": "CITY:::COUNTRY_NAME",
+            "target": "RIVER:::COUNTRY_NAME"
+        },
+        {
+            "source": "STATE:::STATE_NAME",
+            "target": "MOUNTAIN:::STATE_NAME"
+        },
+        {
+            "source": "BORDER_INFO:::STATE_NAME",
+            "target": "MOUNTAIN:::STATE_NAME"
+        },
+        {
+            "source": "CITY:::STATE_NAME",
+            "target": "MOUNTAIN:::STATE_NAME"
+        },
+        {
+            "source": "HIGHLOW:::STATE_NAME",
+            "target": "MOUNTAIN:::STATE_NAME"
+        },
+        {
+            "source": "STATE:::COUNTRY_NAME",
+            "target": "MOUNTAIN:::COUNTRY_NAME"
+        },
+        {
+            "source": "CITY:::COUNTRY_NAME",
+            "target": "MOUNTAIN:::COUNTRY_NAME"
+        },
+        {
+            "source": "RIVER:::COUNTRY_NAME",
+            "target": "MOUNTAIN:::COUNTRY_NAME"
+        },
+        {
+            "source": "STATE:::STATE_NAME",
+            "target": "ROAD:::STATE_NAME"
+        },
+        {
+            "source": "BORDER_INFO:::STATE_NAME",
+            "target": "ROAD:::STATE_NAME"
+        },
+        {
+            "source": "CITY:::STATE_NAME",
+            "target": "ROAD:::STATE_NAME"
+        },
+        {
+            "source": "HIGHLOW:::STATE_NAME",
+            "target": "ROAD:::STATE_NAME"
+        },
+        {
+            "source": "MOUNTAIN:::STATE_NAME",
+            "target": "ROAD:::STATE_NAME"
+        },
+        {
+            "source": "STATE:::AREA",
+            "target": "LAKE:::AREA"
+        },
+        {
+            "source": "STATE:::STATE_NAME",
+            "target": "LAKE:::STATE_NAME"
+        },
+        {
+            "source": "BORDER_INFO:::STATE_NAME",
+            "target": "LAKE:::STATE_NAME"
+        },
+        {
+            "source": "CITY:::STATE_NAME",
+            "target": "LAKE:::STATE_NAME"
+        },
+        {
+            "source": "HIGHLOW:::STATE_NAME",
+            "target": "LAKE:::STATE_NAME"
+        },
+        {
+            "source": "MOUNTAIN:::STATE_NAME",
+            "target": "LAKE:::STATE_NAME"
+        },
+        {
+            "source": "ROAD:::STATE_NAME",
+            "target": "LAKE:::STATE_NAME"
+        },
+        {
+            "source": "STATE:::COUNTRY_NAME",
+            "target": "LAKE:::COUNTRY_NAME"
+        },
+        {
+            "source": "CITY:::COUNTRY_NAME",
+            "target": "LAKE:::COUNTRY_NAME"
+        },
+        {
+            "source": "RIVER:::COUNTRY_NAME",
+            "target": "LAKE:::COUNTRY_NAME"
+        },
+        {
+            "source": "MOUNTAIN:::COUNTRY_NAME",
+            "target": "LAKE:::COUNTRY_NAME"
         }
     ]
 }

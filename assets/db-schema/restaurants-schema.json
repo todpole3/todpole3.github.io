@@ -1,101 +1,136 @@
 {
-    "name": "restaurants",
-    "children": [
+    "schema": {
+        "name": "restaurants",
+        "children": [
+            {
+                "id": "RESTAURANT",
+                "name": "RESTAURANT",
+                "children": [
+                    {
+                        "id": "RESTAURANT:::RESTAURANT_ID",
+                        "name": "RESTAURANT_ID",
+                        "is_primary_key": 1,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "RESTAURANT:::NAME",
+                        "name": "NAME",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    },
+                    {
+                        "id": "RESTAURANT:::FOOD_TYPE",
+                        "name": "FOOD_TYPE",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    },
+                    {
+                        "id": "RESTAURANT:::CITY_NAME",
+                        "name": "CITY_NAME",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 1,
+                        "type": " varchar(255)"
+                    },
+                    {
+                        "id": "RESTAURANT:::RATING",
+                        "name": "RATING",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " \"decimal(1"
+                    }
+                ],
+                "is_primary_key": -1,
+                "is_foreign_key": -1,
+                "type": null
+            },
+            {
+                "id": "LOCATION",
+                "name": "LOCATION",
+                "children": [
+                    {
+                        "id": "LOCATION:::RESTAURANT_ID",
+                        "name": "RESTAURANT_ID",
+                        "is_primary_key": 1,
+                        "is_foreign_key": 1,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "LOCATION:::HOUSE_NUMBER",
+                        "name": "HOUSE_NUMBER",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "LOCATION:::STREET_NAME",
+                        "name": "STREET_NAME",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    },
+                    {
+                        "id": "LOCATION:::CITY_NAME",
+                        "name": "CITY_NAME",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 1,
+                        "type": " varchar(255)"
+                    }
+                ],
+                "is_primary_key": -1,
+                "is_foreign_key": -1,
+                "type": null
+            },
+            {
+                "id": "GEOGRAPHIC",
+                "name": "GEOGRAPHIC",
+                "children": [
+                    {
+                        "id": "GEOGRAPHIC:::CITY_NAME",
+                        "name": "CITY_NAME",
+                        "is_primary_key": 1,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    },
+                    {
+                        "id": "GEOGRAPHIC:::COUNTY",
+                        "name": "COUNTY",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    },
+                    {
+                        "id": "GEOGRAPHIC:::REGION",
+                        "name": "REGION",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    }
+                ],
+                "is_primary_key": -1,
+                "is_foreign_key": -1,
+                "type": null
+            }
+        ]
+    },
+    "join_anchors": [
         {
-            "name": "RESTAURANT",
-            "children": [
-                {
-                    "name": " RESTAURANT_ID",
-                    "is_primary_key": 1,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " NAME",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                },
-                {
-                    "name": " FOOD_TYPE",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                },
-                {
-                    "name": " CITY_NAME",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 1,
-                    "type": " varchar(255)"
-                },
-                {
-                    "name": " RATING",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " \"decimal(1"
-                }
-            ],
-            "is_primary_key": -1,
-            "is_foreign_key": -1,
-            "type": null
+            "source": "RESTAURANT:::RESTAURANT_ID",
+            "target": "LOCATION:::RESTAURANT_ID"
         },
         {
-            "name": "LOCATION",
-            "children": [
-                {
-                    "name": " RESTAURANT_ID",
-                    "is_primary_key": 1,
-                    "is_foreign_key": 1,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " HOUSE_NUMBER",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " STREET_NAME",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                },
-                {
-                    "name": " CITY_NAME",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 1,
-                    "type": " varchar(255)"
-                }
-            ],
-            "is_primary_key": -1,
-            "is_foreign_key": -1,
-            "type": null
+            "source": "RESTAURANT:::CITY_NAME",
+            "target": "LOCATION:::CITY_NAME"
         },
         {
-            "name": "GEOGRAPHIC",
-            "children": [
-                {
-                    "name": " CITY_NAME",
-                    "is_primary_key": 1,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                },
-                {
-                    "name": " COUNTY",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                },
-                {
-                    "name": " REGION",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                }
-            ],
-            "is_primary_key": -1,
-            "is_foreign_key": -1,
-            "type": null
+            "source": "RESTAURANT:::CITY_NAME",
+            "target": "GEOGRAPHIC:::CITY_NAME"
+        },
+        {
+            "source": "LOCATION:::CITY_NAME",
+            "target": "GEOGRAPHIC:::CITY_NAME"
         }
     ]
 }

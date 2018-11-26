@@ -1,523 +1,1008 @@
 {
-    "name": "imdb",
-    "children": [
+    "schema": {
+        "name": "imdb",
+        "children": [
+            {
+                "id": "ACTOR",
+                "name": "ACTOR",
+                "children": [
+                    {
+                        "id": "ACTOR:::AID",
+                        "name": "AID",
+                        "is_primary_key": 1,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "ACTOR:::GENDER",
+                        "name": "GENDER",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " text"
+                    },
+                    {
+                        "id": "ACTOR:::NAME",
+                        "name": "NAME",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " text"
+                    },
+                    {
+                        "id": "ACTOR:::NATIONALITY",
+                        "name": "NATIONALITY",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " text"
+                    },
+                    {
+                        "id": "ACTOR:::BIRTH_CITY",
+                        "name": "BIRTH_CITY",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " text"
+                    },
+                    {
+                        "id": "ACTOR:::BIRTH_YEAR",
+                        "name": "BIRTH_YEAR",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    }
+                ],
+                "is_primary_key": -1,
+                "is_foreign_key": -1,
+                "type": null
+            },
+            {
+                "id": "CAST",
+                "name": "CAST",
+                "children": [
+                    {
+                        "id": "CAST:::ID",
+                        "name": "ID",
+                        "is_primary_key": 1,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "CAST:::MSID",
+                        "name": "MSID",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "CAST:::AID",
+                        "name": "AID",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "CAST:::ROLE",
+                        "name": "ROLE",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " text"
+                    }
+                ],
+                "is_primary_key": -1,
+                "is_foreign_key": -1,
+                "type": null
+            },
+            {
+                "id": "CLASSIFICATION",
+                "name": "CLASSIFICATION",
+                "children": [
+                    {
+                        "id": "CLASSIFICATION:::ID",
+                        "name": "ID",
+                        "is_primary_key": 1,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "CLASSIFICATION:::MSID",
+                        "name": "MSID",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "CLASSIFICATION:::GID",
+                        "name": "GID",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    }
+                ],
+                "is_primary_key": -1,
+                "is_foreign_key": -1,
+                "type": null
+            },
+            {
+                "id": "COMPANY",
+                "name": "COMPANY",
+                "children": [
+                    {
+                        "id": "COMPANY:::ID",
+                        "name": "ID",
+                        "is_primary_key": 1,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "COMPANY:::NAME",
+                        "name": "NAME",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 1,
+                        "type": " text"
+                    },
+                    {
+                        "id": "COMPANY:::COUNTRY_CODE",
+                        "name": "COUNTRY_CODE",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " varchar(255)"
+                    }
+                ],
+                "is_primary_key": -1,
+                "is_foreign_key": -1,
+                "type": null
+            },
+            {
+                "id": "COPYRIGHT",
+                "name": "COPYRIGHT",
+                "children": [
+                    {
+                        "id": "COPYRIGHT:::ID",
+                        "name": "ID",
+                        "is_primary_key": 1,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "COPYRIGHT:::MSID",
+                        "name": "MSID",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "COPYRIGHT:::CID",
+                        "name": "CID",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    }
+                ],
+                "is_primary_key": -1,
+                "is_foreign_key": -1,
+                "type": null
+            },
+            {
+                "id": "DIRECTED_BY",
+                "name": "DIRECTED_BY",
+                "children": [
+                    {
+                        "id": "DIRECTED_BY:::ID",
+                        "name": "ID",
+                        "is_primary_key": 1,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "DIRECTED_BY:::MSID",
+                        "name": "MSID",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "DIRECTED_BY:::DID",
+                        "name": "DID",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    }
+                ],
+                "is_primary_key": -1,
+                "is_foreign_key": -1,
+                "type": null
+            },
+            {
+                "id": "DIRECTOR",
+                "name": "DIRECTOR",
+                "children": [
+                    {
+                        "id": "DIRECTOR:::DID",
+                        "name": "DID",
+                        "is_primary_key": 1,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "DIRECTOR:::GENDER",
+                        "name": "GENDER",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " text"
+                    },
+                    {
+                        "id": "DIRECTOR:::NAME",
+                        "name": "NAME",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " text"
+                    },
+                    {
+                        "id": "DIRECTOR:::NATIONALITY",
+                        "name": "NATIONALITY",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " text"
+                    },
+                    {
+                        "id": "DIRECTOR:::BIRTH_CITY",
+                        "name": "BIRTH_CITY",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " text"
+                    },
+                    {
+                        "id": "DIRECTOR:::BIRTH_YEAR",
+                        "name": "BIRTH_YEAR",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    }
+                ],
+                "is_primary_key": -1,
+                "is_foreign_key": -1,
+                "type": null
+            },
+            {
+                "id": "GENRE",
+                "name": "GENRE",
+                "children": [
+                    {
+                        "id": "GENRE:::GID",
+                        "name": "GID",
+                        "is_primary_key": 1,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "GENRE:::GENRE",
+                        "name": "GENRE",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " text"
+                    }
+                ],
+                "is_primary_key": -1,
+                "is_foreign_key": -1,
+                "type": null
+            },
+            {
+                "id": "KEYWORD",
+                "name": "KEYWORD",
+                "children": [
+                    {
+                        "id": "KEYWORD:::ID",
+                        "name": "ID",
+                        "is_primary_key": 1,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "KEYWORD:::KEYWORD",
+                        "name": "KEYWORD",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " text"
+                    }
+                ],
+                "is_primary_key": -1,
+                "is_foreign_key": -1,
+                "type": null
+            },
+            {
+                "id": "MADE_BY",
+                "name": "MADE_BY",
+                "children": [
+                    {
+                        "id": "MADE_BY:::ID",
+                        "name": "ID",
+                        "is_primary_key": 1,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "MADE_BY:::MSID",
+                        "name": "MSID",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "MADE_BY:::PID",
+                        "name": "PID",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    }
+                ],
+                "is_primary_key": -1,
+                "is_foreign_key": -1,
+                "type": null
+            },
+            {
+                "id": "MOVIE",
+                "name": "MOVIE",
+                "children": [
+                    {
+                        "id": "MOVIE:::MID",
+                        "name": "MID",
+                        "is_primary_key": 1,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "MOVIE:::TITLE",
+                        "name": "TITLE",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " text"
+                    },
+                    {
+                        "id": "MOVIE:::RELEASE_YEAR",
+                        "name": "RELEASE_YEAR",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "MOVIE:::TITLE_AKA",
+                        "name": "TITLE_AKA",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " text"
+                    },
+                    {
+                        "id": "MOVIE:::BUDGET",
+                        "name": "BUDGET",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " text"
+                    }
+                ],
+                "is_primary_key": -1,
+                "is_foreign_key": -1,
+                "type": null
+            },
+            {
+                "id": "PRODUCER",
+                "name": "PRODUCER",
+                "children": [
+                    {
+                        "id": "PRODUCER:::PID",
+                        "name": "PID",
+                        "is_primary_key": 1,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "PRODUCER:::GENDER",
+                        "name": "GENDER",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " text"
+                    },
+                    {
+                        "id": "PRODUCER:::NAME",
+                        "name": "NAME",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " text"
+                    },
+                    {
+                        "id": "PRODUCER:::NATIONALITY",
+                        "name": "NATIONALITY",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " text"
+                    },
+                    {
+                        "id": "PRODUCER:::BIRTH_CITY",
+                        "name": "BIRTH_CITY",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " text"
+                    },
+                    {
+                        "id": "PRODUCER:::BIRTH_YEAR",
+                        "name": "BIRTH_YEAR",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    }
+                ],
+                "is_primary_key": -1,
+                "is_foreign_key": -1,
+                "type": null
+            },
+            {
+                "id": "TAGS",
+                "name": "TAGS",
+                "children": [
+                    {
+                        "id": "TAGS:::ID",
+                        "name": "ID",
+                        "is_primary_key": 1,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "TAGS:::MSID",
+                        "name": "MSID",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 1,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "TAGS:::KID",
+                        "name": "KID",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 1,
+                        "type": " int(11)"
+                    }
+                ],
+                "is_primary_key": -1,
+                "is_foreign_key": -1,
+                "type": null
+            },
+            {
+                "id": "TV_SERIES",
+                "name": "TV_SERIES",
+                "children": [
+                    {
+                        "id": "TV_SERIES:::SID",
+                        "name": "SID",
+                        "is_primary_key": 1,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "TV_SERIES:::TITLE",
+                        "name": "TITLE",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " text"
+                    },
+                    {
+                        "id": "TV_SERIES:::RELEASE_YEAR",
+                        "name": "RELEASE_YEAR",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "TV_SERIES:::NUM_OF_SEASONS",
+                        "name": "NUM_OF_SEASONS",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "TV_SERIES:::NUM_OF_EPISODES",
+                        "name": "NUM_OF_EPISODES",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "TV_SERIES:::TITLE_AKA",
+                        "name": "TITLE_AKA",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " text"
+                    },
+                    {
+                        "id": "TV_SERIES:::BUDGET",
+                        "name": "BUDGET",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " text"
+                    }
+                ],
+                "is_primary_key": -1,
+                "is_foreign_key": -1,
+                "type": null
+            },
+            {
+                "id": "WRITER",
+                "name": "WRITER",
+                "children": [
+                    {
+                        "id": "WRITER:::WID",
+                        "name": "WID",
+                        "is_primary_key": 1,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "WRITER:::GENDER",
+                        "name": "GENDER",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " text"
+                    },
+                    {
+                        "id": "WRITER:::NAME",
+                        "name": "NAME",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " text"
+                    },
+                    {
+                        "id": "WRITER:::NATIONALITY",
+                        "name": "NATIONALITY",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " text"
+                    },
+                    {
+                        "id": "WRITER:::BIRTH_CITY",
+                        "name": "BIRTH_CITY",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " text"
+                    },
+                    {
+                        "id": "WRITER:::BIRTH_YEAR",
+                        "name": "BIRTH_YEAR",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    }
+                ],
+                "is_primary_key": -1,
+                "is_foreign_key": -1,
+                "type": null
+            },
+            {
+                "id": "WRITTEN_BY",
+                "name": "WRITTEN_BY",
+                "children": [
+                    {
+                        "id": "WRITTEN_BY:::ID",
+                        "name": "ID",
+                        "is_primary_key": 1,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "WRITTEN_BY:::MSID",
+                        "name": "MSID",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    },
+                    {
+                        "id": "WRITTEN_BY:::WID",
+                        "name": "WID",
+                        "is_primary_key": 0,
+                        "is_foreign_key": 0,
+                        "type": " int(11)"
+                    }
+                ],
+                "is_primary_key": -1,
+                "is_foreign_key": -1,
+                "type": null
+            }
+        ]
+    },
+    "join_anchors": [
         {
-            "name": "actor",
-            "children": [
-                {
-                    "name": " aid",
-                    "is_primary_key": 1,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " gender",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " text"
-                },
-                {
-                    "name": " name",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " text"
-                },
-                {
-                    "name": " nationality",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " text"
-                },
-                {
-                    "name": " birth_city",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " text"
-                },
-                {
-                    "name": " birth_year",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                }
-            ],
-            "is_primary_key": -1,
-            "is_foreign_key": -1,
-            "type": null
+            "source": "ACTOR:::AID",
+            "target": "CAST:::AID"
         },
         {
-            "name": "cast",
-            "children": [
-                {
-                    "name": " id",
-                    "is_primary_key": 1,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " msid",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " aid",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " role",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " text"
-                }
-            ],
-            "is_primary_key": -1,
-            "is_foreign_key": -1,
-            "type": null
+            "source": "CAST:::ID",
+            "target": "CLASSIFICATION:::ID"
         },
         {
-            "name": "classification",
-            "children": [
-                {
-                    "name": " id",
-                    "is_primary_key": 1,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " msid",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " gid",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                }
-            ],
-            "is_primary_key": -1,
-            "is_foreign_key": -1,
-            "type": null
+            "source": "CAST:::MSID",
+            "target": "CLASSIFICATION:::MSID"
         },
         {
-            "name": "company",
-            "children": [
-                {
-                    "name": " id",
-                    "is_primary_key": 1,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " name",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 1,
-                    "type": " text"
-                },
-                {
-                    "name": " country_code",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " varchar(255)"
-                }
-            ],
-            "is_primary_key": -1,
-            "is_foreign_key": -1,
-            "type": null
+            "source": "CAST:::ID",
+            "target": "COMPANY:::ID"
         },
         {
-            "name": "copyright",
-            "children": [
-                {
-                    "name": " id",
-                    "is_primary_key": 1,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " msid",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " cid",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                }
-            ],
-            "is_primary_key": -1,
-            "is_foreign_key": -1,
-            "type": null
+            "source": "CLASSIFICATION:::ID",
+            "target": "COMPANY:::ID"
         },
         {
-            "name": "directed_by",
-            "children": [
-                {
-                    "name": " id",
-                    "is_primary_key": 1,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " msid",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " did",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                }
-            ],
-            "is_primary_key": -1,
-            "is_foreign_key": -1,
-            "type": null
+            "source": "ACTOR:::NAME",
+            "target": "COMPANY:::NAME"
         },
         {
-            "name": "director",
-            "children": [
-                {
-                    "name": " did",
-                    "is_primary_key": 1,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " gender",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " text"
-                },
-                {
-                    "name": " name",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " text"
-                },
-                {
-                    "name": " nationality",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " text"
-                },
-                {
-                    "name": " birth_city",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " text"
-                },
-                {
-                    "name": " birth_year",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                }
-            ],
-            "is_primary_key": -1,
-            "is_foreign_key": -1,
-            "type": null
+            "source": "CAST:::ID",
+            "target": "COPYRIGHT:::ID"
         },
         {
-            "name": "genre",
-            "children": [
-                {
-                    "name": " gid",
-                    "is_primary_key": 1,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " genre",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " text"
-                }
-            ],
-            "is_primary_key": -1,
-            "is_foreign_key": -1,
-            "type": null
+            "source": "CLASSIFICATION:::ID",
+            "target": "COPYRIGHT:::ID"
         },
         {
-            "name": "keyword",
-            "children": [
-                {
-                    "name": " id",
-                    "is_primary_key": 1,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " keyword",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " text"
-                }
-            ],
-            "is_primary_key": -1,
-            "is_foreign_key": -1,
-            "type": null
+            "source": "COMPANY:::ID",
+            "target": "COPYRIGHT:::ID"
         },
         {
-            "name": "made_by",
-            "children": [
-                {
-                    "name": " id",
-                    "is_primary_key": 1,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " msid",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " pid",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                }
-            ],
-            "is_primary_key": -1,
-            "is_foreign_key": -1,
-            "type": null
+            "source": "CAST:::MSID",
+            "target": "COPYRIGHT:::MSID"
         },
         {
-            "name": "movie",
-            "children": [
-                {
-                    "name": " mid",
-                    "is_primary_key": 1,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " title",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " text"
-                },
-                {
-                    "name": " release_year",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " title_aka",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " text"
-                },
-                {
-                    "name": " budget",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " text"
-                }
-            ],
-            "is_primary_key": -1,
-            "is_foreign_key": -1,
-            "type": null
+            "source": "CLASSIFICATION:::MSID",
+            "target": "COPYRIGHT:::MSID"
         },
         {
-            "name": "producer",
-            "children": [
-                {
-                    "name": " pid",
-                    "is_primary_key": 1,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " gender",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " text"
-                },
-                {
-                    "name": " name",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " text"
-                },
-                {
-                    "name": " nationality",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " text"
-                },
-                {
-                    "name": " birth_city",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " text"
-                },
-                {
-                    "name": " birth_year",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                }
-            ],
-            "is_primary_key": -1,
-            "is_foreign_key": -1,
-            "type": null
+            "source": "CAST:::ID",
+            "target": "DIRECTED_BY:::ID"
         },
         {
-            "name": "tags",
-            "children": [
-                {
-                    "name": " id",
-                    "is_primary_key": 1,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " msid",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 1,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " kid",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 1,
-                    "type": " int(11)"
-                }
-            ],
-            "is_primary_key": -1,
-            "is_foreign_key": -1,
-            "type": null
+            "source": "CLASSIFICATION:::ID",
+            "target": "DIRECTED_BY:::ID"
         },
         {
-            "name": "tv_series",
-            "children": [
-                {
-                    "name": " sid",
-                    "is_primary_key": 1,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " title",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " text"
-                },
-                {
-                    "name": " release_year",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " num_of_seasons",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " num_of_episodes",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " title_aka",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " text"
-                },
-                {
-                    "name": " budget",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " text"
-                }
-            ],
-            "is_primary_key": -1,
-            "is_foreign_key": -1,
-            "type": null
+            "source": "COMPANY:::ID",
+            "target": "DIRECTED_BY:::ID"
         },
         {
-            "name": "writer",
-            "children": [
-                {
-                    "name": " wid",
-                    "is_primary_key": 1,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " gender",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " text"
-                },
-                {
-                    "name": " name",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " text"
-                },
-                {
-                    "name": " nationality",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " text"
-                },
-                {
-                    "name": " birth_city",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " text"
-                },
-                {
-                    "name": " birth_year",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                }
-            ],
-            "is_primary_key": -1,
-            "is_foreign_key": -1,
-            "type": null
+            "source": "COPYRIGHT:::ID",
+            "target": "DIRECTED_BY:::ID"
         },
         {
-            "name": "written_by",
-            "children": [
-                {
-                    "name": " id",
-                    "is_primary_key": 1,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " msid",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                },
-                {
-                    "name": " wid",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": " int(11)"
-                }
-            ],
-            "is_primary_key": -1,
-            "is_foreign_key": -1,
-            "type": null
+            "source": "CAST:::MSID",
+            "target": "DIRECTED_BY:::MSID"
+        },
+        {
+            "source": "CLASSIFICATION:::MSID",
+            "target": "DIRECTED_BY:::MSID"
+        },
+        {
+            "source": "COPYRIGHT:::MSID",
+            "target": "DIRECTED_BY:::MSID"
+        },
+        {
+            "source": "DIRECTED_BY:::DID",
+            "target": "DIRECTOR:::DID"
+        },
+        {
+            "source": "ACTOR:::GENDER",
+            "target": "DIRECTOR:::GENDER"
+        },
+        {
+            "source": "ACTOR:::NAME",
+            "target": "DIRECTOR:::NAME"
+        },
+        {
+            "source": "COMPANY:::NAME",
+            "target": "DIRECTOR:::NAME"
+        },
+        {
+            "source": "ACTOR:::NATIONALITY",
+            "target": "DIRECTOR:::NATIONALITY"
+        },
+        {
+            "source": "ACTOR:::BIRTH_CITY",
+            "target": "DIRECTOR:::BIRTH_CITY"
+        },
+        {
+            "source": "ACTOR:::BIRTH_YEAR",
+            "target": "DIRECTOR:::BIRTH_YEAR"
+        },
+        {
+            "source": "CLASSIFICATION:::GID",
+            "target": "GENRE:::GID"
+        },
+        {
+            "source": "CAST:::ID",
+            "target": "KEYWORD:::ID"
+        },
+        {
+            "source": "CLASSIFICATION:::ID",
+            "target": "KEYWORD:::ID"
+        },
+        {
+            "source": "COMPANY:::ID",
+            "target": "KEYWORD:::ID"
+        },
+        {
+            "source": "COPYRIGHT:::ID",
+            "target": "KEYWORD:::ID"
+        },
+        {
+            "source": "DIRECTED_BY:::ID",
+            "target": "KEYWORD:::ID"
+        },
+        {
+            "source": "CAST:::ID",
+            "target": "MADE_BY:::ID"
+        },
+        {
+            "source": "CLASSIFICATION:::ID",
+            "target": "MADE_BY:::ID"
+        },
+        {
+            "source": "COMPANY:::ID",
+            "target": "MADE_BY:::ID"
+        },
+        {
+            "source": "COPYRIGHT:::ID",
+            "target": "MADE_BY:::ID"
+        },
+        {
+            "source": "DIRECTED_BY:::ID",
+            "target": "MADE_BY:::ID"
+        },
+        {
+            "source": "KEYWORD:::ID",
+            "target": "MADE_BY:::ID"
+        },
+        {
+            "source": "CAST:::MSID",
+            "target": "MADE_BY:::MSID"
+        },
+        {
+            "source": "CLASSIFICATION:::MSID",
+            "target": "MADE_BY:::MSID"
+        },
+        {
+            "source": "COPYRIGHT:::MSID",
+            "target": "MADE_BY:::MSID"
+        },
+        {
+            "source": "DIRECTED_BY:::MSID",
+            "target": "MADE_BY:::MSID"
+        },
+        {
+            "source": "MADE_BY:::PID",
+            "target": "PRODUCER:::PID"
+        },
+        {
+            "source": "ACTOR:::GENDER",
+            "target": "PRODUCER:::GENDER"
+        },
+        {
+            "source": "DIRECTOR:::GENDER",
+            "target": "PRODUCER:::GENDER"
+        },
+        {
+            "source": "ACTOR:::NAME",
+            "target": "PRODUCER:::NAME"
+        },
+        {
+            "source": "COMPANY:::NAME",
+            "target": "PRODUCER:::NAME"
+        },
+        {
+            "source": "DIRECTOR:::NAME",
+            "target": "PRODUCER:::NAME"
+        },
+        {
+            "source": "ACTOR:::NATIONALITY",
+            "target": "PRODUCER:::NATIONALITY"
+        },
+        {
+            "source": "DIRECTOR:::NATIONALITY",
+            "target": "PRODUCER:::NATIONALITY"
+        },
+        {
+            "source": "ACTOR:::BIRTH_CITY",
+            "target": "PRODUCER:::BIRTH_CITY"
+        },
+        {
+            "source": "DIRECTOR:::BIRTH_CITY",
+            "target": "PRODUCER:::BIRTH_CITY"
+        },
+        {
+            "source": "ACTOR:::BIRTH_YEAR",
+            "target": "PRODUCER:::BIRTH_YEAR"
+        },
+        {
+            "source": "DIRECTOR:::BIRTH_YEAR",
+            "target": "PRODUCER:::BIRTH_YEAR"
+        },
+        {
+            "source": "CAST:::ID",
+            "target": "TAGS:::ID"
+        },
+        {
+            "source": "CLASSIFICATION:::ID",
+            "target": "TAGS:::ID"
+        },
+        {
+            "source": "COMPANY:::ID",
+            "target": "TAGS:::ID"
+        },
+        {
+            "source": "COPYRIGHT:::ID",
+            "target": "TAGS:::ID"
+        },
+        {
+            "source": "DIRECTED_BY:::ID",
+            "target": "TAGS:::ID"
+        },
+        {
+            "source": "KEYWORD:::ID",
+            "target": "TAGS:::ID"
+        },
+        {
+            "source": "MADE_BY:::ID",
+            "target": "TAGS:::ID"
+        },
+        {
+            "source": "CAST:::MSID",
+            "target": "TAGS:::MSID"
+        },
+        {
+            "source": "CLASSIFICATION:::MSID",
+            "target": "TAGS:::MSID"
+        },
+        {
+            "source": "COPYRIGHT:::MSID",
+            "target": "TAGS:::MSID"
+        },
+        {
+            "source": "DIRECTED_BY:::MSID",
+            "target": "TAGS:::MSID"
+        },
+        {
+            "source": "MADE_BY:::MSID",
+            "target": "TAGS:::MSID"
+        },
+        {
+            "source": "MOVIE:::TITLE",
+            "target": "TV_SERIES:::TITLE"
+        },
+        {
+            "source": "MOVIE:::RELEASE_YEAR",
+            "target": "TV_SERIES:::RELEASE_YEAR"
+        },
+        {
+            "source": "MOVIE:::TITLE_AKA",
+            "target": "TV_SERIES:::TITLE_AKA"
+        },
+        {
+            "source": "MOVIE:::BUDGET",
+            "target": "TV_SERIES:::BUDGET"
+        },
+        {
+            "source": "ACTOR:::GENDER",
+            "target": "WRITER:::GENDER"
+        },
+        {
+            "source": "DIRECTOR:::GENDER",
+            "target": "WRITER:::GENDER"
+        },
+        {
+            "source": "PRODUCER:::GENDER",
+            "target": "WRITER:::GENDER"
+        },
+        {
+            "source": "ACTOR:::NAME",
+            "target": "WRITER:::NAME"
+        },
+        {
+            "source": "COMPANY:::NAME",
+            "target": "WRITER:::NAME"
+        },
+        {
+            "source": "DIRECTOR:::NAME",
+            "target": "WRITER:::NAME"
+        },
+        {
+            "source": "PRODUCER:::NAME",
+            "target": "WRITER:::NAME"
+        },
+        {
+            "source": "ACTOR:::NATIONALITY",
+            "target": "WRITER:::NATIONALITY"
+        },
+        {
+            "source": "DIRECTOR:::NATIONALITY",
+            "target": "WRITER:::NATIONALITY"
+        },
+        {
+            "source": "PRODUCER:::NATIONALITY",
+            "target": "WRITER:::NATIONALITY"
+        },
+        {
+            "source": "ACTOR:::BIRTH_CITY",
+            "target": "WRITER:::BIRTH_CITY"
+        },
+        {
+            "source": "DIRECTOR:::BIRTH_CITY",
+            "target": "WRITER:::BIRTH_CITY"
+        },
+        {
+            "source": "PRODUCER:::BIRTH_CITY",
+            "target": "WRITER:::BIRTH_CITY"
+        },
+        {
+            "source": "ACTOR:::BIRTH_YEAR",
+            "target": "WRITER:::BIRTH_YEAR"
+        },
+        {
+            "source": "DIRECTOR:::BIRTH_YEAR",
+            "target": "WRITER:::BIRTH_YEAR"
+        },
+        {
+            "source": "PRODUCER:::BIRTH_YEAR",
+            "target": "WRITER:::BIRTH_YEAR"
+        },
+        {
+            "source": "CAST:::ID",
+            "target": "WRITTEN_BY:::ID"
+        },
+        {
+            "source": "CLASSIFICATION:::ID",
+            "target": "WRITTEN_BY:::ID"
+        },
+        {
+            "source": "COMPANY:::ID",
+            "target": "WRITTEN_BY:::ID"
+        },
+        {
+            "source": "COPYRIGHT:::ID",
+            "target": "WRITTEN_BY:::ID"
+        },
+        {
+            "source": "DIRECTED_BY:::ID",
+            "target": "WRITTEN_BY:::ID"
+        },
+        {
+            "source": "KEYWORD:::ID",
+            "target": "WRITTEN_BY:::ID"
+        },
+        {
+            "source": "MADE_BY:::ID",
+            "target": "WRITTEN_BY:::ID"
+        },
+        {
+            "source": "TAGS:::ID",
+            "target": "WRITTEN_BY:::ID"
+        },
+        {
+            "source": "CAST:::MSID",
+            "target": "WRITTEN_BY:::MSID"
+        },
+        {
+            "source": "CLASSIFICATION:::MSID",
+            "target": "WRITTEN_BY:::MSID"
+        },
+        {
+            "source": "COPYRIGHT:::MSID",
+            "target": "WRITTEN_BY:::MSID"
+        },
+        {
+            "source": "DIRECTED_BY:::MSID",
+            "target": "WRITTEN_BY:::MSID"
+        },
+        {
+            "source": "MADE_BY:::MSID",
+            "target": "WRITTEN_BY:::MSID"
+        },
+        {
+            "source": "TAGS:::MSID",
+            "target": "WRITTEN_BY:::MSID"
+        },
+        {
+            "source": "WRITER:::WID",
+            "target": "WRITTEN_BY:::WID"
         }
     ]
 }
