@@ -94,7 +94,10 @@
                     "is_foreign_key": 0,
                     "type": " varchar(3)"
                 }
-            ]
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
         },
         {
             "name": "AIRLINE",
@@ -117,7 +120,10 @@
                     "is_foreign_key": 0,
                     "type": " text"
                 }
-            ]
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
         },
         {
             "name": "AIRPORT",
@@ -164,7 +170,10 @@
                     "is_foreign_key": 0,
                     "type": " int(11)"
                 }
-            ]
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
         },
         {
             "name": "AIRPORT_SERVICE",
@@ -199,7 +208,10 @@
                     "is_foreign_key": 0,
                     "type": " int(11)"
                 }
-            ]
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
         },
         {
             "name": "CITY",
@@ -234,7 +246,10 @@
                     "is_foreign_key": 0,
                     "type": " varchar(3)"
                 }
-            ]
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
         },
         {
             "name": "CLASS_OF_SERVICE",
@@ -257,7 +272,10 @@
                     "is_foreign_key": 0,
                     "type": " text"
                 }
-            ]
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
         },
         {
             "name": "CODE_DESCRIPTION",
@@ -274,7 +292,10 @@
                     "is_foreign_key": 0,
                     "type": " text"
                 }
-            ]
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
         },
         {
             "name": "COMPARTMENT_CLASS",
@@ -291,7 +312,10 @@
                     "is_foreign_key": 0,
                     "type": " varchar(8)"
                 }
-            ]
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
         },
         {
             "name": "DATE_DAY",
@@ -320,7 +344,10 @@
                     "is_foreign_key": 0,
                     "type": " varchar(10)"
                 }
-            ]
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
         },
         {
             "name": "DAYS",
@@ -337,7 +364,10 @@
                     "is_foreign_key": 0,
                     "type": " varchar(10)"
                 }
-            ]
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
         },
         {
             "name": "DUAL_CARRIER",
@@ -372,7 +402,10 @@
                     "is_foreign_key": 0,
                     "type": " text"
                 }
-            ]
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
         },
         {
             "name": "EQUIPMENT_SEQUENCE",
@@ -389,7 +422,10 @@
                     "is_foreign_key": 0,
                     "type": " varchar(3)"
                 }
-            ]
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
         },
         {
             "name": "FARE",
@@ -448,7 +484,10 @@
                     "is_foreign_key": 0,
                     "type": " varchar(3)"
                 }
-            ]
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
         },
         {
             "name": "FARE_BASIS",
@@ -507,7 +546,10 @@
                     "is_foreign_key": 0,
                     "type": " text"
                 }
-            ]
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
         },
         {
             "name": "FLIGHT",
@@ -602,7 +644,10 @@
                     "is_foreign_key": 0,
                     "type": " varchar(3)"
                 }
-            ]
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
         },
         {
             "name": "FLIGHT_FARE",
@@ -619,7 +664,10 @@
                     "is_foreign_key": 0,
                     "type": " int(11)"
                 }
-            ]
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
         },
         {
             "name": "FLIGHT_LEG",
@@ -642,7 +690,10 @@
                     "is_foreign_key": 0,
                     "type": " int(11)"
                 }
-            ]
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
         },
         {
             "name": "FLIGHT_STOP",
@@ -713,7 +764,10 @@
                     "is_foreign_key": 0,
                     "type": " int(11)"
                 }
-            ]
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
         },
         {
             "name": "FOOD_SERVICE",
@@ -742,7 +796,10 @@
                     "is_foreign_key": 0,
                     "type": " varchar(10)"
                 }
-            ]
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
         },
         {
             "name": "GROUND_SERVICE",
@@ -771,7 +828,10 @@
                     "is_foreign_key": 0,
                     "type": " int(11)"
                 }
-            ]
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
         },
         {
             "name": "MONTH",
@@ -788,7 +848,10 @@
                     "is_foreign_key": 0,
                     "type": " text"
                 }
-            ]
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
         },
         {
             "name": "RESTRICTION",
@@ -841,7 +904,10 @@
                     "is_foreign_key": 0,
                     "type": " text"
                 }
-            ]
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
         },
         {
             "name": "STATE",
@@ -864,7 +930,10 @@
                     "is_foreign_key": 0,
                     "type": " text"
                 }
-            ]
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
         },
         {
             "name": "TIME_INTERVAL",
@@ -887,7 +956,10 @@
                     "is_foreign_key": 0,
                     "type": " int(11)"
                 }
-            ]
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
         },
         {
             "name": "TIME_ZONE",
@@ -910,7 +982,10 @@
                     "is_foreign_key": 0,
                     "type": " int(11)"
                 }
-            ]
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
         }
     ]
 }
