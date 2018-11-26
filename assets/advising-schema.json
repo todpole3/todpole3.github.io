@@ -1,0 +1,893 @@
+{
+    "name": "advising",
+    "children": [
+        {
+            "name": "AREA",
+            "children": [
+                {
+                    "name": " course_id",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " area",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                }
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
+        },
+        {
+            "name": "COMMENT_INSTRUCTOR",
+            "children": [
+                {
+                    "name": " instructor_id",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": "    PRI"
+                },
+                {
+                    "name": " student_id",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": "    PRI"
+                },
+                {
+                    "name": " score",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " comment_text",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                }
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
+        },
+        {
+            "name": "COURSE",
+            "children": [
+                {
+                    "name": " COURSE_ID",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": "    PRI"
+                },
+                {
+                    "name": " NAME",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " DEPARTMENT",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " NUMBER",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " CREDITS",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " ADVISORY_REQUIREMENT",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " ENFORCED_REQUIREMENT",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " DESCRIPTION",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " NUM_SEMESTERS",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " NUM_ENROLLED",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " HAS_DISCUSSION",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " HAS_LAB",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " HAS_PROJECTS",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " HAS_EXAMS",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " NUM_REVIEWS",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " CLARITY_SCORE",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " EASINESS_SCORE",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " HELPFULNESS_SCORE",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                }
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
+        },
+        {
+            "name": "COURSE_OFFERING",
+            "children": [
+                {
+                    "name": " OFFERING_ID",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": "    PRI"
+                },
+                {
+                    "name": " COURSE_ID",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   MUL"
+                },
+                {
+                    "name": " SEMESTER",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " SECTION_NUMBER",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " START_TIME",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " END_TIME",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " MONDAY",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " TUESDAY",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " WEDNESDAY",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " THURSDAY",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " FRIDAY",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " SATURDAY",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " SUNDAY",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " HAS_FINAL_PROJECT",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " HAS_FINAL_EXAM",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " TEXTBOOK",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " CLASS_ADDRESS",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " ALLOW_AUDIT",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                }
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
+        },
+        {
+            "name": "COURSE_PREREQUISITE",
+            "children": [
+                {
+                    "name": " pre_course_id",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": "    PRI"
+                },
+                {
+                    "name": " course_id",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": "    PRI"
+                }
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
+        },
+        {
+            "name": "COURSE_TAGS_COUNT",
+            "children": [
+                {
+                    "name": " COURSE_ID",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": "    PRI"
+                },
+                {
+                    "name": " CLEAR_GRADING",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " POP_QUIZ",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " GROUP_PROJECTS",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " INSPIRATIONAL",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " LONG_LECTURES",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " EXTRA_CREDIT",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " FEW_TESTS",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " GOOD_FEEDBACK",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " TOUGH_TESTS",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " HEAVY_PAPERS",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " CARES_FOR_STUDENTS",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " HEAVY_ASSIGNMENTS",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " RESPECTED",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " PARTICIPATION",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " HEAVY_READING",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " TOUGH_GRADER",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " HILARIOUS",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " WOULD_TAKE_AGAIN",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " GOOD_LECTURE",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " NO_SKIP",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                }
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
+        },
+        {
+            "name": "GSI",
+            "children": [
+                {
+                    "name": " course_offering_id",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": "    PRI"
+                },
+                {
+                    "name": " student_id",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": "    PRI"
+                }
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
+        },
+        {
+            "name": "INSTRUCTOR",
+            "children": [
+                {
+                    "name": " INSTRUCTOR_ID",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": "    PRI"
+                },
+                {
+                    "name": " NAME",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " UNIQNAME",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                }
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
+        },
+        {
+            "name": "JOBS",
+            "children": [
+                {
+                    "name": " JOB_ID",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": "    PRI"
+                },
+                {
+                    "name": " JOB_TITLE",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " DESCRIPTION",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " REQUIREMENT",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " CITY",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " STATE",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " COUNTRY",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " ZIP",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                }
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
+        },
+        {
+            "name": "OFFERING_INSTRUCTOR",
+            "children": [
+                {
+                    "name": " OFFERING_INSTRUCTOR_ID",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": "    PRI"
+                },
+                {
+                    "name": " OFFERING_ID",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   MUL"
+                },
+                {
+                    "name": " INSTRUCTOR_ID",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   MUL"
+                }
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
+        },
+        {
+            "name": "PROGRAM",
+            "children": [
+                {
+                    "name": " program_id",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": "    PRI"
+                },
+                {
+                    "name": " name",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " college",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " introduction",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                }
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
+        },
+        {
+            "name": "PROGRAM_COURSE",
+            "children": [
+                {
+                    "name": " program_id",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": "    PRI"
+                },
+                {
+                    "name": " course_id",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": "    PRI"
+                },
+                {
+                    "name": " workload",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " category",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": "    PRI"
+                }
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
+        },
+        {
+            "name": "PROGRAM_REQUIREMENT",
+            "children": [
+                {
+                    "name": " program_id",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": "    PRI"
+                },
+                {
+                    "name": " category",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": "    PRI"
+                },
+                {
+                    "name": " min_credit",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " additional_req",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                }
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
+        },
+        {
+            "name": "REQUIREMENT",
+            "children": [
+                {
+                    "name": " REQUIREMENT_ID",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": "    PRI"
+                },
+                {
+                    "name": " REQUIREMENT",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " COLLEGE",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                }
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
+        },
+        {
+            "name": "SEMESTER",
+            "children": [
+                {
+                    "name": " semester_id",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": "    PRI"
+                },
+                {
+                    "name": " semester",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " year",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                }
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
+        },
+        {
+            "name": "STUDENT",
+            "children": [
+                {
+                    "name": " student_id",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": "    PRI"
+                },
+                {
+                    "name": " lastname",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " firstname",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " program_id",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " declare_major",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " total_credit",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " total_gpa",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": "    YES"
+                },
+                {
+                    "name": " entered_as",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " admit_term",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " predicted_graduation_semester",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " degree",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " minor",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " internship",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                }
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
+        },
+        {
+            "name": "STUDENT_RECORD",
+            "children": [
+                {
+                    "name": " student_id",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": "    PRI"
+                },
+                {
+                    "name": " course_id",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": "    PRI"
+                },
+                {
+                    "name": " semester",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": "    -"
+                },
+                {
+                    "name": " grade",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " how",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " transfer_source",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " earn_credit",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": "    PRI"
+                },
+                {
+                    "name": " repeat_term",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                },
+                {
+                    "name": " test_id",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                }
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
+        },
+        {
+            "name": "TA",
+            "children": [
+                {
+                    "name": " campus_job_id",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": "    PRI"
+                },
+                {
+                    "name": " student_id",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": "    -"
+                },
+                {
+                    "name": " location",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": "   -"
+                }
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
+        }
+    ]
+}
