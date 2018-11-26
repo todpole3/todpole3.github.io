@@ -1,0 +1,101 @@
+{
+    "name": "restaurants",
+    "children": [
+        {
+            "name": "RESTAURANT",
+            "children": [
+                {
+                    "name": " RESTAURANT_ID",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": " int(11)"
+                },
+                {
+                    "name": " NAME",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " varchar(255)"
+                },
+                {
+                    "name": " FOOD_TYPE",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " varchar(255)"
+                },
+                {
+                    "name": " CITY_NAME",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 1,
+                    "type": " varchar(255)"
+                },
+                {
+                    "name": " RATING",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " \"decimal(1"
+                }
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
+        },
+        {
+            "name": "LOCATION",
+            "children": [
+                {
+                    "name": " RESTAURANT_ID",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 1,
+                    "type": " int(11)"
+                },
+                {
+                    "name": " HOUSE_NUMBER",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " int(11)"
+                },
+                {
+                    "name": " STREET_NAME",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " varchar(255)"
+                },
+                {
+                    "name": " CITY_NAME",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 1,
+                    "type": " varchar(255)"
+                }
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
+        },
+        {
+            "name": "GEOGRAPHIC",
+            "children": [
+                {
+                    "name": " CITY_NAME",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": " varchar(255)"
+                },
+                {
+                    "name": " COUNTY",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " varchar(255)"
+                },
+                {
+                    "name": " REGION",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " varchar(255)"
+                }
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
+        }
+    ]
+}

@@ -1,0 +1,289 @@
+{
+    "name": "yelp",
+    "children": [
+        {
+            "name": "business",
+            "children": [
+                {
+                    "name": " bid",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": " int(11)"
+                },
+                {
+                    "name": " business_id",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " varchar(255)"
+                },
+                {
+                    "name": " name",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " varchar(255)"
+                },
+                {
+                    "name": " full_address",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " varchar(255)"
+                },
+                {
+                    "name": " city",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " varchar(255)"
+                },
+                {
+                    "name": " latitude",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " varchar(255)"
+                },
+                {
+                    "name": " longitude",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " varchar(255)"
+                },
+                {
+                    "name": " review_count",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " bigint(20)"
+                },
+                {
+                    "name": " is_open",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " tinyint(1)"
+                },
+                {
+                    "name": " rating",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " float"
+                },
+                {
+                    "name": " state",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " varchar(255)"
+                }
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
+        },
+        {
+            "name": "category",
+            "children": [
+                {
+                    "name": " id",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": " int(11)"
+                },
+                {
+                    "name": " business_id",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " varchar(255)"
+                },
+                {
+                    "name": " category_name",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " varchar(255)"
+                }
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
+        },
+        {
+            "name": "checkin",
+            "children": [
+                {
+                    "name": " cid",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": " int(11)"
+                },
+                {
+                    "name": " business_id",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " varchar(255)"
+                },
+                {
+                    "name": " count",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " int(11)"
+                },
+                {
+                    "name": " day",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " varchar(12)"
+                }
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
+        },
+        {
+            "name": "neighbourhood",
+            "children": [
+                {
+                    "name": " id",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": " int(11)"
+                },
+                {
+                    "name": " business_id",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " varchar(255)"
+                },
+                {
+                    "name": " neighborhood_name",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " varchar(255)"
+                }
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
+        },
+        {
+            "name": "review",
+            "children": [
+                {
+                    "name": " rid",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": " int(11)"
+                },
+                {
+                    "name": " business_id",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " varchar(255)"
+                },
+                {
+                    "name": " user_id",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " varchar(255)"
+                },
+                {
+                    "name": " rating",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " float"
+                },
+                {
+                    "name": " text",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " longtext"
+                },
+                {
+                    "name": " year",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " int(11)"
+                },
+                {
+                    "name": " month",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " varchar(10)"
+                }
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
+        },
+        {
+            "name": "tip",
+            "children": [
+                {
+                    "name": " tip_id",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": " int(11)"
+                },
+                {
+                    "name": " business_id",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " varchar(255)"
+                },
+                {
+                    "name": " text",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " longtext"
+                },
+                {
+                    "name": " user_id",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " varchar(255)"
+                },
+                {
+                    "name": " likes",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " int(11)"
+                },
+                {
+                    "name": " year",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " int(11)"
+                },
+                {
+                    "name": " month",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " varchar(10)"
+                }
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
+        },
+        {
+            "name": "user",
+            "children": [
+                {
+                    "name": " uid",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": " int(11)"
+                },
+                {
+                    "name": " user_id",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " varchar(255)"
+                },
+                {
+                    "name": " name",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " varchar(255)"
+                }
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
+        }
+    ]
+}

@@ -1,0 +1,255 @@
+{
+    "name": "geography",
+    "children": [
+        {
+            "name": "STATE",
+            "children": [
+                {
+                    "name": " STATE_NAME",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": " varchar(255)"
+                },
+                {
+                    "name": " CAPITAL",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 1,
+                    "type": " varchar(255)"
+                },
+                {
+                    "name": " POPULATION",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " int(11)"
+                },
+                {
+                    "name": " AREA",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " double"
+                },
+                {
+                    "name": " COUNTRY_NAME",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " varchar(255)"
+                },
+                {
+                    "name": " DENSITY",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " double"
+                }
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
+        },
+        {
+            "name": "BORDER_INFO",
+            "children": [
+                {
+                    "name": " STATE_NAME",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 1,
+                    "type": " varchar(255)"
+                },
+                {
+                    "name": " BORDER",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 1,
+                    "type": " varchar(255)"
+                }
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
+        },
+        {
+            "name": "CITY",
+            "children": [
+                {
+                    "name": " CITY_NAME",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": " varchar(255)"
+                },
+                {
+                    "name": " STATE_NAME",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 1,
+                    "type": " varchar(255)"
+                },
+                {
+                    "name": " POPULATION",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " int(11)"
+                },
+                {
+                    "name": " COUNTRY_NAME",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " varchar(255)"
+                }
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
+        },
+        {
+            "name": "HIGHLOW",
+            "children": [
+                {
+                    "name": " STATE_NAME",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 1,
+                    "type": " varchar(255)"
+                },
+                {
+                    "name": " HIGHEST_POINT",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " varchar(255)"
+                },
+                {
+                    "name": " HIGHEST_ELEVATION",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " varchar(255)"
+                },
+                {
+                    "name": " LOWEST_POINT",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " varchar(255)"
+                },
+                {
+                    "name": " LOWEST_ELEVATION",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " varchar(255)"
+                }
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
+        },
+        {
+            "name": "RIVER",
+            "children": [
+                {
+                    "name": " RIVER_NAME",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": " varchar(255)"
+                },
+                {
+                    "name": " LENGTH",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " int(11)"
+                },
+                {
+                    "name": " TRAVERSE",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 1,
+                    "type": " varchar(255)"
+                },
+                {
+                    "name": " COUNTRY_NAME",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " varchar(255)"
+                }
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
+        },
+        {
+            "name": "MOUNTAIN",
+            "children": [
+                {
+                    "name": " MOUNTAIN_NAME",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": " varchar(255)"
+                },
+                {
+                    "name": " MOUNTAIN_ALTITUDE",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " int(11)"
+                },
+                {
+                    "name": " STATE_NAME",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 1,
+                    "type": " varchar(255)"
+                },
+                {
+                    "name": " COUNTRY_NAME",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " varchar(255)"
+                }
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
+        },
+        {
+            "name": "ROAD",
+            "children": [
+                {
+                    "name": " ROAD_NAME",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": " varchar(10)"
+                },
+                {
+                    "name": " STATE_NAME",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 1,
+                    "type": " varchar(255)"
+                }
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
+        },
+        {
+            "name": "LAKE",
+            "children": [
+                {
+                    "name": " LAKE_NAME",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 0,
+                    "type": " varchar(255)"
+                },
+                {
+                    "name": " AREA",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " double"
+                },
+                {
+                    "name": " STATE_NAME",
+                    "is_primary_key": 1,
+                    "is_foreign_key": 1,
+                    "type": " varchar(255)"
+                },
+                {
+                    "name": " COUNTRY_NAME",
+                    "is_primary_key": 0,
+                    "is_foreign_key": 0,
+                    "type": " varchar(255)"
+                }
+            ],
+            "is_primary_key": -1,
+            "is_foreign_key": -1,
+            "type": null
+        }
+    ]
+}
