@@ -6,14 +6,14 @@
             "children": [
                 {
                     "name": " AUTHORID",
-                    "is_primary_key": 0,
+                    "is_primary_key": 1,
                     "is_foreign_key": 0,
                     "type": " INT(11) NOT NULL"
                 },
                 {
                     "name": " AUTHORNAME",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
+                    "is_foreign_key": 1,
                     "type": " VARCHAR(50) DEFAULT NULL"
                 }
             ],
@@ -26,14 +26,14 @@
             "children": [
                 {
                     "name": " CITINGPAPERID",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
+                    "is_primary_key": 1,
+                    "is_foreign_key": 1,
                     "type": " INT(11) NOT NULL"
                 },
                 {
                     "name": " CITEDPAPERID",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
+                    "is_foreign_key": 1,
                     "type": " INT(11) NOT NULL"
                 }
             ],
@@ -46,14 +46,14 @@
             "children": [
                 {
                     "name": " DATASETID",
-                    "is_primary_key": 0,
+                    "is_primary_key": 1,
                     "is_foreign_key": 0,
                     "type": " INT(11) NOT NULL"
                 },
                 {
                     "name": " DATASETNAME",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
+                    "is_foreign_key": 1,
                     "type": " VARCHAR(50) DEFAULT NULL"
                 }
             ],
@@ -66,14 +66,14 @@
             "children": [
                 {
                     "name": " JOURNALID",
-                    "is_primary_key": 0,
+                    "is_primary_key": 1,
                     "is_foreign_key": 0,
                     "type": " INT(11) NOT NULL"
                 },
                 {
                     "name": " JOURNALNAME",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
+                    "is_foreign_key": 1,
                     "type": " VARCHAR(100) DEFAULT NULL"
                 }
             ],
@@ -86,14 +86,14 @@
             "children": [
                 {
                     "name": " KEYPHRASEID",
-                    "is_primary_key": 0,
+                    "is_primary_key": 1,
                     "is_foreign_key": 0,
                     "type": " INT(11) NOT NULL"
                 },
                 {
                     "name": " KEYPHRASENAME",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
+                    "is_foreign_key": 1,
                     "type": " VARCHAR(50) DEFAULT NULL"
                 }
             ],
@@ -106,7 +106,7 @@
             "children": [
                 {
                     "name": " PAPERID",
-                    "is_primary_key": 0,
+                    "is_primary_key": 1,
                     "is_foreign_key": 0,
                     "type": " INT(11) NOT NULL"
                 },
@@ -143,7 +143,7 @@
                 {
                     "name": " JOURNALID",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
+                    "is_foreign_key": 1,
                     "type": " INT(11) DEFAULT NULL"
                 }
             ],

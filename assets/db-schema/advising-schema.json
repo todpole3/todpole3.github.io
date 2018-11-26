@@ -7,14 +7,14 @@
                 {
                     "name": " course_id",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "  int(11)"
                 },
                 {
                     "name": " area",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "       varchar(30)"
                 }
             ],
             "is_primary_key": -1,
@@ -26,27 +26,27 @@
             "children": [
                 {
                     "name": " instructor_id",
-                    "is_primary_key": 0,
+                    "is_primary_key": 1,
                     "is_foreign_key": 0,
-                    "type": "    PRI"
+                    "type": "  int(11)"
                 },
                 {
                     "name": " student_id",
-                    "is_primary_key": 0,
+                    "is_primary_key": 1,
                     "is_foreign_key": 0,
-                    "type": "    PRI"
+                    "type": "     int(11)"
                 },
                 {
                     "name": " score",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "          int(11)"
                 },
                 {
                     "name": " comment_text",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "   varchar(400)"
                 }
             ],
             "is_primary_key": -1,
@@ -58,111 +58,111 @@
             "children": [
                 {
                     "name": " COURSE_ID",
-                    "is_primary_key": 0,
+                    "is_primary_key": 1,
                     "is_foreign_key": 0,
-                    "type": "    PRI"
+                    "type": "             int(11)"
                 },
                 {
                     "name": " NAME",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "                  varchar(255)"
                 },
                 {
                     "name": " DEPARTMENT",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "            varchar(255)"
                 },
                 {
                     "name": " NUMBER",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "                varchar(255)"
                 },
                 {
                     "name": " CREDITS",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "               varchar(255)"
                 },
                 {
                     "name": " ADVISORY_REQUIREMENT",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "  varchar(255)"
                 },
                 {
                     "name": " ENFORCED_REQUIREMENT",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "  varchar(255)"
                 },
                 {
                     "name": " DESCRIPTION",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "           varchar(16384)"
                 },
                 {
                     "name": " NUM_SEMESTERS",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "         int(11)"
                 },
                 {
                     "name": " NUM_ENROLLED",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "          int(11)"
                 },
                 {
                     "name": " HAS_DISCUSSION",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "        varchar(1)"
                 },
                 {
                     "name": " HAS_LAB",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "               varchar(1)"
                 },
                 {
                     "name": " HAS_PROJECTS",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "          varchar(1)"
                 },
                 {
                     "name": " HAS_EXAMS",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "             varchar(1)"
                 },
                 {
                     "name": " NUM_REVIEWS",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "           int(11)"
                 },
                 {
                     "name": " CLARITY_SCORE",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "         int(11)"
                 },
                 {
                     "name": " EASINESS_SCORE",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "        int(11)"
                 },
                 {
                     "name": " HELPFULNESS_SCORE",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "     int(11)"
                 }
             ],
             "is_primary_key": -1,
@@ -174,111 +174,111 @@
             "children": [
                 {
                     "name": " OFFERING_ID",
-                    "is_primary_key": 0,
+                    "is_primary_key": 1,
                     "is_foreign_key": 0,
-                    "type": "    PRI"
+                    "type": "        int(11)"
                 },
                 {
                     "name": " COURSE_ID",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   MUL"
+                    "is_foreign_key": 1,
+                    "type": "          int(11)"
                 },
                 {
                     "name": " SEMESTER",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "           int(11)"
                 },
                 {
                     "name": " SECTION_NUMBER",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "     int(11)"
                 },
                 {
                     "name": " START_TIME",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "         time"
                 },
                 {
                     "name": " END_TIME",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "           time"
                 },
                 {
                     "name": " MONDAY",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "             varchar(1)"
                 },
                 {
                     "name": " TUESDAY",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "            varchar(1)"
                 },
                 {
                     "name": " WEDNESDAY",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "          varchar(1)"
                 },
                 {
                     "name": " THURSDAY",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "           varchar(1)"
                 },
                 {
                     "name": " FRIDAY",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "             varchar(1)"
                 },
                 {
                     "name": " SATURDAY",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "           varchar(1)"
                 },
                 {
                     "name": " SUNDAY",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "             varchar(1)"
                 },
                 {
                     "name": " HAS_FINAL_PROJECT",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "  varchar(1)"
                 },
                 {
                     "name": " HAS_FINAL_EXAM",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "     varchar(1)"
                 },
                 {
                     "name": " TEXTBOOK",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "           varchar(30)"
                 },
                 {
                     "name": " CLASS_ADDRESS",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "      varchar(30)"
                 },
                 {
                     "name": " ALLOW_AUDIT",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "        varchar(1)"
                 }
             ],
             "is_primary_key": -1,
@@ -290,15 +290,15 @@
             "children": [
                 {
                     "name": " pre_course_id",
-                    "is_primary_key": 0,
+                    "is_primary_key": 1,
                     "is_foreign_key": 0,
-                    "type": "    PRI"
+                    "type": "  int(11)"
                 },
                 {
                     "name": " course_id",
-                    "is_primary_key": 0,
+                    "is_primary_key": 1,
                     "is_foreign_key": 0,
-                    "type": "    PRI"
+                    "type": "      int(11)"
                 }
             ],
             "is_primary_key": -1,
@@ -310,129 +310,129 @@
             "children": [
                 {
                     "name": " COURSE_ID",
-                    "is_primary_key": 0,
+                    "is_primary_key": 1,
                     "is_foreign_key": 0,
-                    "type": "    PRI"
+                    "type": "           int(11)"
                 },
                 {
                     "name": " CLEAR_GRADING",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "       int(11)"
                 },
                 {
                     "name": " POP_QUIZ",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "            int(11)"
                 },
                 {
                     "name": " GROUP_PROJECTS",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "      int(11)"
                 },
                 {
                     "name": " INSPIRATIONAL",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "       int(11)"
                 },
                 {
                     "name": " LONG_LECTURES",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "       int(11)"
                 },
                 {
                     "name": " EXTRA_CREDIT",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "        int(11)"
                 },
                 {
                     "name": " FEW_TESTS",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "           int(11)"
                 },
                 {
                     "name": " GOOD_FEEDBACK",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "       int(11)"
                 },
                 {
                     "name": " TOUGH_TESTS",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "         int(11)"
                 },
                 {
                     "name": " HEAVY_PAPERS",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "        int(11)"
                 },
                 {
                     "name": " CARES_FOR_STUDENTS",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "  int(11)"
                 },
                 {
                     "name": " HEAVY_ASSIGNMENTS",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "   int(11)"
                 },
                 {
                     "name": " RESPECTED",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "           int(11)"
                 },
                 {
                     "name": " PARTICIPATION",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "       int(11)"
                 },
                 {
                     "name": " HEAVY_READING",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "       int(11)"
                 },
                 {
                     "name": " TOUGH_GRADER",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "        int(11)"
                 },
                 {
                     "name": " HILARIOUS",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "           int(11)"
                 },
                 {
                     "name": " WOULD_TAKE_AGAIN",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "    int(11)"
                 },
                 {
                     "name": " GOOD_LECTURE",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "        int(11)"
                 },
                 {
                     "name": " NO_SKIP",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "             int(11)"
                 }
             ],
             "is_primary_key": -1,
@@ -444,15 +444,15 @@
             "children": [
                 {
                     "name": " course_offering_id",
-                    "is_primary_key": 0,
+                    "is_primary_key": 1,
                     "is_foreign_key": 0,
-                    "type": "    PRI"
+                    "type": "  int(11)"
                 },
                 {
                     "name": " student_id",
-                    "is_primary_key": 0,
+                    "is_primary_key": 1,
                     "is_foreign_key": 0,
-                    "type": "    PRI"
+                    "type": "          int(11)"
                 }
             ],
             "is_primary_key": -1,
@@ -464,21 +464,21 @@
             "children": [
                 {
                     "name": " INSTRUCTOR_ID",
-                    "is_primary_key": 0,
+                    "is_primary_key": 1,
                     "is_foreign_key": 0,
-                    "type": "    PRI"
+                    "type": "  int(11)"
                 },
                 {
                     "name": " NAME",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "           varchar(255)"
                 },
                 {
                     "name": " UNIQNAME",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "       varchar(255)"
                 }
             ],
             "is_primary_key": -1,
@@ -490,51 +490,51 @@
             "children": [
                 {
                     "name": " JOB_ID",
-                    "is_primary_key": 0,
+                    "is_primary_key": 1,
                     "is_foreign_key": 0,
-                    "type": "    PRI"
+                    "type": "       int(11)"
                 },
                 {
                     "name": " JOB_TITLE",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "    varchar(100)"
                 },
                 {
                     "name": " DESCRIPTION",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "  varchar(1000)"
                 },
                 {
                     "name": " REQUIREMENT",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "  varchar(1000)"
                 },
                 {
                     "name": " CITY",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "         varchar(20)"
                 },
                 {
                     "name": " STATE",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "        varchar(15)"
                 },
                 {
                     "name": " COUNTRY",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "      varchar(20)"
                 },
                 {
                     "name": " ZIP",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "          int(5)"
                 }
             ],
             "is_primary_key": -1,
@@ -546,21 +546,21 @@
             "children": [
                 {
                     "name": " OFFERING_INSTRUCTOR_ID",
-                    "is_primary_key": 0,
+                    "is_primary_key": 1,
                     "is_foreign_key": 0,
-                    "type": "    PRI"
+                    "type": "  int(11)"
                 },
                 {
                     "name": " OFFERING_ID",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   MUL"
+                    "is_foreign_key": 1,
+                    "type": "             int(11)"
                 },
                 {
                     "name": " INSTRUCTOR_ID",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   MUL"
+                    "is_foreign_key": 1,
+                    "type": "           int(11)"
                 }
             ],
             "is_primary_key": -1,
@@ -572,27 +572,27 @@
             "children": [
                 {
                     "name": " program_id",
-                    "is_primary_key": 0,
+                    "is_primary_key": 1,
                     "is_foreign_key": 0,
-                    "type": "    PRI"
+                    "type": "    int(11)"
                 },
                 {
                     "name": " name",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "          varchar(255)"
                 },
                 {
                     "name": " college",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "       varchar(255)"
                 },
                 {
                     "name": " introduction",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "  varchar(255)"
                 }
             ],
             "is_primary_key": -1,
@@ -604,27 +604,27 @@
             "children": [
                 {
                     "name": " program_id",
-                    "is_primary_key": 0,
+                    "is_primary_key": 1,
                     "is_foreign_key": 0,
-                    "type": "    PRI"
+                    "type": "  int(11)"
                 },
                 {
                     "name": " course_id",
-                    "is_primary_key": 0,
+                    "is_primary_key": 1,
                     "is_foreign_key": 0,
-                    "type": "    PRI"
+                    "type": "   int(11)"
                 },
                 {
                     "name": " workload",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "    int(11)"
                 },
                 {
                     "name": " category",
-                    "is_primary_key": 0,
+                    "is_primary_key": 1,
                     "is_foreign_key": 0,
-                    "type": "    PRI"
+                    "type": "    varchar(11)"
                 }
             ],
             "is_primary_key": -1,
@@ -636,27 +636,27 @@
             "children": [
                 {
                     "name": " program_id",
-                    "is_primary_key": 0,
+                    "is_primary_key": 1,
                     "is_foreign_key": 0,
-                    "type": "    PRI"
+                    "type": "      int(11)"
                 },
                 {
                     "name": " category",
-                    "is_primary_key": 0,
+                    "is_primary_key": 1,
                     "is_foreign_key": 0,
-                    "type": "    PRI"
+                    "type": "        varchar(11)"
                 },
                 {
                     "name": " min_credit",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "      int(11)"
                 },
                 {
                     "name": " additional_req",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "  varchar(100)"
                 }
             ],
             "is_primary_key": -1,
@@ -668,21 +668,21 @@
             "children": [
                 {
                     "name": " REQUIREMENT_ID",
-                    "is_primary_key": 0,
+                    "is_primary_key": 1,
                     "is_foreign_key": 0,
-                    "type": "    PRI"
+                    "type": "  int(11)"
                 },
                 {
                     "name": " REQUIREMENT",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "     varchar(255)"
                 },
                 {
                     "name": " COLLEGE",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "         varchar(255)"
                 }
             ],
             "is_primary_key": -1,
@@ -694,21 +694,21 @@
             "children": [
                 {
                     "name": " semester_id",
-                    "is_primary_key": 0,
+                    "is_primary_key": 1,
                     "is_foreign_key": 0,
-                    "type": "    PRI"
+                    "type": "  int(11)"
                 },
                 {
                     "name": " semester",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "     varchar(4)"
                 },
                 {
                     "name": " year",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "         int(11)"
                 }
             ],
             "is_primary_key": -1,
@@ -720,81 +720,81 @@
             "children": [
                 {
                     "name": " student_id",
-                    "is_primary_key": 0,
+                    "is_primary_key": 1,
                     "is_foreign_key": 0,
-                    "type": "    PRI"
+                    "type": "                     int(11)"
                 },
                 {
                     "name": " lastname",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "                       varchar(255)"
                 },
                 {
                     "name": " firstname",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "                      varchar(255)"
                 },
                 {
                     "name": " program_id",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "                     int(11)"
                 },
                 {
                     "name": " declare_major",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "                  varchar(255)"
                 },
                 {
                     "name": " total_credit",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "                   int(11)"
                 },
                 {
                     "name": " total_gpa",
-                    "is_primary_key": 0,
+                    "is_primary_key": 1,
                     "is_foreign_key": 0,
-                    "type": "    YES"
+                    "type": "                      float(3"
                 },
                 {
                     "name": " entered_as",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "                     varchar(11)"
                 },
                 {
                     "name": " admit_term",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "                     int(4)"
                 },
                 {
                     "name": " predicted_graduation_semester",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "  int(11)"
                 },
                 {
                     "name": " degree",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "                         varchar(10)"
                 },
                 {
                     "name": " minor",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "                          varchar(10)"
                 },
                 {
                     "name": " internship",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "                     varchar(10)"
                 }
             ],
             "is_primary_key": -1,
@@ -806,57 +806,57 @@
             "children": [
                 {
                     "name": " student_id",
-                    "is_primary_key": 0,
+                    "is_primary_key": 1,
                     "is_foreign_key": 0,
-                    "type": "    PRI"
+                    "type": "       int(11)"
                 },
                 {
                     "name": " course_id",
-                    "is_primary_key": 0,
+                    "is_primary_key": 1,
                     "is_foreign_key": 0,
-                    "type": "    PRI"
+                    "type": "        int(11)"
                 },
                 {
                     "name": " semester",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
-                    "type": "    -"
+                    "type": "         int(11)"
                 },
                 {
                     "name": " grade",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "            varchar(10)"
                 },
                 {
                     "name": " how",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "              varchar(10)"
                 },
                 {
                     "name": " transfer_source",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "  varchar(10)"
                 },
                 {
                     "name": " earn_credit",
-                    "is_primary_key": 0,
+                    "is_primary_key": 1,
                     "is_foreign_key": 0,
-                    "type": "    PRI"
+                    "type": "      varchar(1)"
                 },
                 {
                     "name": " repeat_term",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "      varchar(10)"
                 },
                 {
                     "name": " test_id",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "          varchar(10)"
                 }
             ],
             "is_primary_key": -1,
@@ -868,21 +868,21 @@
             "children": [
                 {
                     "name": " campus_job_id",
-                    "is_primary_key": 0,
+                    "is_primary_key": 1,
                     "is_foreign_key": 0,
-                    "type": "    PRI"
+                    "type": "  int(11)"
                 },
                 {
                     "name": " student_id",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
-                    "type": "    -"
+                    "type": "     int(11)"
                 },
                 {
                     "name": " location",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
-                    "type": "   -"
+                    "is_foreign_key": 1,
+                    "type": "       varchar(10)"
                 }
             ],
             "is_primary_key": -1,
