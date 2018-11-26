@@ -9,155 +9,85 @@
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " varchar(3)"
-                }
-            ]
-        },
-        {
-            "name": "AIRCRAFT",
-            "children": [
+                },
                 {
                     "name": " AIRCRAFT_DESCRIPTION",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " varchar(50)"
-                }
-            ]
-        },
-        {
-            "name": "AIRCRAFT",
-            "children": [
+                },
                 {
                     "name": " MANUFACTURER",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " varchar(30)"
-                }
-            ]
-        },
-        {
-            "name": "AIRCRAFT",
-            "children": [
+                },
                 {
                     "name": " BASIC_TYPE",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " varchar(30)"
-                }
-            ]
-        },
-        {
-            "name": "AIRCRAFT",
-            "children": [
+                },
                 {
                     "name": " ENGINES",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " int(11)"
-                }
-            ]
-        },
-        {
-            "name": "AIRCRAFT",
-            "children": [
+                },
                 {
                     "name": " PROPULSION",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " varchar(10)"
-                }
-            ]
-        },
-        {
-            "name": "AIRCRAFT",
-            "children": [
+                },
                 {
                     "name": " WIDE_BODY",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " varchar(3)"
-                }
-            ]
-        },
-        {
-            "name": "AIRCRAFT",
-            "children": [
+                },
                 {
                     "name": " WING_SPAN",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " int(11)"
-                }
-            ]
-        },
-        {
-            "name": "AIRCRAFT",
-            "children": [
+                },
                 {
                     "name": " LENGTH",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " int(11)"
-                }
-            ]
-        },
-        {
-            "name": "AIRCRAFT",
-            "children": [
+                },
                 {
                     "name": " WEIGHT",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " int(11)"
-                }
-            ]
-        },
-        {
-            "name": "AIRCRAFT",
-            "children": [
+                },
                 {
                     "name": " CAPACITY",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " int(11)"
-                }
-            ]
-        },
-        {
-            "name": "AIRCRAFT",
-            "children": [
+                },
                 {
                     "name": " PAY_LOAD",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " int(11)"
-                }
-            ]
-        },
-        {
-            "name": "AIRCRAFT",
-            "children": [
+                },
                 {
                     "name": " CRUISING_SPEED",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " int(11)"
-                }
-            ]
-        },
-        {
-            "name": "AIRCRAFT",
-            "children": [
+                },
                 {
                     "name": " RANGE_MILES",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " int(11)"
-                }
-            ]
-        },
-        {
-            "name": "AIRCRAFT",
-            "children": [
+                },
                 {
                     "name": " PRESSURIZED",
                     "is_primary_key": 0,
@@ -174,23 +104,13 @@
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " varchar(2)"
-                }
-            ]
-        },
-        {
-            "name": "AIRLINE",
-            "children": [
+                },
                 {
                     "name": " AIRLINE_NAME",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " text"
-                }
-            ]
-        },
-        {
-            "name": "AIRLINE",
-            "children": [
+                },
                 {
                     "name": " NOTE",
                     "is_primary_key": 0,
@@ -207,67 +127,37 @@
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " varchar(3)"
-                }
-            ]
-        },
-        {
-            "name": "AIRPORT",
-            "children": [
+                },
                 {
                     "name": " AIRPORT_NAME",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " text"
-                }
-            ]
-        },
-        {
-            "name": "AIRPORT",
-            "children": [
+                },
                 {
                     "name": " AIRPORT_LOCATION",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " text"
-                }
-            ]
-        },
-        {
-            "name": "AIRPORT",
-            "children": [
+                },
                 {
                     "name": " STATE_CODE",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " varchar(2)"
-                }
-            ]
-        },
-        {
-            "name": "AIRPORT",
-            "children": [
+                },
                 {
                     "name": " COUNTRY_NAME",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " varchar(6)"
-                }
-            ]
-        },
-        {
-            "name": "AIRPORT",
-            "children": [
+                },
                 {
                     "name": " TIME_ZONE_CODE",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " varchar(3)"
-                }
-            ]
-        },
-        {
-            "name": "AIRPORT",
-            "children": [
+                },
                 {
                     "name": " MINIMUM_CONNECT_TIME",
                     "is_primary_key": 0,
@@ -284,45 +174,25 @@
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " varchar(4)"
-                }
-            ]
-        },
-        {
-            "name": "AIRPORT_SERVICE",
-            "children": [
+                },
                 {
                     "name": " AIRPORT_CODE",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " varchar(3)"
-                }
-            ]
-        },
-        {
-            "name": "AIRPORT_SERVICE",
-            "children": [
+                },
                 {
                     "name": " MILES_DISTANT",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " int(11)"
-                }
-            ]
-        },
-        {
-            "name": "AIRPORT_SERVICE",
-            "children": [
+                },
                 {
                     "name": " DIRECTION",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " varchar(2)"
-                }
-            ]
-        },
-        {
-            "name": "AIRPORT_SERVICE",
-            "children": [
+                },
                 {
                     "name": " MINUTES_DISTANT",
                     "is_primary_key": 0,
@@ -339,45 +209,25 @@
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " varchar(4)"
-                }
-            ]
-        },
-        {
-            "name": "CITY",
-            "children": [
+                },
                 {
                     "name": " CITY_NAME",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " varchar(18)"
-                }
-            ]
-        },
-        {
-            "name": "CITY",
-            "children": [
+                },
                 {
                     "name": " STATE_CODE",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " varchar(2)"
-                }
-            ]
-        },
-        {
-            "name": "CITY",
-            "children": [
+                },
                 {
                     "name": " COUNTRY_NAME",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " varchar(6)"
-                }
-            ]
-        },
-        {
-            "name": "CITY",
-            "children": [
+                },
                 {
                     "name": " TIME_ZONE_CODE",
                     "is_primary_key": 0,
@@ -394,23 +244,13 @@
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " varchar(2)"
-                }
-            ]
-        },
-        {
-            "name": "CLASS_OF_SERVICE",
-            "children": [
+                },
                 {
                     "name": " RANK",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " int(11)"
-                }
-            ]
-        },
-        {
-            "name": "CLASS_OF_SERVICE",
-            "children": [
+                },
                 {
                     "name": " CLASS_DESCRIPTION",
                     "is_primary_key": 0,
@@ -427,12 +267,7 @@
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " varchar(4)"
-                }
-            ]
-        },
-        {
-            "name": "CODE_DESCRIPTION",
-            "children": [
+                },
                 {
                     "name": " DESCRIPTION",
                     "is_primary_key": 0,
@@ -449,12 +284,7 @@
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " varchar(5)"
-                }
-            ]
-        },
-        {
-            "name": "COMPARTMENT_CLASS",
-            "children": [
+                },
                 {
                     "name": " CLASS_TYPE",
                     "is_primary_key": 0,
@@ -471,34 +301,19 @@
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " int(11)"
-                }
-            ]
-        },
-        {
-            "name": "DATE_DAY",
-            "children": [
+                },
                 {
                     "name": " DAY_NUMBER",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " int(11)"
-                }
-            ]
-        },
-        {
-            "name": "DATE_DAY",
-            "children": [
+                },
                 {
                     "name": " YEAR",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " int(11)"
-                }
-            ]
-        },
-        {
-            "name": "DATE_DAY",
-            "children": [
+                },
                 {
                     "name": " DAY_NAME",
                     "is_primary_key": 0,
@@ -515,12 +330,7 @@
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " varchar(20)"
-                }
-            ]
-        },
-        {
-            "name": "DAYS",
-            "children": [
+                },
                 {
                     "name": " DAY_NAME",
                     "is_primary_key": 0,
@@ -537,45 +347,25 @@
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " varchar(2)"
-                }
-            ]
-        },
-        {
-            "name": "DUAL_CARRIER",
-            "children": [
+                },
                 {
                     "name": " LOW_FLIGHT_NUMBER",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " int(11)"
-                }
-            ]
-        },
-        {
-            "name": "DUAL_CARRIER",
-            "children": [
+                },
                 {
                     "name": " HIGH_FLIGHT_NUMBER",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " int(11)"
-                }
-            ]
-        },
-        {
-            "name": "DUAL_CARRIER",
-            "children": [
+                },
                 {
                     "name": " DUAL_AIRLINE",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " varchar(2)"
-                }
-            ]
-        },
-        {
-            "name": "DUAL_CARRIER",
-            "children": [
+                },
                 {
                     "name": " SERVICE_NAME",
                     "is_primary_key": 0,
@@ -592,12 +382,7 @@
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " varchar(12)"
-                }
-            ]
-        },
-        {
-            "name": "EQUIPMENT_SEQUENCE",
-            "children": [
+                },
                 {
                     "name": " AIRCRAFT_CODE",
                     "is_primary_key": 0,
@@ -614,89 +399,49 @@
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " int(11)"
-                }
-            ]
-        },
-        {
-            "name": "FARE",
-            "children": [
+                },
                 {
                     "name": " FROM_AIRPORT",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " varchar(3)"
-                }
-            ]
-        },
-        {
-            "name": "FARE",
-            "children": [
+                },
                 {
                     "name": " TO_AIRPORT",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " varchar(3)"
-                }
-            ]
-        },
-        {
-            "name": "FARE",
-            "children": [
+                },
                 {
                     "name": " FARE_BASIS_CODE",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " text"
-                }
-            ]
-        },
-        {
-            "name": "FARE",
-            "children": [
+                },
                 {
                     "name": " FARE_AIRLINE",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " text"
-                }
-            ]
-        },
-        {
-            "name": "FARE",
-            "children": [
+                },
                 {
                     "name": " RESTRICTION_CODE",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " text"
-                }
-            ]
-        },
-        {
-            "name": "FARE",
-            "children": [
+                },
                 {
                     "name": " ONE_DIRECTION_COST",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " int(11)"
-                }
-            ]
-        },
-        {
-            "name": "FARE",
-            "children": [
+                },
                 {
                     "name": " ROUND_TRIP_COST",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " int(11)"
-                }
-            ]
-        },
-        {
-            "name": "FARE",
-            "children": [
+                },
                 {
                     "name": " ROUND_TRIP_REQUIRED",
                     "is_primary_key": 0,
@@ -713,89 +458,49 @@
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " text"
-                }
-            ]
-        },
-        {
-            "name": "FARE_BASIS",
-            "children": [
+                },
                 {
                     "name": " BOOKING_CLASS",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " text"
-                }
-            ]
-        },
-        {
-            "name": "FARE_BASIS",
-            "children": [
+                },
                 {
                     "name": " CLASS_TYPE",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " text"
-                }
-            ]
-        },
-        {
-            "name": "FARE_BASIS",
-            "children": [
+                },
                 {
                     "name": " PREMIUM",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " text"
-                }
-            ]
-        },
-        {
-            "name": "FARE_BASIS",
-            "children": [
+                },
                 {
                     "name": " ECONOMY",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " text"
-                }
-            ]
-        },
-        {
-            "name": "FARE_BASIS",
-            "children": [
+                },
                 {
                     "name": " DISCOUNTED",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " text"
-                }
-            ]
-        },
-        {
-            "name": "FARE_BASIS",
-            "children": [
+                },
                 {
                     "name": " NIGHT",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " text"
-                }
-            ]
-        },
-        {
-            "name": "FARE_BASIS",
-            "children": [
+                },
                 {
                     "name": " SEASON",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " text"
-                }
-            ]
-        },
-        {
-            "name": "FARE_BASIS",
-            "children": [
+                },
                 {
                     "name": " BASIS_DAYS",
                     "is_primary_key": 0,
@@ -812,155 +517,85 @@
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " text"
-                }
-            ]
-        },
-        {
-            "name": "FLIGHT",
-            "children": [
+                },
                 {
                     "name": " AIRLINE_CODE",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " varchar(3)"
-                }
-            ]
-        },
-        {
-            "name": "FLIGHT",
-            "children": [
+                },
                 {
                     "name": " AIRLINE_FLIGHT",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " text"
-                }
-            ]
-        },
-        {
-            "name": "FLIGHT",
-            "children": [
+                },
                 {
                     "name": " ARRIVAL_TIME",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " int(11)"
-                }
-            ]
-        },
-        {
-            "name": "FLIGHT",
-            "children": [
+                },
                 {
                     "name": " CONNECTIONS",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " int(11)"
-                }
-            ]
-        },
-        {
-            "name": "FLIGHT",
-            "children": [
+                },
                 {
                     "name": " DEPARTURE_TIME",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " int(11)"
-                }
-            ]
-        },
-        {
-            "name": "FLIGHT",
-            "children": [
+                },
                 {
                     "name": " DUAL_CARRIER",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " text"
-                }
-            ]
-        },
-        {
-            "name": "FLIGHT",
-            "children": [
+                },
                 {
                     "name": " FLIGHT_DAYS",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " text"
-                }
-            ]
-        },
-        {
-            "name": "FLIGHT",
-            "children": [
+                },
                 {
                     "name": " FLIGHT_ID",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " int(11)"
-                }
-            ]
-        },
-        {
-            "name": "FLIGHT",
-            "children": [
+                },
                 {
                     "name": " FLIGHT_NUMBER",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " int(11)"
-                }
-            ]
-        },
-        {
-            "name": "FLIGHT",
-            "children": [
+                },
                 {
                     "name": " FROM_AIRPORT",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " varchar(3)"
-                }
-            ]
-        },
-        {
-            "name": "FLIGHT",
-            "children": [
+                },
                 {
                     "name": " MEAL_CODE",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " text"
-                }
-            ]
-        },
-        {
-            "name": "FLIGHT",
-            "children": [
+                },
                 {
                     "name": " STOPS",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " int(11)"
-                }
-            ]
-        },
-        {
-            "name": "FLIGHT",
-            "children": [
+                },
                 {
                     "name": " TIME_ELAPSED",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " int(11)"
-                }
-            ]
-        },
-        {
-            "name": "FLIGHT",
-            "children": [
+                },
                 {
                     "name": " TO_AIRPORT",
                     "is_primary_key": 0,
@@ -977,12 +612,7 @@
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " int(11)"
-                }
-            ]
-        },
-        {
-            "name": "FLIGHT_FARE",
-            "children": [
+                },
                 {
                     "name": " FARE_ID",
                     "is_primary_key": 0,
@@ -999,23 +629,13 @@
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " int(11)"
-                }
-            ]
-        },
-        {
-            "name": "FLIGHT_LEG",
-            "children": [
+                },
                 {
                     "name": " LEG_NUMBER",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " int(11)"
-                }
-            ]
-        },
-        {
-            "name": "FLIGHT_LEG",
-            "children": [
+                },
                 {
                     "name": " LEG_FLIGHT",
                     "is_primary_key": 0,
@@ -1032,111 +652,61 @@
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " int(11)"
-                }
-            ]
-        },
-        {
-            "name": "FLIGHT_STOP",
-            "children": [
+                },
                 {
                     "name": " STOP_NUMBER",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " int(11)"
-                }
-            ]
-        },
-        {
-            "name": "FLIGHT_STOP",
-            "children": [
+                },
                 {
                     "name": " STOP_DAYS",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " text"
-                }
-            ]
-        },
-        {
-            "name": "FLIGHT_STOP",
-            "children": [
+                },
                 {
                     "name": " STOP_AIRPORT",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " text"
-                }
-            ]
-        },
-        {
-            "name": "FLIGHT_STOP",
-            "children": [
+                },
                 {
                     "name": " ARRIVAL_TIME",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " int(11)"
-                }
-            ]
-        },
-        {
-            "name": "FLIGHT_STOP",
-            "children": [
+                },
                 {
                     "name": " ARRIVAL_AIRLINE",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " text"
-                }
-            ]
-        },
-        {
-            "name": "FLIGHT_STOP",
-            "children": [
+                },
                 {
                     "name": " ARRIVAL_FLIGHT_NUMBER",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " int(11)"
-                }
-            ]
-        },
-        {
-            "name": "FLIGHT_STOP",
-            "children": [
+                },
                 {
                     "name": " DEPARTURE_TIME",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " int(11)"
-                }
-            ]
-        },
-        {
-            "name": "FLIGHT_STOP",
-            "children": [
+                },
                 {
                     "name": " DEPARTURE_AIRLINE",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " text"
-                }
-            ]
-        },
-        {
-            "name": "FLIGHT_STOP",
-            "children": [
+                },
                 {
                     "name": " DEPARTURE_FLIGHT_NUMBER",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " int(11)"
-                }
-            ]
-        },
-        {
-            "name": "FLIGHT_STOP",
-            "children": [
+                },
                 {
                     "name": " STOP_TIME",
                     "is_primary_key": 0,
@@ -1153,34 +723,19 @@
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " text"
-                }
-            ]
-        },
-        {
-            "name": "FOOD_SERVICE",
-            "children": [
+                },
                 {
                     "name": " MEAL_NUMBER",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " int(11)"
-                }
-            ]
-        },
-        {
-            "name": "FOOD_SERVICE",
-            "children": [
+                },
                 {
                     "name": " COMPARTMENT",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " text"
-                }
-            ]
-        },
-        {
-            "name": "FOOD_SERVICE",
-            "children": [
+                },
                 {
                     "name": " MEAL_DESCRIPTION",
                     "is_primary_key": 0,
@@ -1197,34 +752,19 @@
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " text"
-                }
-            ]
-        },
-        {
-            "name": "GROUND_SERVICE",
-            "children": [
+                },
                 {
                     "name": " AIRPORT_CODE",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " text"
-                }
-            ]
-        },
-        {
-            "name": "GROUND_SERVICE",
-            "children": [
+                },
                 {
                     "name": " TRANSPORT_TYPE",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " text"
-                }
-            ]
-        },
-        {
-            "name": "GROUND_SERVICE",
-            "children": [
+                },
                 {
                     "name": " GROUND_FARE",
                     "is_primary_key": 0,
@@ -1241,12 +781,7 @@
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " int(11)"
-                }
-            ]
-        },
-        {
-            "name": "MONTH",
-            "children": [
+                },
                 {
                     "name": " MONTH_NAME",
                     "is_primary_key": 0,
@@ -1263,78 +798,43 @@
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " text"
-                }
-            ]
-        },
-        {
-            "name": "RESTRICTION",
-            "children": [
+                },
                 {
                     "name": " ADVANCE_PURCHASE",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " int(11)"
-                }
-            ]
-        },
-        {
-            "name": "RESTRICTION",
-            "children": [
+                },
                 {
                     "name": " STOPOVERS",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " text"
-                }
-            ]
-        },
-        {
-            "name": "RESTRICTION",
-            "children": [
+                },
                 {
                     "name": " SATURDAY_STAY_REQUIRED",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " text"
-                }
-            ]
-        },
-        {
-            "name": "RESTRICTION",
-            "children": [
+                },
                 {
                     "name": " MINIMUM_STAY",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " int(11)"
-                }
-            ]
-        },
-        {
-            "name": "RESTRICTION",
-            "children": [
+                },
                 {
                     "name": " MAXIMUM_STAY",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " int(11)"
-                }
-            ]
-        },
-        {
-            "name": "RESTRICTION",
-            "children": [
+                },
                 {
                     "name": " APPLICATION",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " text"
-                }
-            ]
-        },
-        {
-            "name": "RESTRICTION",
-            "children": [
+                },
                 {
                     "name": " NO_DISCOUNTS",
                     "is_primary_key": 0,
@@ -1351,23 +851,13 @@
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " text"
-                }
-            ]
-        },
-        {
-            "name": "STATE",
-            "children": [
+                },
                 {
                     "name": " STATE_NAME",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " text"
-                }
-            ]
-        },
-        {
-            "name": "STATE",
-            "children": [
+                },
                 {
                     "name": " COUNTRY_NAME",
                     "is_primary_key": 0,
@@ -1384,23 +874,13 @@
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " text"
-                }
-            ]
-        },
-        {
-            "name": "TIME_INTERVAL",
-            "children": [
+                },
                 {
                     "name": " BEGIN_TIME",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " int(11)"
-                }
-            ]
-        },
-        {
-            "name": "TIME_INTERVAL",
-            "children": [
+                },
                 {
                     "name": " END_TIME",
                     "is_primary_key": 0,
@@ -1417,23 +897,13 @@
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " text"
-                }
-            ]
-        },
-        {
-            "name": "TIME_ZONE",
-            "children": [
+                },
                 {
                     "name": " TIME_ZONE_NAME",
                     "is_primary_key": 0,
                     "is_foreign_key": 0,
                     "type": " text"
-                }
-            ]
-        },
-        {
-            "name": "TIME_ZONE",
-            "children": [
+                },
                 {
                     "name": " HOURS_FROM_GMT",
                     "is_primary_key": 0,
