@@ -7,7 +7,7 @@
                 {
                     "name": " AIRCRAFT_CODE",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
+                    "is_foreign_key": 1,
                     "type": " varchar(3)"
                 },
                 {
@@ -105,7 +105,7 @@
                 {
                     "name": " AIRLINE_CODE",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
+                    "is_foreign_key": 1,
                     "type": " varchar(2)"
                 },
                 {
@@ -131,7 +131,7 @@
                 {
                     "name": " AIRPORT_CODE",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
+                    "is_foreign_key": 1,
                     "type": " varchar(3)"
                 },
                 {
@@ -181,13 +181,13 @@
                 {
                     "name": " CITY_CODE",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
+                    "is_foreign_key": 1,
                     "type": " varchar(4)"
                 },
                 {
                     "name": " AIRPORT_CODE",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
+                    "is_foreign_key": 1,
                     "type": " varchar(3)"
                 },
                 {
@@ -219,7 +219,7 @@
                 {
                     "name": " CITY_CODE",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
+                    "is_foreign_key": 1,
                     "type": " varchar(4)"
                 },
                 {
@@ -231,7 +231,7 @@
                 {
                     "name": " STATE_CODE",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
+                    "is_foreign_key": 1,
                     "type": " varchar(2)"
                 },
                 {
@@ -256,8 +256,8 @@
             "children": [
                 {
                     "name": " BOOKING_CLASS",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
+                    "is_primary_key": 1,
+                    "is_foreign_key": 1,
                     "type": " varchar(2)"
                 },
                 {
@@ -282,7 +282,7 @@
             "children": [
                 {
                     "name": " CODE",
-                    "is_primary_key": 0,
+                    "is_primary_key": 1,
                     "is_foreign_key": 0,
                     "type": " varchar(4)"
                 },
@@ -341,7 +341,7 @@
                 {
                     "name": " DAY_NAME",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
+                    "is_foreign_key": 1,
                     "type": " varchar(10)"
                 }
             ],
@@ -355,13 +355,13 @@
                 {
                     "name": " DAYS_CODE",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
+                    "is_foreign_key": 1,
                     "type": " varchar(20)"
                 },
                 {
                     "name": " DAY_NAME",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
+                    "is_foreign_key": 1,
                     "type": " varchar(10)"
                 }
             ],
@@ -413,13 +413,13 @@
                 {
                     "name": " AIRCRAFT_CODE_SEQUENCE",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
+                    "is_foreign_key": 1,
                     "type": " varchar(12)"
                 },
                 {
                     "name": " AIRCRAFT_CODE",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
+                    "is_foreign_key": 1,
                     "type": " varchar(3)"
                 }
             ],
@@ -432,26 +432,26 @@
             "children": [
                 {
                     "name": " FARE_ID",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
+                    "is_primary_key": 1,
+                    "is_foreign_key": 1,
                     "type": " int(11)"
                 },
                 {
                     "name": " FROM_AIRPORT",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
+                    "is_foreign_key": 1,
                     "type": " varchar(3)"
                 },
                 {
                     "name": " TO_AIRPORT",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
+                    "is_foreign_key": 1,
                     "type": " varchar(3)"
                 },
                 {
                     "name": " FARE_BASIS_CODE",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
+                    "is_foreign_key": 1,
                     "type": " text"
                 },
                 {
@@ -463,7 +463,7 @@
                 {
                     "name": " RESTRICTION_CODE",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
+                    "is_foreign_key": 1,
                     "type": " text"
                 },
                 {
@@ -495,13 +495,13 @@
                 {
                     "name": " FARE_BASIS_CODE",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
+                    "is_foreign_key": 1,
                     "type": " text"
                 },
                 {
                     "name": " BOOKING_CLASS",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
+                    "is_foreign_key": 1,
                     "type": " text"
                 },
                 {
@@ -543,7 +543,7 @@
                 {
                     "name": " BASIS_DAYS",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
+                    "is_foreign_key": 1,
                     "type": " text"
                 }
             ],
@@ -557,13 +557,13 @@
                 {
                     "name": " AIRCRAFT_CODE_SEQUENCE",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
+                    "is_foreign_key": 1,
                     "type": " text"
                 },
                 {
                     "name": " AIRLINE_CODE",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
+                    "is_foreign_key": 1,
                     "type": " varchar(3)"
                 },
                 {
@@ -599,13 +599,13 @@
                 {
                     "name": " FLIGHT_DAYS",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
+                    "is_foreign_key": 1,
                     "type": " text"
                 },
                 {
                     "name": " FLIGHT_ID",
-                    "is_primary_key": 0,
-                    "is_foreign_key": 0,
+                    "is_primary_key": 1,
+                    "is_foreign_key": 1,
                     "type": " int(11)"
                 },
                 {
@@ -617,13 +617,13 @@
                 {
                     "name": " FROM_AIRPORT",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
+                    "is_foreign_key": 1,
                     "type": " varchar(3)"
                 },
                 {
                     "name": " MEAL_CODE",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
+                    "is_foreign_key": 1,
                     "type": " text"
                 },
                 {
@@ -641,7 +641,7 @@
                 {
                     "name": " TO_AIRPORT",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
+                    "is_foreign_key": 1,
                     "type": " varchar(3)"
                 }
             ],
@@ -655,13 +655,13 @@
                 {
                     "name": " FLIGHT_ID",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
+                    "is_foreign_key": 1,
                     "type": " int(11)"
                 },
                 {
                     "name": " FARE_ID",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
+                    "is_foreign_key": 1,
                     "type": " int(11)"
                 }
             ],
@@ -675,7 +675,7 @@
                 {
                     "name": " FLIGHT_ID",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
+                    "is_foreign_key": 1,
                     "type": " int(11)"
                 },
                 {
@@ -687,7 +687,7 @@
                 {
                     "name": " LEG_FLIGHT",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
+                    "is_foreign_key": 1,
                     "type": " int(11)"
                 }
             ],
@@ -701,7 +701,7 @@
                 {
                     "name": " FLIGHT_ID",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
+                    "is_foreign_key": 1,
                     "type": " int(11)"
                 },
                 {
@@ -719,7 +719,7 @@
                 {
                     "name": " STOP_AIRPORT",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
+                    "is_foreign_key": 1,
                     "type": " text"
                 },
                 {
@@ -775,7 +775,7 @@
                 {
                     "name": " MEAL_CODE",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
+                    "is_foreign_key": 1,
                     "type": " text"
                 },
                 {
@@ -807,13 +807,13 @@
                 {
                     "name": " CITY_CODE",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
+                    "is_foreign_key": 1,
                     "type": " text"
                 },
                 {
                     "name": " AIRPORT_CODE",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
+                    "is_foreign_key": 1,
                     "type": " text"
                 },
                 {
@@ -859,7 +859,7 @@
                 {
                     "name": " RESTRICTION_CODE",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
+                    "is_foreign_key": 1,
                     "type": " text"
                 },
                 {
@@ -915,7 +915,7 @@
                 {
                     "name": " STATE_CODE",
                     "is_primary_key": 0,
-                    "is_foreign_key": 0,
+                    "is_foreign_key": 1,
                     "type": " text"
                 },
                 {
