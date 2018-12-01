@@ -435,32 +435,84 @@
     },
     "join_anchors": [
         {
-            "source": "AUTHOR:::HOMEPAGE",
-            "target": "CONFERENCE:::HOMEPAGE"
+            "source": "JOURNAL:::JID",
+            "target": "PUBLICATION:::JID"
         },
         {
-            "source": "AUTHOR:::NAME",
-            "target": "CONFERENCE:::NAME"
+            "source": "AUTHOR:::AID",
+            "target": "WRITES:::AID"
         },
         {
-            "source": "AUTHOR:::NAME",
-            "target": "DOMAIN:::NAME"
+            "source": "PUBLICATION:::PID",
+            "target": "WRITES:::PID"
         },
         {
-            "source": "CONFERENCE:::NAME",
-            "target": "DOMAIN:::NAME"
+            "source": "CONFERENCE:::CID",
+            "target": "PUBLICATION:::CID"
+        },
+        {
+            "source": "DOMAIN_JOURNAL:::DID",
+            "target": "DOMAIN:::DID"
+        },
+        {
+            "source": "DOMAIN_JOURNAL:::JID",
+            "target": "JOURNAL:::JID"
+        },
+        {
+            "source": "AUTHOR:::OID",
+            "target": "ORGANIZATION:::OID"
         },
         {
             "source": "AUTHOR:::AID",
             "target": "DOMAIN_AUTHOR:::AID"
         },
         {
-            "source": "DOMAIN:::DID",
-            "target": "DOMAIN_AUTHOR:::DID"
+            "source": "DOMAIN_AUTHOR:::DID",
+            "target": "DOMAIN:::DID"
         },
         {
             "source": "CONFERENCE:::CID",
             "target": "DOMAIN_CONFERENCE:::CID"
+        },
+        {
+            "source": "DOMAIN_CONFERENCE:::DID",
+            "target": "DOMAIN:::DID"
+        },
+        {
+            "source": "DOMAIN_KEYWORD:::DID",
+            "target": "DOMAIN:::DID"
+        },
+        {
+            "source": "DOMAIN_KEYWORD:::KID",
+            "target": "KEYWORD:::KID"
+        },
+        {
+            "source": "KEYWORD:::KID",
+            "target": "PUBLICATION_KEYWORD:::KID"
+        },
+        {
+            "source": "PUBLICATION_KEYWORD:::PID",
+            "target": "PUBLICATION:::PID"
+        },
+        {
+            "source": "DOMAIN_PUBLICATION:::DID",
+            "target": "DOMAIN:::DID"
+        },
+        {
+            "source": "DOMAIN_PUBLICATION:::PID",
+            "target": "PUBLICATION:::PID"
+        },
+        {
+            "source": "CITE:::CITED",
+            "target": "PUBLICATION:::PID"
+        },
+        {
+            "source": "CITE:::CITING",
+            "target": "PUBLICATION:::PID"
+        },
+        {
+            "source": "DOMAIN:::DID",
+            "target": "DOMAIN_AUTHOR:::DID"
         },
         {
             "source": "DOMAIN:::DID",
@@ -519,70 +571,6 @@
             "target": "DOMAIN_PUBLICATION:::DID"
         },
         {
-            "source": "AUTHOR:::HOMEPAGE",
-            "target": "JOURNAL:::HOMEPAGE"
-        },
-        {
-            "source": "CONFERENCE:::HOMEPAGE",
-            "target": "JOURNAL:::HOMEPAGE"
-        },
-        {
-            "source": "DOMAIN_JOURNAL:::JID",
-            "target": "JOURNAL:::JID"
-        },
-        {
-            "source": "AUTHOR:::NAME",
-            "target": "JOURNAL:::NAME"
-        },
-        {
-            "source": "CONFERENCE:::NAME",
-            "target": "JOURNAL:::NAME"
-        },
-        {
-            "source": "DOMAIN:::NAME",
-            "target": "JOURNAL:::NAME"
-        },
-        {
-            "source": "DOMAIN_KEYWORD:::KID",
-            "target": "KEYWORD:::KID"
-        },
-        {
-            "source": "AUTHOR:::HOMEPAGE",
-            "target": "ORGANIZATION:::HOMEPAGE"
-        },
-        {
-            "source": "CONFERENCE:::HOMEPAGE",
-            "target": "ORGANIZATION:::HOMEPAGE"
-        },
-        {
-            "source": "JOURNAL:::HOMEPAGE",
-            "target": "ORGANIZATION:::HOMEPAGE"
-        },
-        {
-            "source": "AUTHOR:::NAME",
-            "target": "ORGANIZATION:::NAME"
-        },
-        {
-            "source": "CONFERENCE:::NAME",
-            "target": "ORGANIZATION:::NAME"
-        },
-        {
-            "source": "DOMAIN:::NAME",
-            "target": "ORGANIZATION:::NAME"
-        },
-        {
-            "source": "JOURNAL:::NAME",
-            "target": "ORGANIZATION:::NAME"
-        },
-        {
-            "source": "AUTHOR:::OID",
-            "target": "ORGANIZATION:::OID"
-        },
-        {
-            "source": "CONFERENCE:::CID",
-            "target": "PUBLICATION:::CID"
-        },
-        {
             "source": "DOMAIN_CONFERENCE:::CID",
             "target": "PUBLICATION:::CID"
         },
@@ -591,19 +579,7 @@
             "target": "PUBLICATION:::JID"
         },
         {
-            "source": "JOURNAL:::JID",
-            "target": "PUBLICATION:::JID"
-        },
-        {
-            "source": "DOMAIN_PUBLICATION:::PID",
-            "target": "PUBLICATION:::PID"
-        },
-        {
             "source": "DOMAIN_KEYWORD:::KID",
-            "target": "PUBLICATION_KEYWORD:::KID"
-        },
-        {
-            "source": "KEYWORD:::KID",
             "target": "PUBLICATION_KEYWORD:::KID"
         },
         {
@@ -613,10 +589,6 @@
         {
             "source": "PUBLICATION:::PID",
             "target": "PUBLICATION_KEYWORD:::PID"
-        },
-        {
-            "source": "AUTHOR:::AID",
-            "target": "WRITES:::AID"
         },
         {
             "source": "DOMAIN_AUTHOR:::AID",
@@ -624,10 +596,6 @@
         },
         {
             "source": "DOMAIN_PUBLICATION:::PID",
-            "target": "WRITES:::PID"
-        },
-        {
-            "source": "PUBLICATION:::PID",
             "target": "WRITES:::PID"
         },
         {
