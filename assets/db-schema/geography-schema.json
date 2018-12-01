@@ -295,6 +295,54 @@
     },
     "join_anchors": [
         {
+            "source": "BORDER_INFO:::BORDER",
+            "target": "STATE:::STATE_NAME"
+        },
+        {
+            "source": "HIGHLOW:::STATE_NAME",
+            "target": "STATE:::STATE_NAME"
+        },
+        {
+            "source": "HIGHLOW:::HIGHEST_POINT",
+            "target": "STATE:::CAPITAL"
+        },
+        {
+            "source": "CITY:::STATE_NAME",
+            "target": "RIVER:::TRAVERSE"
+        },
+        {
+            "source": "CITY:::CITY_NAME",
+            "target": "STATE:::CAPITAL"
+        },
+        {
+            "source": "CITY:::STATE_NAME",
+            "target": "STATE:::STATE_NAME"
+        },
+        {
+            "source": "BORDER_INFO:::STATE_NAME",
+            "target": "RIVER:::TRAVERSE"
+        },
+        {
+            "source": "BORDER_INFO:::BORDER",
+            "target": "HIGHLOW:::STATE_NAME"
+        },
+        {
+            "source": "BORDER_INFO:::STATE_NAME",
+            "target": "HIGHLOW:::STATE_NAME"
+        },
+        {
+            "source": "HIGHLOW:::STATE_NAME",
+            "target": "RIVER:::TRAVERSE"
+        },
+        {
+            "source": "RIVER:::TRAVERSE",
+            "target": "STATE:::STATE_NAME"
+        },
+        {
+            "source": "BORDER_INFO:::STATE_NAME",
+            "target": "BORDER_INFO:::BORDER"
+        },
+        {
             "source": "STATE:::STATE_NAME",
             "target": "BORDER_INFO:::STATE_NAME"
         },
@@ -307,124 +355,12 @@
             "target": "CITY:::STATE_NAME"
         },
         {
-            "source": "STATE:::POPULATION",
-            "target": "CITY:::POPULATION"
-        },
-        {
-            "source": "STATE:::COUNTRY_NAME",
-            "target": "CITY:::COUNTRY_NAME"
-        },
-        {
             "source": "STATE:::STATE_NAME",
-            "target": "HIGHLOW:::STATE_NAME"
-        },
-        {
-            "source": "BORDER_INFO:::STATE_NAME",
             "target": "HIGHLOW:::STATE_NAME"
         },
         {
             "source": "CITY:::STATE_NAME",
             "target": "HIGHLOW:::STATE_NAME"
-        },
-        {
-            "source": "STATE:::COUNTRY_NAME",
-            "target": "RIVER:::COUNTRY_NAME"
-        },
-        {
-            "source": "CITY:::COUNTRY_NAME",
-            "target": "RIVER:::COUNTRY_NAME"
-        },
-        {
-            "source": "STATE:::STATE_NAME",
-            "target": "MOUNTAIN:::STATE_NAME"
-        },
-        {
-            "source": "BORDER_INFO:::STATE_NAME",
-            "target": "MOUNTAIN:::STATE_NAME"
-        },
-        {
-            "source": "CITY:::STATE_NAME",
-            "target": "MOUNTAIN:::STATE_NAME"
-        },
-        {
-            "source": "HIGHLOW:::STATE_NAME",
-            "target": "MOUNTAIN:::STATE_NAME"
-        },
-        {
-            "source": "STATE:::COUNTRY_NAME",
-            "target": "MOUNTAIN:::COUNTRY_NAME"
-        },
-        {
-            "source": "CITY:::COUNTRY_NAME",
-            "target": "MOUNTAIN:::COUNTRY_NAME"
-        },
-        {
-            "source": "RIVER:::COUNTRY_NAME",
-            "target": "MOUNTAIN:::COUNTRY_NAME"
-        },
-        {
-            "source": "STATE:::STATE_NAME",
-            "target": "ROAD:::STATE_NAME"
-        },
-        {
-            "source": "BORDER_INFO:::STATE_NAME",
-            "target": "ROAD:::STATE_NAME"
-        },
-        {
-            "source": "CITY:::STATE_NAME",
-            "target": "ROAD:::STATE_NAME"
-        },
-        {
-            "source": "HIGHLOW:::STATE_NAME",
-            "target": "ROAD:::STATE_NAME"
-        },
-        {
-            "source": "MOUNTAIN:::STATE_NAME",
-            "target": "ROAD:::STATE_NAME"
-        },
-        {
-            "source": "STATE:::AREA",
-            "target": "LAKE:::AREA"
-        },
-        {
-            "source": "STATE:::STATE_NAME",
-            "target": "LAKE:::STATE_NAME"
-        },
-        {
-            "source": "BORDER_INFO:::STATE_NAME",
-            "target": "LAKE:::STATE_NAME"
-        },
-        {
-            "source": "CITY:::STATE_NAME",
-            "target": "LAKE:::STATE_NAME"
-        },
-        {
-            "source": "HIGHLOW:::STATE_NAME",
-            "target": "LAKE:::STATE_NAME"
-        },
-        {
-            "source": "MOUNTAIN:::STATE_NAME",
-            "target": "LAKE:::STATE_NAME"
-        },
-        {
-            "source": "ROAD:::STATE_NAME",
-            "target": "LAKE:::STATE_NAME"
-        },
-        {
-            "source": "STATE:::COUNTRY_NAME",
-            "target": "LAKE:::COUNTRY_NAME"
-        },
-        {
-            "source": "CITY:::COUNTRY_NAME",
-            "target": "LAKE:::COUNTRY_NAME"
-        },
-        {
-            "source": "RIVER:::COUNTRY_NAME",
-            "target": "LAKE:::COUNTRY_NAME"
-        },
-        {
-            "source": "MOUNTAIN:::COUNTRY_NAME",
-            "target": "LAKE:::COUNTRY_NAME"
         }
     ]
 }
