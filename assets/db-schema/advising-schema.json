@@ -1112,10 +1112,6 @@
             "target": "STUDENT:::STUDENT_ID"
         },
         {
-            "source": "OFFERING_INSTRUCTOR:::OFFERING_ID",
-            "target": "STUDENT_RECORD:::OFFERING_ID"
-        },
-        {
             "source": "STUDENT_RECORD:::STUDENT_ID",
             "target": "STUDENT:::STUDENT_ID"
         },
