@@ -361,6 +361,66 @@
         {
             "source": "CITY:::STATE_NAME",
             "target": "HIGHLOW:::STATE_NAME"
+        },
+        {
+            "source": "STATE:::STATE_NAME",
+            "target": "MOUNTAIN:::STATE_NAME"
+        },
+        {
+            "source": "BORDER_INFO:::STATE_NAME",
+            "target": "MOUNTAIN:::STATE_NAME"
+        },
+        {
+            "source": "CITY:::STATE_NAME",
+            "target": "MOUNTAIN:::STATE_NAME"
+        },
+        {
+            "source": "HIGHLOW:::STATE_NAME",
+            "target": "MOUNTAIN:::STATE_NAME"
+        },
+        {
+            "source": "STATE:::STATE_NAME",
+            "target": "ROAD:::STATE_NAME"
+        },
+        {
+            "source": "BORDER_INFO:::STATE_NAME",
+            "target": "ROAD:::STATE_NAME"
+        },
+        {
+            "source": "CITY:::STATE_NAME",
+            "target": "ROAD:::STATE_NAME"
+        },
+        {
+            "source": "HIGHLOW:::STATE_NAME",
+            "target": "ROAD:::STATE_NAME"
+        },
+        {
+            "source": "MOUNTAIN:::STATE_NAME",
+            "target": "ROAD:::STATE_NAME"
+        },
+        {
+            "source": "STATE:::STATE_NAME",
+            "target": "LAKE:::STATE_NAME"
+        },
+        {
+            "source": "BORDER_INFO:::STATE_NAME",
+            "target": "LAKE:::STATE_NAME"
+        },
+        {
+            "source": "CITY:::STATE_NAME",
+            "target": "LAKE:::STATE_NAME"
+        },
+        {
+            "source": "HIGHLOW:::STATE_NAME",
+            "target": "LAKE:::STATE_NAME"
+        },
+        {
+            "source": "MOUNTAIN:::STATE_NAME",
+            "target": "LAKE:::STATE_NAME"
+        },
+        {
+            "source": "ROAD:::STATE_NAME",
+            "target": "LAKE:::STATE_NAME"
         }
     ]
 }

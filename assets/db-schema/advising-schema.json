@@ -1060,6 +1060,10 @@
             "target": "SEMESTER:::SEMESTER_ID"
         },
         {
+            "source": "COURSE_OFFERING:::SEMESTER",
+            "target": "SEMESTER:::SEMESTER"
+        },
+        {
             "source": "COURSE_PREREQUISITE:::PRE_COURSE_ID",
             "target": "COURSE:::COURSE_ID"
         },
@@ -1093,6 +1097,10 @@
         },
         {
             "source": "SEMESTER:::SEMESTER_ID",
+            "target": "STUDENT_RECORD:::SEMESTER"
+        },
+        {
+            "source": "SEMESTER:::SEMESTER",
             "target": "STUDENT_RECORD:::SEMESTER"
         },
         {
@@ -1144,6 +1152,34 @@
             "target": "COURSE_PREREQUISITE:::COURSE_ID"
         },
         {
+            "source": "AREA:::COURSE_ID",
+            "target": "COURSE_TAGS_COUNT:::COURSE_ID"
+        },
+        {
+            "source": "COURSE:::COURSE_ID",
+            "target": "COURSE_TAGS_COUNT:::COURSE_ID"
+        },
+        {
+            "source": "COURSE_OFFERING:::COURSE_ID",
+            "target": "COURSE_TAGS_COUNT:::COURSE_ID"
+        },
+        {
+            "source": "COURSE_PREREQUISITE:::COURSE_ID",
+            "target": "COURSE_TAGS_COUNT:::COURSE_ID"
+        },
+        {
+            "source": "COMMENT_INSTRUCTOR:::STUDENT_ID",
+            "target": "GSI:::STUDENT_ID"
+        },
+        {
+            "source": "COMMENT_INSTRUCTOR:::INSTRUCTOR_ID",
+            "target": "INSTRUCTOR:::INSTRUCTOR_ID"
+        },
+        {
+            "source": "COMMENT_INSTRUCTOR:::INSTRUCTOR_ID",
+            "target": "OFFERING_INSTRUCTOR:::INSTRUCTOR_ID"
+        },
+        {
             "source": "PROGRAM:::PROGRAM_ID",
             "target": "PROGRAM_COURSE:::PROGRAM_ID"
         },
@@ -1156,12 +1192,36 @@
             "target": "PROGRAM_COURSE:::COURSE_ID"
         },
         {
+            "source": "COURSE_TAGS_COUNT:::COURSE_ID",
+            "target": "PROGRAM_COURSE:::COURSE_ID"
+        },
+        {
             "source": "PROGRAM:::PROGRAM_ID",
             "target": "PROGRAM_REQUIREMENT:::PROGRAM_ID"
         },
         {
             "source": "PROGRAM_COURSE:::PROGRAM_ID",
             "target": "PROGRAM_REQUIREMENT:::PROGRAM_ID"
+        },
+        {
+            "source": "COMMENT_INSTRUCTOR:::STUDENT_ID",
+            "target": "STUDENT:::STUDENT_ID"
+        },
+        {
+            "source": "PROGRAM:::PROGRAM_ID",
+            "target": "STUDENT:::PROGRAM_ID"
+        },
+        {
+            "source": "PROGRAM_COURSE:::PROGRAM_ID",
+            "target": "STUDENT:::PROGRAM_ID"
+        },
+        {
+            "source": "PROGRAM_REQUIREMENT:::PROGRAM_ID",
+            "target": "STUDENT:::PROGRAM_ID"
+        },
+        {
+            "source": "COMMENT_INSTRUCTOR:::STUDENT_ID",
+            "target": "STUDENT_RECORD:::STUDENT_ID"
         },
         {
             "source": "GSI:::STUDENT_ID",
@@ -1182,6 +1242,26 @@
         {
             "source": "COURSE_PREREQUISITE:::COURSE_ID",
             "target": "STUDENT_RECORD:::COURSE_ID"
+        },
+        {
+            "source": "COURSE_TAGS_COUNT:::COURSE_ID",
+            "target": "STUDENT_RECORD:::COURSE_ID"
+        },
+        {
+            "source": "COMMENT_INSTRUCTOR:::STUDENT_ID",
+            "target": "TA:::STUDENT_ID"
+        },
+        {
+            "source": "GSI:::STUDENT_ID",
+            "target": "TA:::STUDENT_ID"
+        },
+        {
+            "source": "STUDENT:::STUDENT_ID",
+            "target": "TA:::STUDENT_ID"
+        },
+        {
+            "source": "STUDENT_RECORD:::STUDENT_ID",
+            "target": "TA:::STUDENT_ID"
         }
     ]
 }
