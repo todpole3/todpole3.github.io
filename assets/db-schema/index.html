@@ -2,58 +2,35 @@
 <head>
   <title>Text2SQL Database Schema</title>
   <meta charset="utf-8">
-  <meta name="robots" content="noindex">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">  
-  <style>
-
-  .node {
-    cursor: pointer;
-  }
-
-  .node circle {
-    fill: #fff;
-    stroke: steelblue;
-    stroke-width: 1.5px;
-  }
-
-  .node text {
-    font: 10px sans-serif;
-  }
-
-  .link {
-    fill: none;
-    stroke: #ccc;
-    stroke-width: 1.5px;
-  }
-
-  .links path {
-    fill: none;
-    stroke: #d4ac6e;
-    stroke-opacity: 0.6;
-  }
-
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <div class="container-fluid">
-    <h1>Database Schema</h1>
+    <div class="row">
+      <div class="col-md-8 col-sm-12 col-xs-12">
+        <h1>Database Schema</h1>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <select id="selected-db" class="form-control db-select" onchange="draw_db()">
+          <option id="academic" name="db-schema" selected="selected" value="academic"> Academic</option>
+          <option id="advising" name="db-schema" value="advising"> Advising</option>
+          <option id="atis" name="db-schema" value="atis"> ATIS</option>
+          <option id="geography" name="db-schema" value="geography"> GEO</option>
+          <option id="imdb" name="db-schema" value="imdb"> IMDB</option>
+          <option id="restaurant" name="db-schema" value="restaurants"> Restaurants</option>
+          <option id="scholar" name="db-schema" value="scholar"> Scholar</option>
+          <option id="yelp" name="db-schema" value="yelp"> Yelp</option>
+        </select>
+      </div>
+    </div>
     <div class="row">
       <div class="col-md-8 col-sm-12 col-xs-12 canvas">
       </div>
       <div class="col-md-4 col-sm-12 col-xs-12 side-bar">
         <br>
         <br>
-        <form action="/action_page.php">
-          <input id="academic" type="radio" name="db-schema" value="academic"> Academic<br>
-          <input id="advising" type="radio" name="db-schema" value="advising"> Advising<br>
-          <input id="atis" type="radio" name="db-schema" value="atis"> ATIS<br>
-          <input id="geography" type="radio" name="db-schema" value="geography"> GEO<br>
-          <input id="imdb" type="radio" name="db-schema" value="imdb"> IMDB<br>
-          <input type="radio" name="db-schema" value="restaurants"> Restaurants<br>
-          <input type="radio" name="db-schema" value="scholar"> Scholar<br>
-          <input type="radio" name="db-schema" value="yelp"> Yelp<br>  
-        </form>
       </div>
     </div>
   </div>
@@ -258,10 +235,12 @@ function draw_join_anchors(idToNode, links, nodes) {
   nodes.on('mouseover', function (d) {
       nodes.style('fill', null);
       d3.select(this).style('fill', 'black');
-      var nodesToHighlight = [];
-      nodes.style('stroke', function (node_d) {
-        return (node_d.name == d.name && node_d.children == null) ? '#ff6f69' : null;
-      });
+      var nodesToHighlight = links.map(function (e) { 
+          return e.source === d ? e.target : e.target === d ? e.source : 0; 
+        })
+        .filter(function (d) { return d; })
+      nodes.filter(function (node_d) { return nodesToHighlight.indexOf(node_d) >= 0 || node_d === d; })
+        .style('stroke', '#ff6f69');
       arc.style('stroke', function (link_d) {
         return link_d.source === d | link_d.target === d ? '#d62333' : null;
       });
@@ -298,25 +277,15 @@ function draw_join_anchors(idToNode, links, nodes) {
     }); 
 }
 
-// Default visualization
-d3.json("http://victorialin.net/assets/db-schema/academic-schema.json", function(error, graph) {
-  if (error) throw error;
-  var schemaOutput = draw_schema(graph.schema);
-  var idToNode = schemaOutput[0];
-  var svgNodes = schemaOutput[1];
-  function delay_draw() {
-    draw_join_anchors(idToNode, graph.join_anchors, svgNodes);
-  }
-  setTimeout(delay_draw, 600);
-});
-
 // Select the db schema to visualize using radio buttons
-$(document).on("change","input[type=radio]",function(){
-  var db=$('[name="db-schema"]:checked').val();
-  d3.json(`http://victorialin.net/assets/db-schema/${db}-schema.json`, function(error, graph) {
+function draw_db() {
+  db_name = $('#selected-db option:selected').val();
+  d3.json(`http://victorialin.net/assets/db-schema/${db_name}-schema.json`, function(error, graph) {
     if (error) throw error;
-    // clear old join anchors
+
+    // clear old drawings
     d3.select("g").selectAll("*").remove();
+
     var schemaOutput = draw_schema(graph.schema);    
     var idToNode = schemaOutput[0];
     var svgNodes = schemaOutput[1];
@@ -325,6 +294,9 @@ $(document).on("change","input[type=radio]",function(){
     }
     setTimeout(delay_draw, 600);
   });
-});
+}
+
+// Default visualization
+draw_db();
 
 </script>
