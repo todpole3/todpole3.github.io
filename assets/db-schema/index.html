@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<head>
+  <title>Text2SQL Database Schema</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-8 col-sm-12 col-xs-12">
+        <h1>Database Schema</h1>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <select id="selected-db" class="form-control db-select" onchange="draw_db()">
+          <option id="academic" name="db-schema" selected="selected" value="academic"> Academic</option>
+          <option id="advising" name="db-schema" value="advising"> Advising</option>
+          <option id="atis" name="db-schema" value="atis"> ATIS</option>
+          <option id="geography" name="db-schema" value="geography"> GEO</option>
+          <option id="imdb" name="db-schema" value="imdb"> IMDB</option>
+          <option id="restaurant" name="db-schema" value="restaurants"> Restaurants</option>
+          <option id="scholar" name="db-schema" value="scholar"> Scholar</option>
+          <option id="yelp" name="db-schema" value="yelp"> Yelp</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8 col-sm-12 col-xs-12 canvas">
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12 side-bar">
+        <br>
+        <br>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script>
+
+var margin = {top: 20, right: 120, bottom: 20, left: 80},
+    width = 1080 - margin.right - margin.left,
+    height = 1200 - margin.top - margin.bottom;
+
+var i = 0,
+    duration = 750,
+    root;
+
+var tree = d3.layout.tree()
+    .size([height, width]);
+
+var svg = d3.select(".canvas").append("svg")
+    .attr("width", width + margin.right + margin.left)
+    .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+var diagonal = d3.svg.diagonal()
+    .projection(function(d) { return [d.y, d.x]; });
+
+function draw_schema(schema) {
+  
+  root = schema;
+  var idToNode = [],
+    numOfNodes = 0;
+
+  function indexNodes(d) {
+    idToNode[d.id] = d;
+    numOfNodes ++;
+    if (d.children) {
+      d.children.forEach(indexNodes);
+    }
+  }
+  indexNodes(root);
+  
+  height = numOfNodes * 10 > 1200 ? numOfNodes * 10 : 1200;
+  height = height - margin.top - margin.bottom;
+
+  tree = d3.layout.tree()
+    .size([height, width]);
+
+  d3.select(".canvas").select("svg").attr("height", height + margin.top + margin.bottom);
+
+  d3.select(self.frameElement).style("height", height + margin.top + margin.bottom);
+
+  root.x0 = height / 2;
+  root.y0 = 0;
+
+  function collapse(d) {
+    if (d.children) {
+      d._children = d.children;
+      d._children.forEach(collapse);
+      d.children = null;
+    }
+  }
+  // root.children.forEach(collapse);
+  svgNodes = update(root);
+
+  return [idToNode, svgNodes];
+}
+
+function update(source) {
+
+  // Compute the new tree layout.
+  var nodes = tree.nodes(root).reverse(),
+      links = tree.links(nodes);
+
+  // Normalize for fixed-depth.
+  nodes.forEach(function(d) { d.y = d.depth * 180; });
+
+  // Update the nodes…
+  var node = svg.selectAll("g.node")
+      .data(nodes, function(d) { return d.id || (d.id = ++i); });
+
+  // Enter any new nodes at the parent's previous position.
+  var nodeEnter = node.enter().append("g")
+      .attr("class", "node")
+      .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
+      .on("click", click);
+
+  nodeEnter.append("circle")
+      .attr("r", 1e-6)
+      .style("fill", function(d) { 
+        if (d._children)
+          return "lightsteelblue";
+        else if (d.is_primary_key == 1)
+          return "#6b5b95";
+        else if (d.is_foreign_key == 1)
+          return "#5b9aa0";
+        else
+          return "#fff"; });
+
+  nodeEnter.append("text")
+      .attr("x", function(d) { return d.children || d._children ? -10 : 10; })
+      .attr("dy", ".35em")
+      .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
+      .text(function(d) { return d.name; })
+      .style("fill-opacity", 1e-6);
+
+  // Transition nodes to their new position.
+  var nodeUpdate = node.transition()
+      .duration(duration)
+      .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; });
+
+  nodeUpdate.select("circle")
+      .attr("r", 4.5)
+      .style("fill", function(d) { 
+        if (d._children)
+          return "lightsteelblue";
+        else if (d.is_primary_key == 1)
+          return "#e06377";
+        else if (d.is_foreign_key == 1)
+          return "#c5d5c5";
+        else
+          return "#fff"; });
+
+  nodeUpdate.select("text")
+      .style("fill-opacity", 1);
+
+  // Transition exiting nodes to the parent's new position.
+  var nodeExit = node.exit().transition()
+      .duration(duration)
+      .attr("transform", function(d) { return "translate(" + source.y + "," + source.x + ")"; })
+      .remove();
+
+  nodeExit.select("circle")
+      .attr("r", 1e-6);
+
+  nodeExit.select("text")
+      .style("fill-opacity", 1e-6);
+
+  // Update the links…
+  var link = svg.selectAll("path.link")
+      .data(links, function(d) { return d.target.id; });
+
+  // Enter any new links at the parent's previous position.
+  link.enter().insert("path", "g")
+      .attr("class", "link")
+      .attr("d", function(d) {
+        var o = {x: source.x0, y: source.y0};
+        return diagonal({source: o, target: o});
+      });
+
+  // Transition links to their new position.
+  link.transition()
+      .duration(duration)
+      .attr("d", diagonal);
+
+  // Transition exiting nodes to the parent's new position.
+  link.exit().transition()
+      .duration(duration)
+      .attr("d", function(d) {
+        var o = {x: source.x, y: source.y};
+        return diagonal({source: o, target: o});
+      })
+      .remove();
+
+  // Stash the old positions for transition.
+  nodes.forEach(function(d) {
+    d.x0 = d.x;
+    d.y0 = d.y;
+  });
+
+  return nodeEnter;
+
+}
+
+// Toggle children on click.
+function click(d) {
+  if (d.children) {
+    d._children = d.children;
+    d.children = null;
+  } else {
+    d.children = d._children;
+    d._children = null;
+  }
+  update(d);
+}
+
+function draw_join_anchors(idToNode, links, nodes) {
+  var maxNodeNameLength = 0;
+  Object.keys(idToNode).forEach(function(k) {
+    v = idToNode[k];
+    if (v.children == null && v.name.length > maxNodeNameLength)
+      maxNodeNameLength = v.name.length;
+  });
+
+  links.forEach(function (e) {
+    e.source = idToNode[e.source];
+    e.target = idToNode[e.target];
+  });
+
+  nodes.on('mouseover', function (d) {
+      nodes.style('fill', null);
+      d3.select(this).style('fill', 'black');
+      var nodesToHighlight = links.map(function (e) { 
+          return e.source === d ? e.target : e.target === d ? e.source : 0; 
+        })
+        .filter(function (d) { return d; })
+      nodes.filter(function (node_d) { return nodesToHighlight.indexOf(node_d) >= 0 || node_d === d; })
+        .style('stroke', '#ff6f69');
+      arc.style('stroke', function (link_d) {
+        return link_d.source === d | link_d.target === d ? '#d62333' : null;
+      });
+    })
+    .on('mouseout', function (d) {
+      nodes.style('stroke', null);
+      arc.style('stroke', null);
+    }); 
+
+  var arc = svg.append('g')
+    .attr('class', 'links')
+    .selectAll('path')
+    .data(links)
+    .enter().append('path')
+    .attr('d', function (d) {
+      var xOffset = maxNodeNameLength * 7;
+      return ['M', d.source.y + xOffset, d.source.x, 'A',
+        (d.source.x - d.target.x)/3.5, ',',
+        (d.source.x - d.target.x)/2, 0, 0, ',',
+        d.source.x < d.target.x ? 1 : 0, d.target.y + xOffset, ',', d.target.x]
+        .join(' ');
+    })
+    .attr('stroke-width', 1.5)
+    .on('mouseover', function (d) {
+      arc.style('stroke', null);
+      d3.select(this).style('stroke', '#d62333');
+      nodes.style('stroke', function (node_d) {
+        return node_d === d.source || node_d === d.target ? '#ff6f69' : null;
+      });
+    })
+    .on('mouseout', function (d) {
+      arc.style('stroke', null);
+      nodes.style('stroke', null);
+    }); 
+}
+
+// Select the db schema to visualize using radio buttons
+function draw_db() {
+  db_name = $('#selected-db option:selected').val();
+  d3.json(`http://victorialin.net/assets/db-schema/${db_name}-schema.json`, function(error, graph) {
+    if (error) throw error;
+
+    // clear old drawings
+    d3.select("g").selectAll("*").remove();
+
+    var schemaOutput = draw_schema(graph.schema);    
+    var idToNode = schemaOutput[0];
+    var svgNodes = schemaOutput[1];
+    function delay_draw() {
+      draw_join_anchors(idToNode, graph.join_anchors, svgNodes);
+    }
+    setTimeout(delay_draw, 600);
+  });
+}
+
+// Default visualization
+draw_db();
+
+</script>
