@@ -28,7 +28,7 @@ jQuery('.btn-svg').each(function(){
         // Check if the viewport is set, if the viewport is not set the SVG wont't scale.
         $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'));
 
-        $svg = $svg.attr('class', ' btn-svg');
+        $svg = $svg.attr('class', imgClass+' btn-svg');
 
         // Replace image with new SVG
         $img.replaceWith($svg);
