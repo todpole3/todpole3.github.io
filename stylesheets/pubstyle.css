@@ -37,6 +37,13 @@
 
 .btn-pub {
   border-color: #BEBEBE;
+  -webkit-transition-duration: 0.15s; /* Safari */
+  transition-duration: 0.15s;
+}
+
+.btn-pub:hover {
+  color: #FFFFFF;
+  background-color: #555555;
 }
 
 .links {

@@ -261,6 +261,10 @@ footer {
   font-size: 12px;
 }
 
+svg:hover .btn-svg {
+  color: #F9A602;
+}
+
 .btn-slides-events {
   background-color: #1d7892;
   color: #ffffff;
