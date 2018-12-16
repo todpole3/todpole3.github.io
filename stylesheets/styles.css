@@ -210,6 +210,7 @@ footer {
 
 .contacts .social-networks {
     font-size: 24px;
+    margin-left: -2;
 }
 
 .side-bar-panel{
@@ -262,11 +263,13 @@ footer {
 }
 
 .btn-svg-svg {
-    fill: black;
+    margin-top: 6px;
+    fill: #333333;
+    transition: all .2s;
 }
 
 .btn-svg-svg:hover {
-  fill: #F9A602;
+    fill: black;
 }
 
 .btn-slides-events {
