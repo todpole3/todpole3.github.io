@@ -261,6 +261,10 @@ footer {
   font-size: 12px;
 }
 
+.btn-svg-svg {
+    fill: black;
+}
+
 .btn-svg-svg:hover {
   fill: #F9A602;
 }
