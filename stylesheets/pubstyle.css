@@ -26,6 +26,7 @@
   border: 0px;
   padding: 2px;
   font-size: 12px;
+  width: 30px;
 }
 
 .details-panel li {
@@ -33,4 +34,13 @@
   border: 0px;
   padding: 2px;
   font-size: 12px;
+}
+
+.btn-pub {
+  color: #484848;
+  font-size: 14px;
+  margin-right: 16px;
+  padding: 0;
+  border: none;
+  background: none;
 }

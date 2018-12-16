@@ -194,10 +194,14 @@ footer {
 }
 
 .contacts { 
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
   padding-top: 12px;
-} 
+}
+
+.social-networks {
+  padding-left: 16px;
+}
 
 .section{
   margin-top: 32px;
