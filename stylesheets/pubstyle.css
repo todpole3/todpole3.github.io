@@ -37,8 +37,8 @@
 
 .btn-pub {
   border-color: #BEBEBE;
-  -webkit-transition-duration: 0.15s; /* Safari */
-  transition-duration: 0.15s;
+  -webkit-transition-duration: 0.05s; /* Safari */
+  transition-duration: 0.05s;
 }
 
 .btn-pub:hover {

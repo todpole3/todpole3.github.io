@@ -262,7 +262,7 @@ footer {
 }
 
 svg:hover .btn-svg {
-  color: #F9A602;
+  fill: #F9A602;
 }
 
 .btn-slides-events {
