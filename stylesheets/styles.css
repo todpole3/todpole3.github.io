@@ -261,7 +261,7 @@ footer {
   font-size: 12px;
 }
 
-svg:hover .btn-svg {
+.btn-svg:hover {
   fill: #F9A602;
 }
 
