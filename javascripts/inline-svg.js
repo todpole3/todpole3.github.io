@@ -29,6 +29,7 @@ jQuery('.btn-svg').each(function(){
         if(!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
             $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
         }
+        $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'));
 
         // Replace image with new SVG
         $img.replaceWith($svg);
