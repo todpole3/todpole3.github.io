@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,400italic,700italic,300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300italic,400italic,700italic,300,400,700);
 
 body {
   padding:40px 0 50px 0;
@@ -14,7 +15,9 @@ h1, h2, h3, h5, h6 {
 }
 
 p, ul, ol, table, pre, dl {
-  margin:0 0 20px;
+  font-weight: 300;
+  margin: 0 0 20px;
+  color: #444;
 }
 
 h1, h2, h3 {
@@ -43,8 +46,8 @@ h4 {
 }
 
 a {
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #5686b0;
-  font-weight:300;
   text-decoration:none;
 }
 
@@ -193,7 +196,7 @@ footer {
   padding-bottom: 6px;
 }
 
-.contacts { 
+.contacts {
   font-size: 18px;
   font-weight: 300;
   margin-top: 6px;
@@ -221,8 +224,11 @@ footer {
   margin-top: 32px;
 }
 
-.news ul li {
+.news {
   font-size: 15px;
+}
+
+.news ul li {
   margin: 8px 0;
 }
 

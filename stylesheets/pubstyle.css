@@ -4,6 +4,11 @@
     display:none;
 }
 
+.author-me {
+    font-family: "Roboto", sans-serif;
+    color: #5686b0;
+}
+
 .bibtex{
 	font-family: "Gill Sans", sans-serif;
     display:none;
