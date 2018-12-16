@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,400italic,700italic,300,400,700);
 
 body {
-  padding:50px 0 50px 0;
+  padding:40px 0 50px 0;
   font:16px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#000;
   font-weight:300;
@@ -43,7 +43,7 @@ h4 {
 }
 
 a {
-  color:#07a;
+  color: #5686b0;
   font-weight:300;
   text-decoration:none;
 }
@@ -190,21 +190,38 @@ footer {
 }
 
 .name-card {
-  padding-bottom: 20px;
+  padding-bottom: 6px;
 }
 
 .contacts { 
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
-  padding-top: 12px;
-} 
+  margin-top: 6px;
+}
+
+.contacts .address {
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+.contacts .email {
+  font-size: 14px;
+}
+
+.contacts .social-networks {
+    font-size: 24px;
+}
+
+.side-bar-panel{
+  margin:0 12px 0 0;
+}
 
 .section{
   margin-top: 32px;
 }
 
 .news {
-  margin-top: 36px;
+  padding-top: 16px;
 }
 
 .news ul li {
@@ -212,14 +229,9 @@ footer {
   margin: 8px 0;
 }
 
-.news .event-date {
+.event-date {
   font-weight: 600;
-  color:#07a 
-}
-
-.news-normal .event-date {
-  font-weight: 600;
-  color:#07a
+  color: #487298;
 }
 
 .project-snapshot div div p {
@@ -235,17 +247,12 @@ footer {
   font-weight: normal;
 }
 
-
-.side-bar-panel{
-  margin:0 20px 0 0;
-}
-
 .li-relaxed {
     margin: 0 0 6px 0;
 }
 
 .icon-cog {
-  color: #4c9fc3;
+  color: #487298;
 }
 
 .btn-slides {
@@ -255,7 +262,7 @@ footer {
 }
 
 .btn-slides-events {
-  background-color: #5bc0de;
+  background-color: #1d7892;
   color: #ffffff;
   font-size: 12px;
 }

@@ -11,7 +11,7 @@
 
 .publication{
 	width:100%;
-	margin-bottom: 16px;
+	margin-bottom: 20px;
 }
 
 .details-panel {
@@ -33,4 +33,13 @@
   border: 0px;
   padding: 2px;
   font-size: 12px;
+}
+
+.btn-pub {
+  border-color: #BEBEBE;
+}
+
+.links {
+  margin-left: 0px;
+  margin-top: 6px;
 }
