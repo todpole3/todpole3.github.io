@@ -18,6 +18,8 @@ jQuery('.btn-svg').each(function(){
         // Add replaced image's classes to the new SVG
         if(typeof imgClass !== 'undefined') {
             $svg = $svg.attr('class', imgClass+' replaced-svg');
+            $svg = $svg.attr('width', 30);
+            $svg = $svg.attr('height', 30);
         }
 
         // Remove any invalid XML tags as per http://validator.w3.org
