@@ -117,7 +117,7 @@ header ul.github {
   background: -webkit-linear-gradient(top, #fff 0%,#dddddd 100%);
   background: -o-linear-gradient(top, #fff 0%,#dddddd 100%);
   background: -ms-linear-gradient(top, #fff 0%,#dddddd 100%);
-  background: linear-gradient(top, #fff 0%,#dddddd 100%);
+  background: linear-gradient(to top, #fff 0%,#dddddd 100%);
 
   border-radius:5px;
   border:1px solid #d2d2d2;
@@ -210,7 +210,7 @@ footer {
 
 .contacts .social-networks {
     font-size: 24px;
-    margin-left: -2;
+    margin-left: -2px;
 }
 
 .side-bar-panel{
