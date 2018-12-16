@@ -10,15 +10,17 @@ jQuery('.btn-svg').each(function(){
     jQuery.get(imgURL, function(data) {
         // Get the SVG tag, ignore the rest
         var $svg = jQuery(data).find('svg');
-        $svg = $svg.attr('width', 30);
-        $svg = $svg.attr('height', 30);
 
         // Add replaced image's ID to the new SVG
         if(typeof imgID !== 'undefined') {
             $svg = $svg.attr('id', imgID);
         }
         // Add replaced image's classes to the new SVG
-        $svg = $svg.attr('class', 'btn-svg-svg');
+        if(typeof imgClass !== 'undefined') {
+            $svg = $svg.attr('class', imgClass+' btn-svg-svg');
+        } else {
+            $svg = $svg.attr('class', 'btn-svg-svg');
+        }
 
         // Remove any invalid XML tags as per http://validator.w3.org
         $svg = $svg.removeAttr('xmlns:a');
@@ -26,6 +28,9 @@ jQuery('.btn-svg').each(function(){
         // Check if the viewport is set, if the viewport is not set the SVG wont't scale.
         $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'));
 
+        $svg = $svg.attr('width', 30);
+        $svg = $svg.attr('height', 30);
+        
         // Replace image with new SVG
         $img.replaceWith($svg);
         console.log($svg.attr('class'));
