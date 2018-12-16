@@ -365,12 +365,13 @@
             </div>
          </div>
       </div>
-      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="javascripts/jquery-3.3.1.min.js"></script>
+      <script src="lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
       <script src="javascripts/scale.fix.js"></script>
+      <script src="javascripts/inline-svg.js"></script>
       <script>
          document.body.style.zoom="110%";
-
+         $('.btn-pub').mouseup(function() { this.blur() })
       </script>
    </body>
 </html>
