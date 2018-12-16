@@ -19,9 +19,9 @@ jQuery('.btn-svg').each(function(){
         }
         // Add replaced image's classes to the new SVG
         if(typeof imgClass !== 'undefined') {
-            $svg = $svg.attr('class', imgClass+' btn-svg');
+            $svg = $svg.attr('class', imgClass+' btn-svg-svg');
         } else {
-            $svg = $svg.attr('class', 'btn-svg');
+            $svg = $svg.attr('class', 'btn-svg-svg');
         }
 
         // Remove any invalid XML tags as per http://validator.w3.org
@@ -32,6 +32,7 @@ jQuery('.btn-svg').each(function(){
 
         // Replace image with new SVG
         $img.replaceWith($svg);
+        console.log($svg.attr('class'));
 
     }, 'xml');
 
