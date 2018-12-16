@@ -6,10 +6,11 @@
       <meta http-equiv="X-UA-Compatible" content="chrome=1">
       <meta name="viewport" content="width=device-width initial-scale=1.0">
       <link rel="stylesheet" href="lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
-      <link rel="stylesheet" href="stylesheets/styles.css">
-      <link rel="stylesheet" href="stylesheets/pubstyle.css">
       <!-- Icon library -->
       <link rel="stylesheet" href="lib/font-awesome-4.7.0-2/css/font-awesome.min.css">
+      <link rel="stylesheet" href="lib/academicons-1.8.6-2/css/academicons.min.css">
+      <link rel="stylesheet" href="stylesheets/styles.css">
+      <link rel="stylesheet" href="stylesheets/pubstyle.css">
       <!-- [if lt IE 9]
          <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
          [endif] -->
@@ -29,21 +30,23 @@
                            <img src="img/me-sketch.jpeg" alt="Sketch of me" class="img-circle img-responsive">
                         </div>
                         <div class="col-md-6 col-sm-9 col-xs-7 contacts">
-                           <p>
+                          <div>
                               Research Scientist<br>
                               Salesforce Research<br>
-                              <i class="fa fa-map-marker" aria-hidden="true"></i> 575 High St, Palo Alto, California<br>
-                              <a href="mailto:xilin{AT}salesforce.com" style="font-weight: 400">xilin@salesforce.com</a>
-                           </p>
+                          </div>
+                          <div class="address"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                           575 High St, Palo Alto, California<br>
+                          </div>
+                          <div class="email">
+                            <i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:xilin{AT}salesforce.com" style="font-weight: 400">xilin@salesforce.com</a>
+                          </div>
+                          <div class="social-networks">
+                            <a href="https://twitter.com/VictoriaLinML"><img src="lib/social-icons/twitter-circular.svg" width="30"></a>&nbsp;
+                            <a href="https://www.linkedin.com/in/xivictorialin"><img src="lib/social-icons/linkedin-circular.svg" width="30"></a>&nbsp;
+                            <a href="https://github.com/todpole3"><img src="lib/social-icons/github-circular.svg" width="30"></a>&nbsp;
+                            <a href="https://scholar.google.com/citations?user=gYUOJwMAAAAJ&hl=en"><img src="lib/social-icons/scholar-circular.svg" width="30"></a>
+                          </div>
                         </div>
-                     </div>
-                     <div class="social-networks">
-                        <ul class="github">
-                           <li><a href="https://twitter.com/VictoriaLinML"> Follow<strong>Twitter</strong></a></li>
-                           <li><a href="https://www.linkedin.com/in/xivictorialin"> Connect<strong>LinkedIn</strong></a></li>
-                           <li><a href="https://github.com/todpole3"> Check<strong>GitHub</strong></a></li>
-                           <li><a href="https://scholar.google.com/citations?user=gYUOJwMAAAAJ&hl=en"> Check<strong>GScholar</strong></a></li>
-                        </ul>
                      </div>
                   </header>
                   <div class="news">
@@ -68,7 +71,6 @@
                   <div class="navbar hidden-xs hidden-sm">
                      <h4>Navigation</h4>
                      <ul>
-                        <li><a href="">Home</a></li>
                         <li><a href="files/cv.pdf">CV</a></li>
                         <li><a href="resources.html">Resources</a></li>
                         <li><a href="">Blog (coming soon!)</a></li>
@@ -141,21 +143,21 @@
                            </span><br />
                            <span class="venuetype"></span><span class="venue">EMNLP 2018.</span><br>
                            <span class="links btn-group">
-                              <a class="btn btn-default btn-xs" href="pubs/multihopkg-emnlp2018.pdf">
-                              <i class="fa fa-file-pdf-o"></i> PDF</a>
-                              <a class="btn btn-default btn-xs" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_lin18_multihopkg').slideToggle('fast');return false;">
+                              <a class="btn btn-default btn-xs btn-pub" href="pubs/multihopkg-emnlp2018.pdf">
+                              <i class="fa fa-download"></i> PDF</a>
+                              <a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_lin18_multihopkg').slideToggle('fast');return false;">
                               <i class="fa fa-file-text-o"></i> Abstract</a>
-                              <a class="btn btn-default btn-xs" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#bibtex_lin18_multihopkg').slideToggle('fast');return false;">
+                              <a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#bibtex_lin18_multihopkg').slideToggle('fast');return false;">
                               <i class="fa fa-quote-left"></i> Bibtex</a>
                               <div class="btn-group">
-                                 <a class="btn btn-default btn-xs dropdown-toggles" data-toggle="dropdown">
+                                 <a class="btn btn-default btn-xs btn-pub dropdown-toggles" data-toggle="dropdown">
                                  <i class="glyphicon glyphicon-blackboard"></i> Slides <span class="caret"></span></a>
                                  <ul id="slides_menu_lin18_multihopkg" class="dropdown-menu details-panel" role="menu">
                                     <li><a href="pubs/MultiHopKG_emnlp2018_talk.pdf">PDF version</a></li>
                                     <li><a href="pubs/MultiHopKG_emnlp2018_talk.key">Keynote version</a></li>
                                  </ul>
                               </div>
-                              <a class="btn btn-default btn-xs" href="http://github.com/salesforce/MultiHopKG">
+                              <a class="btn btn-default btn-xs btn-pub" href="http://github.com/salesforce/MultiHopKG">
                               <i class="fa fa-github"></i> Code </a>
                            </span>
                            <div id="abstract_lin18_multihopkg" class="abstract well">
@@ -182,13 +184,13 @@
                         </span><br />
                         <span class="venuetype"></span><span class="venue">LREC 2018.</span><br>
                         <span class="links btn-group">
-                        <a class="btn btn-default btn-xs" href="pubs/nl2bash.pdf">
-                        <i class="fa fa-file-pdf-o"></i> PDF</a>
-                        <a class="btn btn-default btn-xs" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_lin18_nl2bash').slideToggle('fast');return false;">
+                        <a class="btn btn-default btn-xs btn-pub" href="pubs/nl2bash.pdf">
+                        <i class="fa fa-download"></i> PDF</a>
+                        <a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_lin18_nl2bash').slideToggle('fast');return false;">
                         <i class="fa fa-file-text-o"></i> Abstract</a>
-                        <a class="btn btn-default btn-xs" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#bibtex_lin18_nl2bash').slideToggle('fast');return false;">
+                        <a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#bibtex_lin18_nl2bash').slideToggle('fast');return false;">
                         <i class="fa fa-quote-left"></i> Bibtex</a>
-                        <a class="btn btn-default btn-xs" href="https://github.com/TellinaTool/nl2bash">
+                        <a class="btn btn-default btn-xs btn-pub" href="https://github.com/TellinaTool/nl2bash">
                         <i class="fa fa-github"></i> Dataset & Code </a>
                         </span>
                         <div id="abstract_lin18_nl2bash" class="abstract well">
@@ -213,11 +215,11 @@
                         </span><br />
                         <span class="venuetype"></span><span class="venue">ACL 2016. </span><br>
                         <span class="links btn-group">
-                        <a class="btn btn-default btn-xs" href="pubs/relationpaths_acl_2016.pdf">
-                        <i class="fa fa-file-pdf-o"></i> PDF</a>
-                        <a class="btn btn-default btn-xs" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_lin16_pathcomp').slideToggle('fast');return false;">
+                        <a class="btn btn-default btn-xs btn-pub" href="pubs/relationpaths_acl_2016.pdf">
+                        <i class="fa fa-download"></i> PDF</a>
+                        <a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_lin16_pathcomp').slideToggle('fast');return false;">
                         <i class="fa fa-file-text-o"></i> Abstract</a>
-                        <a class="btn btn-default btn-xs" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#bibtex_lin16_pathcomp').slideToggle('fast');return false;">
+                        <a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#bibtex_lin16_pathcomp').slideToggle('fast');return false;">
                         <i class="fa fa-quote-left"></i> Bibtex</a>
                         </span>
                         <div id="abstract_lin16_pathcomp" class="abstract well">
@@ -269,13 +271,13 @@
                         </span><br/>
                         <span class="venuetype"></span><span class="venue">University of Washington Department of Computer Science and Engineering Technical Report 2017.</span><br />
                         <span class="links btn-group">
-                        <a class="btn btn-default btn-xs" href="pubs/tellina_tr170510.pdf">
-                        <i class="fa fa-file-pdf-o"></i> PDF</a>
-                        <a class="btn btn-default btn-xs" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_lin17_nl2command').slideToggle('fast');return false;">
+                        <a class="btn btn-default btn-xs btn-pub" href="pubs/tellina_tr170510.pdf">
+                        <i class="fa fa-download"></i> PDF</a>
+                        <a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_lin17_nl2command').slideToggle('fast');return false;">
                         <i class="fa fa-file-text-o"></i> Abstract</a>
-                        <a class="btn btn-default btn-xs" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#bibtex_lin17_nl2command').slideToggle('fast');return false;">
+                        <a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#bibtex_lin17_nl2command').slideToggle('fast');return false;">
                         <i class="fa fa-quote-left"></i> Bibtex</a>
-                        <a class="btn btn-default btn-xs" href="https://github.com/TellinaTool">
+                        <a class="btn btn-default btn-xs btn-pub" href="https://github.com/TellinaTool">
                         <i class="fa fa-github"></i> Tellina Tool </a>
                         </span>
                         <div id="abstract_lin17_nl2command" class="abstract well">
@@ -304,11 +306,11 @@
                         </span><br />
                         <span class="venuetype"></span><span class="venue">NIPS Workshop on Modern Machine Learning and NLP 2014.</span><br />
                         <span class="links btn-group">
-                        <a class="btn btn-default btn-xs" href="pubs/prlr_mlnlp_2014.pdf">
-                        <i class="fa fa-file-pdf-o"></i> PDF</a>
-                        <a class="btn btn-default btn-xs" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_lin14_prlr').slideToggle('fast');return false;">
+                        <a class="btn btn-default btn-xs btn-pub" href="pubs/prlr_mlnlp_2014.pdf">
+                        <i class="fa fa-download"></i> PDF</a>
+                        <a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_lin14_prlr').slideToggle('fast');return false;">
                         <i class="fa fa-file-text-o"></i> Abstract</a>
-                        <a class="btn btn-default btn-xs" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#bibtex_lin14_prlr').slideToggle('fast');return false;">
+                        <a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#bibtex_lin14_prlr').slideToggle('fast');return false;">
                         <i class="fa fa-quote-left"></i> Bibtex</a>
                         </span>
                         <div id="abstract_lin14_prlr" class="abstract well">
@@ -347,7 +349,6 @@
                         <a id="navigation" class="anchor" href="#navigation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Navigation
                      </h3>
                      <ul>
-                        <li><a href="">Home</a></li>
                         <li><a href="files/cv.pdf">CV</a></li>
                         <li><a href="resources.html">Resources</a></li>
                         <li><a href="">Blog (coming soon!)</a></li>
