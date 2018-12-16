@@ -19,7 +19,9 @@ jQuery('.btn-svg').each(function(){
         }
         // Add replaced image's classes to the new SVG
         if(typeof imgClass !== 'undefined') {
-            $svg = $svg.attr('class', imgClass+' replaced-svg');
+            $svg = $svg.attr('class', imgClass+' btn-svg');
+        } else {
+            $svg = $svg.attr('class', 'btn-svg');
         }
 
         // Remove any invalid XML tags as per http://validator.w3.org
@@ -28,7 +30,7 @@ jQuery('.btn-svg').each(function(){
         // Check if the viewport is set, if the viewport is not set the SVG wont't scale.
         $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'));
 
-        // $svg = $svg.attr('class', imgClass+' btn-svg');
+        $svg = $svg.attr('class', imgClass+' btn-svg');
 
         // Replace image with new SVG
         $img.replaceWith($svg);
