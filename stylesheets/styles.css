@@ -360,7 +360,7 @@ footer {
   }
 }
 
-@media print, screen and (max-width: 720px) {
+@media print, screen and (max-width: 768px) {
   body {
     padding:15px 0 15px 0;
     font-weight: 400;
@@ -376,6 +376,11 @@ footer {
 
   .news {
     padding-bottom: 12px;
+  }
+
+  .name-card-separator {
+    display: block;
+    margin-top: 16px;
   }
 }
 
