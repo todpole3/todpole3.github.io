@@ -360,7 +360,7 @@ footer {
   }
 }
 
-@media print, screen and (max-width: 480px) {
+@media print, screen and (max-width: 720px) {
   body {
     padding:15px 0 15px 0;
     font-weight: 400;
@@ -372,6 +372,10 @@ footer {
 
   p, ul, ol, table, pre, dl {
       color: #555;
+  }
+
+  .news {
+    padding-bottom: 12px;
   }
 }
 
