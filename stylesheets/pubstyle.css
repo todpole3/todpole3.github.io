@@ -55,3 +55,9 @@
   margin-left: 0px;
   margin-top: 6px;
 }
+
+@media print, screen and (max-width: 768px) {
+  .author-me {
+    font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+}
