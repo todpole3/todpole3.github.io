@@ -231,11 +231,11 @@ footer {
 
 .event-date {
   font-weight: 600;
-  color: #487298;
+  color: #5786b0;
 }
 
 .project-snapshot div div p {
-  padding-left: 0px; 
+  padding-left: 0px;
   margin: 0 12px 0 20px;
 }
 
@@ -252,7 +252,7 @@ footer {
 }
 
 .icon-cog {
-  color: #487298;
+  color: #5786b0;
 }
 
 .btn-slides {
