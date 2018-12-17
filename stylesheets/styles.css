@@ -252,10 +252,6 @@ footer {
     margin: 0 0 6px 0;
 }
 
-.icon-cog {
-  color: #5786b0;
-}
-
 .btn-slides {
   background-color: #A0A0A0;
   color: #ffffff;
@@ -270,12 +266,6 @@ footer {
 
 .btn-svg-svg:hover {
     fill: black;
-}
-
-.btn-slides-events {
-  background-color: #1d7892;
-  color: #ffffff;
-  font-size: 12px;
 }
 
 .btn-outline {
