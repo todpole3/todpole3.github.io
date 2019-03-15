@@ -170,10 +170,8 @@ header ul.github a strong {
   color:#222;
 }
 
-section {
-  width:500px;
-  float:right;
-  padding-bottom:50px;
+.section {
+  margin-bottom: 32px;
 }
 
 small {
@@ -216,10 +214,6 @@ footer {
 
 .side-bar-panel{
   margin:0 12px 0 0;
-}
-
-.section{
-  margin-top: 32px;
 }
 
 .news {
@@ -321,29 +315,6 @@ footer {
   }
 }
 
-@media print, screen and (max-width: 720px) {
-  body {
-    word-wrap:break-word;
-  }
-
-  .side-bar-panel {
-    float: left;
-    width: 100%;
-  }
-
-  header {
-    padding:0;
-  }
-
-  header ul.github, header p.view {
-    position:static;
-  }
-
-  pre, code {
-    word-wrap:normal;
-  }
-}
-
 @media print, screen and (max-width: 768px) {
   body {
     padding:15px 0 15px 0;
@@ -368,11 +339,62 @@ footer {
   }
 }
 
+@media print, screen and (max-width: 720px) {
+  body {
+    word-wrap:break-word;
+  }
+
+  .side-bar-panel {
+    float: left;
+    width: 100%;
+  }
+
+  header {
+    padding:0;
+  }
+
+  header ul.github, header p.view {
+    position:static;
+  }
+
+  pre, code {
+    word-wrap:normal;
+  }
+}
+
+@media print, screen and (max-width: 480px) {
+  body {
+    word-wrap:break-word;
+  }
+
+  .side-bar-panel {
+    float: left;
+    width: 100%;
+  }
+
+  header {
+    padding:0;
+  }
+
+  header ul.github, header p.view {
+    position:static;
+  }
+
+  pre, code {
+    word-wrap:normal;
+  }
+
+  .section h3 {
+    background: #eeefea;
+    font-size: 20px;
+  }
+}
+
 @media print {
   body {
     padding:0.4in;
     font-size:12pt;
-    color:##404040;
+    color:#404040;
   }
 
   footer {
