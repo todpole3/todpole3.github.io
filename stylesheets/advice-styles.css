@@ -1,0 +1,16 @@
+.advice-quote {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    color: #A9A9A9;
+    text-shadow: .5px .5px #A9A9A9;
+}
+
+.advice-category {
+    font-size: 16px;
+    color: #484848;
+}
+
+.advice-date {
+    float: right;
+}
