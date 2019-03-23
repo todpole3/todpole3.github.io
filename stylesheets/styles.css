@@ -3,10 +3,10 @@
 
 body {
   padding:40px 0 50px 0;
-  font:16px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#404040;
+  font:16.5px/1.5 Lato, "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color:#080808;
   font-weight:300;
-  background:#fff;
+  background:#ffffff;
 }
 
 h1, h2, h3, h5, h6 {
@@ -16,11 +16,11 @@ h1, h2, h3, h5, h6 {
 
 p, ul, ol, table, pre, dl {
   margin: 0 0 20px;
-  color:#404040;
+  color:#080808;
 }
 
 .section div > span {
-  color:#404040;
+  color:#080808;
 }
 
 h1, h2, h3 {
@@ -99,12 +99,12 @@ th, td {
 }
 
 dt {
-  color:##404040;
+  color:##080808;
   font-weight:700;
 }
 
 th {
-  color:##404040;
+  color:##080808;
 }
 
 img {
@@ -198,8 +198,11 @@ footer {
 }
 
 .contacts {
-  font-size: 18px;
   margin-top: 6px;
+}
+
+.contacts .title {
+  font-size: 18px;
 }
 
 .contacts .address {
