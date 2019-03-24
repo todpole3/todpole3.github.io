@@ -3,7 +3,9 @@
 
 body {
   padding:40px 0 50px 0;
-  font:16.5px/1.5 Lato, "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-size: 16.5px;
+  line-height: 1.5;
   color:#080808;
   font-weight:300;
   background:#ffffff;
@@ -11,12 +13,12 @@ body {
 
 h1, h2, h3, h5, h6 {
   color:#222;
-  margin:0px 0 20px;
+  margin:0 0 20px;
 }
 
 p, ul, ol, table, pre, dl {
-  margin: 0 0 20px;
   color:#080808;
+  margin:0 0 20px;
 }
 
 .section div > span {
