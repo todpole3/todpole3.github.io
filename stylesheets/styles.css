@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,400italic,700italic,300,400,700);
 @import url(https://fonts.googleapis.com/css?family=Roboto:300italic,400italic,700italic,300,400,700);
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
 
 body {
   padding:40px 0 50px 0;
@@ -219,6 +221,11 @@ footer {
 .contacts .social-networks {
     font-size: 24px;
     margin-left: -2px;
+}
+
+.dataset {
+    font-family: 'Abril Fatface';
+    /* font-family: 'Acme', sans-serif; */
 }
 
 .side-bar-panel{
