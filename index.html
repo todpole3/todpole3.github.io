@@ -389,7 +389,14 @@
                         <a id="service" class="anchor" href="#services" ria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Professional Services
                      </h3>
                      <div>
-                         <span><img src="img/icons/diamond.svg" width="10">&nbsp;&nbsp;&nbsp;&nbsp;Reviewer for <a href="https://icml.cc/">ICML</a>, <a href="https://aclanthology.info/venues/acl">ACL</a>, <a href="https://aclanthology.info/venues/emnlp">EMNLP</a>, <a href="http://naacl.org/">NAACL</a>, <a href="https://aclanthology.info/venues/coling">COLING</a>, <a href="http://www.conll.org">CoNLL</a>.</span>
+                         <span><img src="img/icons/diamond.svg" width="10">&nbsp;&nbsp;&nbsp;&nbsp;Reviewer for
+                             <a href="https://icml.cc/" data-toggle="tooltip" data-placement="top" title="2019">ICML</a>,
+                             <a href="https://aclanthology.info/venues/acl" data-toggle="tooltip" data-placement="top" title="2017-2019">ACL</a>,
+                             <a href="https://aclanthology.info/venues/emnlp" data-toggle="tooltip" data-placement="top" title="2015-2018">EMNLP</a>,
+                             <a href="http://naacl.org/" data-toggle="tooltip" data-placement="top" title="2019">NAACL</a>,
+                             <a href="https://aclanthology.info/venues/coling" data-toggle="tooltip" data-placement="top" title="2018">COLING</a>,
+                             <a href="http://www.conll.org" data-toggle="tooltip" data-placement="top" title="2018">CoNLL</a>.
+                         </span>
                      </div>
                   </div>
 
@@ -437,6 +444,10 @@
       <script>
          document.body.style.zoom="110%";
          $('.btn-pub').mouseup(function() { this.blur() })
+
+         $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+         })
       </script>
    </body>
 </html>
