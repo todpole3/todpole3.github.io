@@ -1,9 +1,16 @@
 .advice-quote {
-    font-style: italic;
     font-weight: 400;
-    font-size: 14px;
-    color: #A9A9A9;
-    text-shadow: .5px .5px #A9A9A9;
+    font-size: 13px;
+    color: #2c2c2c;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    border: 0;
+    box-shadow: none;
+    background-color: #ffffff;
+    padding: 2px 2px 2px 2px;
+    margin-bottom: 6px;
 }
 
 .advice-category {
@@ -12,5 +19,6 @@
 }
 
 .advice-date {
+    font-size: 14px;
     float: right;
 }
