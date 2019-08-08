@@ -198,6 +198,10 @@ footer {
   margin-top: 24px;
 }
 
+.side-bar-panel{
+  margin:0 12px 0 0;
+}
+
 .name-card {
   padding-bottom: 6px;
 }
