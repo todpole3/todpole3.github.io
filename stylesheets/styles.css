@@ -2,6 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300italic,400italic,700italic,300,400,700);
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Long+Cang|Zhi+Mang+Xing&display=swap');
 
 body {
   padding:40px 0 50px 0;
@@ -201,6 +202,18 @@ footer {
   padding-bottom: 6px;
 }
 
+.english-name {
+    font-family: cursive;
+}
+
+.chinese-name {
+    /* font-size: 24px;
+    font-family: 'Hiragino Kaku Gothic Pro' */
+    font-size: 28px;
+    font-family: 'Zhi Mang Xing', cursive;
+    color:#393939;
+}
+
 .contacts {
   margin-top: 6px;
 }
@@ -225,11 +238,6 @@ footer {
 
 .dataset {
     font-family: 'Abril Fatface';
-    /* font-family: 'Acme', sans-serif; */
-}
-
-.side-bar-panel{
-  margin:0 12px 0 0;
 }
 
 .news {
