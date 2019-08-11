@@ -237,7 +237,7 @@ footer {
 
 .contacts .social-networks {
     font-size: 24px;
-    margin-left: -2px;
+    margin: 3px 0px 0px -2px;
 }
 
 .dataset {
@@ -282,15 +282,15 @@ footer {
   border: solid 1px #ccc;
 }
 
-.btn-svg-svg {
-    margin-top: 6px;
-    fill: #333333;
+/* .btn-svg {
+    filter: invert(0%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(100%) contrast(1%);
     transition: all .2s;
 }
 
-.btn-svg-svg:hover {
+.btn-svg:hover {
+    filter: invert(0%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(100%) contrast(100%);
     fill: black;
-}
+} */
 
 .btn-outline {
     background-color: transparent;
