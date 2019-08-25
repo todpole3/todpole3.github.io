@@ -245,11 +245,19 @@ footer {
 }
 
 .news {
-  font-size: 15px;
+  font-size: 14.5px;
+  margin-top: 20px;
 }
 
 .news ul li {
   margin: 8px 0;
+}
+
+.news-heading {
+  padding-top: 4px;
+  height: 32px;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .event-date {
