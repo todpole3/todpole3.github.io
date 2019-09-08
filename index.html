@@ -54,8 +54,8 @@
                       <div class="panel-heading news-heading" style="color: #777777">News</div>
                       <div class="panel-body news-body">
                           <ul style="padding-left: 16px; list-style-type: none;">
-                             <li><img src="img/icons/right-arrow.svg" width="10">&nbsp;&nbsp;&nbsp;&nbsp;<span class="event-date">Aug 12, 2019</span> Paper "<a href="">CoSQL: A Conversational Text-to-SQL Challenge Towards Cross-Domain Natural Language Interfaces to Databases</a>" (led by <a href="https://taoyds.github.io/">Tao Yu</a>) is accepted to <a href="https://www.emnlp-ijcnlp2019.org/">EMNLP 2019</a>. Joint work with <a href="https://yale-lily.github.io/">LILY</a> and <a href="https://web.eecs.umich.edu/~wlasecki/croma.html">CroMa</a>.</li>
-                             <li><img src="img/icons/right-arrow.svg" width="10">&nbsp;&nbsp;&nbsp;&nbsp;<span class="event-date">Aug 12, 2019</span> Paper "<a href="">Editing-based SQL Query Generation for Cross-Domain Context-Dependent Questions</a>" (led by <a href="https://ryanzhumich.github.io/">Rui Zhang</a>) is accepted to <a href="https://www.emnlp-ijcnlp2019.org/">EMNLP 2019</a>. Joint work with <a href="https://yale-lily.github.io/">LILY</a>.</li>
+                             <li><img src="img/icons/right-arrow.svg" width="10">&nbsp;&nbsp;&nbsp;&nbsp;<span class="event-date">Aug 12, 2019</span> Paper "<a href="pubs/cosql-emnlp2019.pdf">CoSQL: A Conversational Text-to-SQL Challenge Towards Cross-Domain Natural Language Interfaces to Databases</a>" (led by <a href="https://taoyds.github.io/">Tao Yu</a>) is accepted to <a href="https://www.emnlp-ijcnlp2019.org/">EMNLP 2019</a>. Joint work with <a href="https://yale-lily.github.io/">LILY</a> and <a href="https://web.eecs.umich.edu/~wlasecki/croma.html">CroMa</a>.</li>
+                             <li><img src="img/icons/right-arrow.svg" width="10">&nbsp;&nbsp;&nbsp;&nbsp;<span class="event-date">Aug 12, 2019</span> Paper "<a href="pubs/editing-context2sql-emnlp2019.pdf">Editing-based SQL Query Generation for Cross-Domain Context-Dependent Questions</a>" (led by <a href="https://ryanzhumich.github.io/">Rui Zhang</a>) is accepted to <a href="https://www.emnlp-ijcnlp2019.org/">EMNLP 2019</a>. Joint work with <a href="https://yale-lily.github.io/">LILY</a>.</li>
                              <li><img src="img/icons/right-arrow.svg" width="10">&nbsp;&nbsp;&nbsp;&nbsp;<span class="event-date">July 31, 2019 (Wed 10:30-12:10am)</span> <a href="https://taoyds.github.io/">Tao</a> is presenting <a href="https://yale-lily.github.io/sparc">SParC</a> in <a href="http://www.acl2019.org/EN/program.xhtml">Poster Session 6A: Sentence-level semantics</a>, ACL 2019. Please come and chat with us!</li>
                              <li><img src="img/icons/right-arrow.svg" width="10">&nbsp;&nbsp;&nbsp;&nbsp;<span class="event-date">May 13, 2019</span> Paper "<a href="pubs/sparc-acl2019.pdf">SParC: Cross-Domain Semantic Parsing in Context</a>" (led by <a href="https://taoyds.github.io/">Tao Yu</a>) is accepted to <a href="http://www.acl2019.org/">ACL 2019</a>. Joint work with <a href="https://yale-lily.github.io/">LILY, Yale's NLP lab</a>.</li>
                              <!-- <li><img src="img/icons/right-arrow.svg" width="10">&nbsp;&nbsp;&nbsp;&nbsp;<span class="event-date">May 7, 2019 10:30am</span> I'm giving a lightning tech talk "Towards Explainable and Scalable Knowledge Graph Inference" at the <a href="https://blog.einstein.ai/salesforce-research-at-iclr-2019/">Salesforce Research booth</a> in ICLR.</li> -->
@@ -154,17 +154,25 @@
                            </span><br />
                            <span class="venuetype"></span><span class="venue">EMNLP 2019.</span><br>
                            <span class="links btn-group">
-                              <a class="btn btn-default btn-xs btn-pub" href="">
-                              <!-- <i class="fa fa-download"></i>--> To Appear </a>
-                              <!-- <a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_yu19_cosql').slideToggle('fast');return false;">
-                              <i class="fa fa-file-text-o"></i> Abstract</a> -->
+                              <a class="btn btn-default btn-xs btn-pub" href="pubs/cosql-emnlp2019.pdf">
+                              <i class="fa fa-download"></i> PDF </a>
+                              <a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_yu19_cosql').slideToggle('fast');return false;">
+                              <i class="fa fa-file-text-o"></i> Abstract</a>
                               <a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#bibtex_yu19_cosql').slideToggle('fast');return false;">
                               <i class="fa fa-quote-left"></i> Bibtex</a>
                               <!-- <a class="btn btn-default btn-xs btn-pub" href="https://yale-lily.github.io/sparc">
                               <i class="fa fa-github"></i> Leaderboard </a>-->
                            </span>
                            <div id="abstract_yu19_cosql" class="abstract well">
-
+                                We present CoSQL, a corpus for building cross-domain, general-purpose database (DB) querying dialogue systems.
+It consists of 30k+ turns plus 10k+ annotated SQL queries, obtained from a Wizard-of-Oz (WOZ) collection of 3k dialogues querying 200 complex DBs spanning 138 domains.
+Each dialogue simulates a real-world DB query scenario with a crowd worker as a user exploring the DB and a SQL expert retrieving answers with SQL, clarifying ambiguous questions, or otherwise informing of unanswerable questions.
+When user questions are answerable by SQL, the expert describes the SQL and execution results to the user, hence maintaining a natural interaction flow.
+CoSQL introduces new challenges compared to existing task-oriented dialogue datasets: (1) the dialogue states are grounded in SQL, a domain-independent executable representation, instead of
+domain-specific slot-value pairs, and (2) because testing is done on unseen databases, success requires generalizing to new domains.
+CoSQL includes three tasks: SQL-grounded dialogue state tracking, response generation from
+query results, and user dialogue act prediction.
+We evaluate a set of strong baselines for each task and show that CoSQL presents significant challenges for future research.
                            </div>
                            <div id="bibtex_yu19_cosql" style="display:none">
                               <pre>@inproceedings{Yu2019:cosql,
@@ -186,17 +194,27 @@
                            </span><br />
                            <span class="venuetype"></span><span class="venue">EMNLP 2019.</span><br>
                            <span class="links btn-group">
-                              <a class="btn btn-default btn-xs btn-pub" href="">
-                              <!-- <i class="fa fa-download"></i>--> To Appear </a>
-                              <!-- <a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_zhang19_editing').slideToggle('fast');return false;">
-                              <i class="fa fa-file-text-o"></i> Abstract</a> -->
+                              <a class="btn btn-default btn-xs btn-pub" href="pubs/editing-context2sql-emnlp2019.pdf">
+                              <i class="fa fa-download"></i> PDF </a>
+                              <a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_zhang19_editing').slideToggle('fast');return false;">
+                              <i class="fa fa-file-text-o"></i> Abstract</a>
                               <a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#bibtex_zhang19_editing').slideToggle('fast');return false;">
                               <i class="fa fa-quote-left"></i> Bibtex</a>
-                              <!-- <a class="btn btn-default btn-xs btn-pub" href="https://yale-lily.github.io/sparc">
-                              <i class="fa fa-github"></i> Leaderboard </a>-->
+                              <span class="btn-group">
+                                  <a class="btn btn-default btn-xs btn-pub dropdown-toggles" data-toggle="dropdown">
+                                  <i class="fa fa-github"></i> Code <span class="caret"></span></a>
+                                  <ul id="code_menu_zhang19_editing" class="dropdown-menu details-panel" role="menu">
+                                      <li><a href="https://github.com/ryanzhumich/sparc_atis_pytorch">Rui's</a></li>
+                                  </ul>
+                              </span>
                            </span>
                            <div id="abstract_zhang19_editing" class="abstract well">
-
+                                We focus on the cross-domain context-dependent text-to-SQL generation task.
+Based on the observation that adjacent natural language questions are often linguistically dependent and their corresponding SQL queries tend to overlap, we utilize the interaction history by editing the previous predicted query to improve the generation quality.
+Our editing mechanism views SQL as sequences and reuses generation results at the token level in a simple manner.
+It is flexible to change individual tokens and robust to error propagation.
+Furthermore, to deal with complex table structures in different domains, we employ an utterance-table encoder and a table-aware decoder to incorporate the context of the user utterance and the table schema.
+We evaluate our approach on the SParC dataset and demonstrate the benefit of editing compared with the state-of-the-art baselines which generate SQL from scratch.
                            </div>
                            <div id="bibtex_zhang19_editing" style="display:none">
                               <pre>@inproceedings{Zhang2019:Editing,
