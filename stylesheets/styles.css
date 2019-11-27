@@ -237,7 +237,16 @@ footer {
 
 .contacts .social-networks {
     font-size: 24px;
-    margin: 10px 0px 0px -2px;
+    margin: 8px 0px 0px -2px;
+}
+
+.btn-svg {
+    filter: invert(50%) sepia(80%) saturate(100%) hue-rotate(165deg) brightness(100%) contrast(100%);
+    transition: all .1s;
+}
+
+.btn-svg:hover {
+    filter: invert(25%) sepia(80%) saturate(100%) hue-rotate(165deg) brightness(100%) contrast(100%);
 }
 
 .dataset {
@@ -282,6 +291,28 @@ footer {
   margin: 0 0 6px 0;
 }
 
+.review-table {
+    font-size: 15px;
+    width: 1px;
+    padding: 0;
+}
+
+.review-table >thead>tr>th {
+    font-weight: 400;
+    font-size: 14px;
+    background:
+}
+
+.review-table >tbody>tr>td {
+    height: 1px;
+    padding: 0px;
+    border-top: 0px;
+}
+
+.review-table-column {
+    align: center;
+}
+
 .tooltip.top .tooltip-inner{
   font-size: 15px;
   font-weight: 400;
@@ -289,16 +320,6 @@ footer {
   background-color: #fff;
   border: solid 1px #ccc;
 }
-
-/* .btn-svg {
-    filter: invert(0%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(100%) contrast(1%);
-    transition: all .2s;
-}
-
-.btn-svg:hover {
-    filter: invert(0%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(100%) contrast(100%);
-    fill: black;
-} */
 
 .btn-outline {
     background-color: transparent;
