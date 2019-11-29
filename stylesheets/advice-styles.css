@@ -26,3 +26,23 @@
 .related-reading {
     font-size: 12px;
 }
+
+.blackboard {
+    overflow:auto;
+    background-color: #bbbbbb;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 6px 12px 6px 12px;
+    border-color: #d4ac6e;
+    border-width: 2px;
+}
+
+.first-letter {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.advice-person, .advice-person:visited {
+    color: inherit;
+}

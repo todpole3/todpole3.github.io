@@ -104,12 +104,12 @@ th, td {
 }
 
 dt {
-  color:##080808;
+  color:#080808;
   font-weight:700;
 }
 
 th {
-  color:##080808;
+  color:#080808;
 }
 
 img {
@@ -300,7 +300,6 @@ footer {
 .review-table >thead>tr>th {
     font-weight: 400;
     font-size: 14px;
-    background:
 }
 
 .review-table >tbody>tr>td {
