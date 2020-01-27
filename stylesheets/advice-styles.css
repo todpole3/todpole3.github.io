@@ -46,3 +46,9 @@
 .advice-person, .advice-person:visited {
     color: inherit;
 }
+
+.chinese-calligraphy {
+    /* font-family: 'Hiragino Kaku Gothic Pro' */
+    font-size: 16.5px;
+    font-family: 'Zhi Mang Xing', cursive;
+}
