@@ -43,7 +43,7 @@
   line-height: 20px;
 }
 
-.advice-person, .advice-person:visited {
+.advice-author, .advice-author:visited {
     color: inherit;
 }
 
@@ -51,4 +51,8 @@
     /* font-family: 'Hiragino Kaku Gothic Pro' */
     font-size: 16.5px;
     font-family: 'Zhi Mang Xing', cursive;
+}
+
+.d-hide {
+    display: none;
 }
