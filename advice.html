@@ -19,13 +19,7 @@
       <![endif]-->
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108707366-2"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'UA-108707366-2');
-	</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
    </head>
    <body>
         <div class="container">
@@ -43,15 +37,24 @@
 
                     <div class="well blackboard">
                         <span class="first-letter">G</span>iven two people with exactly the same ability, the one person who manages day in and day out to get in one more hour of thinking will be tremendously more productive over a lifetime.
-                        <span style="float: right">-- <a class="advice-person" href="https://history.computer.org/pioneers/hamming.html">Richard Hamming</a></span>
+                        <span style="float: right">-- <a class="advice-author" href="https://history.computer.org/pioneers/hamming.html">Richard Hamming</a></span>
                     </div>
                     <div class="well blackboard">
                         <span class="first-letter">Y</span>ou have to neglect things if you intend to get what you want done. There's no question about this.
                         <span style="float: right">-- Richard Hamming</span>
                     </div>
-                    <div class="well blackboard">
+                    <div class="well blackboard d-hide" id="random-slogan-1">
                         <span class="chinese-calligraphy">千万不要放纵自己，给自己找借口。对自己严格一点儿，时间长了，自律便成为一种习惯，一种生活方式，你的人格和智慧也因此变得更加完美。</span>
                         <span style="float: right">-- Kai-Fu Lee</span>
+                    </div>
+                    <div class="well blackboard d-hide" id="random-slogan-2">
+                        <span class="first-letter">T</span>hose days when it feels better to blame the weather, those times when you feel like it's too much for you to handle, those, are defining moments in your path towards becoming successful.
+                        <span style="float: right">-- <a class="advice-author" href="https://www.ximalaya.com/waiyu/3531660/248950257">Anonymous</a></span>
+                    </div>
+                    <div class="well blackboard d-hide" id="random-slogan-3">
+                        <span class="first-letter">I</span>t's when you're at your lowest point that you have to pick yourself up and continue, go through the discomfort, feel its pain. You'll get over it, because you're strong enough, resillient enough, and determined enough.
+                        How bad do you want it? Answer this question. And start from there.
+                        <span style="float: right">-- <a class="advice-author" href="https://www.ximalaya.com/waiyu/3531660/248950257">Anonymous</a></span>
                     </div>
                     <hr>
 
@@ -669,6 +672,46 @@
                                     </div>
                                 </div>
                             </li>
+
+                            <li class="li-credit">
+                                <div>
+                                    <div class="well advice-quote">
+                                        <a href="https://www.ximalaya.com/waiyu/3531660/248950257"><img src="img/icons/soup.svg" width="18" alt="chicken soup" title="chicken soup"></a>
+                                        <a href="https://www.ximalaya.com/waiyu/3531660/248950257"><img src="img/icons/podcast.svg" width="18"></a>
+                                        <span class="advice-quote">
+                                            <i class="fa fa-quote-left fa-sm"></i>
+                                            Those moments when you want to stay in bed and binge watch Netflix, those days when it feels better to blame the weather, those times when you feel like it's too much for you to handle,
+                                            those are defining moments in your path towards becoming successful... It's when you're at your lowest point that you have to pick yourself up and continue, go through the discomfort, <i>feel its pain</i>.
+                                            <i class="fa fa-quote-right fa-sm"></i>
+                                        </span>
+                                    </div>
+                                    <p class="advice-title"><a href="https://www.ximalaya.com/waiyu/3531660/248950257">Tough Days Counts More.</a>
+                                        — Anonymous</span>
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li class="li-credit">
+                                <div>
+                                    <div class="well advice-quote">
+                                        <a href="https://www.ximalaya.com/waiyu/3531660/248084073"><img src="img/icons/soup.svg" width="18" alt="chicken soup" title="chicken soup"></a>
+                                        <a href="https://www.ximalaya.com/waiyu/3531660/248084073"><img src="img/icons/podcast.svg" width="18"></a>
+                                        <span class="advice-quote">
+                                            <i class="fa fa-quote-left fa-sm"></i>
+                                            I give myself permission to thrive...
+                                            I give myself permission to achieve...
+                                            Now is my time to live fully...
+                                            Now is my time to celebrate...
+                                            Now is my time to shine...
+                                            Today I affirm my abundance.
+                                            <i class="fa fa-quote-right fa-sm"></i>
+                                        </span>
+                                    </div>
+                                    <p class="advice-title"><a href="https://www.ximalaya.com/waiyu/3531660/248084073">Giving Yourself Permission to Be Great.</a>
+                                        — Bob Baker</span>
+                                    </p>
+                                </div>
+                            </li>
                         </ul>
                         <hr>
                     </div>
@@ -679,6 +722,19 @@
         </div>
         <script>
             document.body.style.zoom="110%";
+
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-108707366-2');
+
+            function getRandomInt(min, max) {
+              min = Math.ceil(min);
+              max = Math.floor(max);
+              return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
+            }
+
+            $('#random-slogan-' + getRandomInt(1, 4)).removeClass('d-hide');
         </script>
    </body>
 </html>
