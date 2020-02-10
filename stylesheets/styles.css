@@ -249,6 +249,15 @@ footer {
     filter: invert(25%) sepia(80%) saturate(100%) hue-rotate(165deg) brightness(100%) contrast(100%);
 }
 
+.btn-svg-lg {
+    filter: invert(48%) sepia(80%) saturate(100%) hue-rotate(165deg) brightness(100%) contrast(100%);
+    transition: all .1s;
+}
+
+.btn-svg-lg:hover {
+    filter: invert(18%) sepia(80%) saturate(100%) hue-rotate(165deg) brightness(100%) contrast(100%);
+}
+
 .dataset {
     font-family: 'Abril Fatface';
 }
