@@ -265,6 +265,8 @@ footer {
 .news {
   font-size: 14.5px;
   margin-top: 20px;
+  margin-bottom: 12px;
+  width: 95%;
 }
 
 .news ul li {
@@ -400,10 +402,6 @@ footer {
 
   p, ul, ol, table, pre, dl {
       color: #555;
-  }
-
-  .news {
-    padding-bottom: 12px;
   }
 
   .name-card-separator {
