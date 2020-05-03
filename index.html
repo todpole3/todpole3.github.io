@@ -158,7 +158,7 @@
                                <span class="dataset">Photon:</span> A Robust Cross-Domain Text-to-SQL System.
                            </span><br>
                            <span class="authors">
-                               Jichuan Zeng*, <span class="author-me">Xi Victoria Lin</span>*, Steven C.H. Hoi, Caiming Xiong, Richard Socher, Michael R. Lyu, Irwin King.
+                               Jichuan Zeng*, <span class="author-me">Xi Victoria Lin</span>*, Caiming Xiong, Richard Socher, Michael R. Lyu, Irwin King, Steven C.H. Hoi.
                            </span><br>
                             <span style="font-size: 14px">* Equal Contribution</span><br>
                             <span class="venuetype"></span><span class="venue">ACL 2020 <i>System Demonstration</i>.</span><br>
@@ -192,10 +192,15 @@
                               <i class="fa fa-download"></i> PDF </a>
                               <a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_wang20_double_hard_debias').slideToggle('fast');return false;">
                               <i class="fa fa-file-text-o"></i> Abstract</a>
-                              <!-- <a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#bibtex_wang20_double_hard_debias').slideToggle('fast');return false;">
-                              <i class="fa fa-quote-left"></i> Bibtex</a>-->
-                              <!-- <a class="btn btn-default btn-xs btn-pub" href="https://yale-lily.github.io/cosql">
-                              <i class="fa fa-github"></i> Leaderboard </a>-->
+                              <a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#bibtex_wang20_double_hard_debias').slideToggle('fast');return false;">
+                              <i class="fa fa-quote-left"></i> Bibtex</a>
+                              <span class="btn-group">
+                                  <a class="btn btn-default btn-xs btn-pub dropdown-toggles" data-toggle="dropdown">
+                                  <i class="fa fa-github"></i> Code <span class="caret"></span></a>
+                                  <ul id="code_menu_wang20_double_hard_debias" class="dropdown-menu details-panel" role="menu">
+                                      <li><a href="https://github.com/uvavision/Double-Hard-Debias">Tianlu's</a></li>
+                                  </ul>
+                              </span>
                            </span>
                            <div id="abstract_wang20_double_hard_debias" class="abstract well">
                                Word embeddings derived from human-generated corpora inherit strong gender bias which can be further amplified by downstream models. Some commonly adopted
@@ -206,9 +211,16 @@
                                show that our approach preserves the distributional semantics of the pre-trained word embeddings while reducing gender bias to a significantly larger degree
                                than prior approaches.
                            </div>
-                           <!-- <div id="bibtex_wang20_double_hard_debias" style="display:none">
-                              <pre></pre>
-                           </div>-->
+                           <div id="bibtex_wang20_double_hard_debias" style="display:none">
+                              <pre>@InProceedings{Wang2020:double_hard_debias,
+  author    = {Tianlu Wang, Xi Victoria Lin, Nazeen Fatema Rajani, Bryan McCann, Vicente Ordonez and Caiming Xiong},
+  title     = {Double-Hard Debias: Tailoring Word Embeddings for Gender Bias Mitigation},
+  booktitle = {Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics},
+  year      = {2020},
+  address   = {Seattle, Washington, USA},
+  publisher = {Association for Computational Linguistics}
+}</pre>
+                           </div>
                         </div>
 
                         <div class="publication">
