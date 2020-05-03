@@ -188,20 +188,27 @@
                            </span><br>
                            <span class="venuetype"></span><span class="venue">ACL 2020.</span><br>
                            <span class="links btn-group">
-                              <a class="btn btn-default btn-xs btn-pub" href="">
-                              <!--<i class="fa fa-download"></i>--> To Appear </a>
-                              <!--<a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_yu19_cosql').slideToggle('fast');return false;">
+                              <a class="btn btn-default btn-xs btn-pub" href="pubs/double-hard-debias-acl2020.pdf">
+                              <i class="fa fa-download"></i> PDF </a>
+                              <a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_wang20_double_hard_debias').slideToggle('fast');return false;">
                               <i class="fa fa-file-text-o"></i> Abstract</a>
-                              <a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#bibtex_yu19_cosql').slideToggle('fast');return false;">
-                              <i class="fa fa-quote-left"></i> Bibtex</a>
-                              <a class="btn btn-default btn-xs btn-pub" href="https://yale-lily.github.io/cosql">
+                              <!-- <a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#bibtex_wang20_double_hard_debias').slideToggle('fast');return false;">
+                              <i class="fa fa-quote-left"></i> Bibtex</a>-->
+                              <!-- <a class="btn btn-default btn-xs btn-pub" href="https://yale-lily.github.io/cosql">
                               <i class="fa fa-github"></i> Leaderboard </a>-->
                            </span>
-                           <div id="abstract_wang20_cosql" class="abstract well">
+                           <div id="abstract_wang20_double_hard_debias" class="abstract well">
+                               Word embeddings derived from human-generated corpora inherit strong gender bias which can be further amplified by downstream models. Some commonly adopted
+                               debiasing approaches, including the seminal Hard Debias algorithm, apply post-processing procedures that project pre-trained word embeddings into a
+                               subspace orthogonal to an inferred gender subspace. We discover that semantic-agnostic corpus regularities such as word frequency captured by the
+                               word embeddings negatively impact the performance of these algorithms. We propose a simple but effective technique, Double Hard Debias, which purifies
+                               the word embeddings against such corpus regularities prior to inferring and removing the gender subspace. Experiments on three bias mitigation benchmarks
+                               show that our approach preserves the distributional semantics of the pre-trained word embeddings while reducing gender bias to a significantly larger degree
+                               than prior approaches.
                            </div>
-                           <div id="bibtex_wang20_cosql" style="display:none">
+                           <!-- <div id="bibtex_wang20_double_hard_debias" style="display:none">
                               <pre></pre>
-                           </div>
+                           </div>-->
                         </div>
 
                         <div class="publication">
