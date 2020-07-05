@@ -165,19 +165,50 @@
                             <span style="font-size: 14px">* Equal Contribution</span><br>
                             <span class="venuetype"></span><span class="venue">ACL 2020 <i>System Demonstration</i>.</span><br>
                            <span class="links btn-group">
-                              <a class="btn btn-default btn-xs btn-pub" href="">
-                              <!--<i class="fa fa-download"></i>--> To Appear </a>
-                              <!--<a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_yu19_cosql').slideToggle('fast');return false;">
+                              <a class="btn btn-default btn-xs btn-pub" href="pubs/photon-acl2020.pdf">
+                              <i class="fa fa-download"></i> PDF </a>
+                              <a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_zengandlin20_photon').slideToggle('fast');return false;">
                               <i class="fa fa-file-text-o"></i> Abstract</a>
-                              <a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#bibtex_yu19_cosql').slideToggle('fast');return false;">
+                              <a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#bibtex_zengandlin20_photon').slideToggle('fast');return false;">
                               <i class="fa fa-quote-left"></i> Bibtex</a>
-                              <a class="btn btn-default btn-xs btn-pub" href="https://yale-lily.github.io/cosql">
-                              <i class="fa fa-github"></i> Leaderboard </a>-->
+                              <span class="btn-group">
+                                 <a class="btn btn-default btn-xs btn-pub dropdown-toggles" data-toggle="dropdown">
+                                 <i class="fa fa-newspaper-o"></i> Press <span class="caret"></span></a>
+                                 <ul id="press_menu_zengandlin20_photon" class="dropdown-menu details-panel" role="menu">
+                                    <li><a href="http://zdnet.com/article/salesforce-teases-its-emerging-ai-capabilities/">ZDNet</a></li>
+                                 </ul>
+                              </span>
+                              <a class="btn btn-default btn-xs btn-pub" href="http://www.naturalsql.com/">
+                              <i class="fa fa-github"></i> Live Demo </a>
                            </span>
-                           <div id="abstract_zengandlin20_cosql" class="abstract well">
+                           <div id="abstract_zengandlin20_photon" class="abstract well">
+                               Natural language interfaces to databases (NLIDB) democratize end user access to relational data. Due to fundamental differences between natural language
+                               communication and programming, it is common for end users to issue questions that are ambiguous to the system or fall outside the semantic scope of its
+                               underlying query language. We present Photon, a robust, modular, cross-domain NLIDB that can flag natural language input to which a SQL mapping cannot be
+                               immediately determined. Photon consists of a strong neural semantic parser (63.2\% structure accuracy on the Spider dev benchmark), a human-in-the-loop
+                               question corrector, a SQL executor and a response generator. The question corrector is a discriminative neural sequence editor which detects confusion
+                               span(s) in the input question and suggests rephrasing until a translatable input is given by the user or a maximum number of iterations are conducted.
+                               Experiments on simulated data show that the proposed method effectively improves the robustness of text-to-SQL system against untranslatable user input.
+                               The live demo of our system is available at http://www.naturalsql.com.
                            </div>
-                           <div id="bibtex_zengandlin20_cosql" style="display:none">
-                              <pre></pre>
+                           <div id="bibtex_zengandlin20_photon" style="display:none">
+                              <pre>@inproceedings{zeng-etal-2020-photon,
+    title = "{P}hoton: A Robust Cross-Domain Text-to-{SQL} System",
+    author = "Zeng, Jichuan  and
+      Lin, Xi Victoria  and
+      Xiong, Caiming  and
+      Socher, Richard  and
+      Lyu, Michael  and
+      King, Irwin and
+      Hoi, Steven C.H."
+    booktitle = "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics: System Demonstrations",
+    month = jul,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/2020.acl-demos.24",
+    pages = "204--214"
+}</pre>
                            </div>
                         </div>
 
@@ -196,6 +227,13 @@
                               <i class="fa fa-file-text-o"></i> Abstract</a>
                               <a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#bibtex_wang20_double_hard_debias').slideToggle('fast');return false;">
                               <i class="fa fa-quote-left"></i> Bibtex</a>
+                              <span class="btn-group">
+                                 <a class="btn btn-default btn-xs btn-pub dropdown-toggles" data-toggle="dropdown">
+                                 <i class="fa fa-newspaper-o"></i> Press <span class="caret"></span></a>
+                                 <ul id="press_menu_wang20_double_hard_debia" class="dropdown-menu details-panel" role="menu">
+                                    <li><a href="https://venturebeat.com/2020/07/01/salesforce-researchers-claim-new-method-mitigates-ai-models-gender-bias/">VentureBeat</a></li>
+                                 </ul>
+                              </span>
                               <span class="btn-group">
                                   <a class="btn btn-default btn-xs btn-pub dropdown-toggles" data-toggle="dropdown">
                                   <i class="fa fa-github"></i> Code <span class="caret"></span></a>
