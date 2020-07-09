@@ -219,12 +219,15 @@ footer {
 }
 
 .sketch {
-    padding-left: 12px;
+    padding-left: 20px;
+}
+
+.img-blur {
     display:block;
     position:relative; 
 }
 
-.sketch:before
+.img-blur:before
 {
     display:block;
     content:'';
