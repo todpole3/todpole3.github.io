@@ -326,8 +326,10 @@ footer {
 }
 
 .project-logo{
-  padding-left: 0px;
-  margin-left: 0px;
+  width: 68px;
+  height:68px;
+  float:left;
+  margin: 8px 20px 12px 2px;
 }
 
 .publication {
