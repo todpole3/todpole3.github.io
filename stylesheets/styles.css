@@ -287,7 +287,6 @@ footer {
   font-size: 14.5px;
   margin-top: 20px;
   margin-bottom: 12px;
-  margin-left: 6px;
   width: 95%;
   outline: 1px solid #989898;
 }
@@ -308,6 +307,7 @@ footer {
   padding-top: 6px;
   padding-bottom: 1px;
   padding-left: 12px;
+  padding-right: 12px;
 }
 
 .news-body ul li {
@@ -323,6 +323,11 @@ footer {
   margin: 0 12px 0 0px;
   padding-left: 0px;
   padding-bottom: 0px;
+}
+
+.project-logo{
+  padding-left: 0px;
+  margin-left: 0px;
 }
 
 .publication {
