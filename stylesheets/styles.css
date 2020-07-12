@@ -55,7 +55,7 @@ h4 {
 
 a {
   font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #5686b0;
+  color: #577492;
   text-decoration:none;
 }
 
@@ -289,17 +289,29 @@ footer {
   margin-bottom: 12px;
   margin-left: 6px;
   width: 95%;
-}
-
-.news ul li {
-  margin: 8px 0 0 0;
+  outline: 1px solid #989898;
 }
 
 .news-heading {
-  padding-top: 4px;
-  height: 32px;
-  font-size: 16px;
+  background-color: #989898;
+  color:#fff;
+  padding-top: 1px;
+  padding-left: 12px;
+  padding-bottom: 1px;
+  letter-spacing: 1px;
   font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.news-body {
+  padding-top: 6px;
+  padding-bottom: 1px;
+  padding-left: 12px;
+}
+
+.news-body ul li {
+  margin: 10px 0 0 0;
 }
 
 .event-date {
@@ -307,9 +319,10 @@ footer {
   color: #5786b0;
 }
 
-.project-snapshot div div p {
+.project-snapshot{
+  margin: 0 12px 0 0px;
   padding-left: 0px;
-  margin: 0 12px 0 20px;
+  padding-bottom: 0px;
 }
 
 .publication {
