@@ -462,6 +462,10 @@ footer {
     width: 100%;
   }
 
+  .news {
+    width: 100%;
+  }
+
   header {
     padding:0;
   }
@@ -482,6 +486,10 @@ footer {
 
   .side-bar-panel {
     float: left;
+    width: 100%;
+  }
+
+  .news {
     width: 100%;
   }
 
