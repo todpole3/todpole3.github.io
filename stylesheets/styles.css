@@ -340,6 +340,14 @@ footer {
   font-weight: normal;
 }
 
+.research-interest {
+  font-size: 15px;
+}
+
+.li-interest {
+  margin: 0 0 6px 0;
+}
+
 .li-relaxed {
   margin: 0 0 6px 0;
 }
