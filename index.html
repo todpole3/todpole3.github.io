@@ -128,7 +128,7 @@
                          </ul>
                      </p>
                      <p>Previously I was a graduate student at the <a href="https://www.cs.washington.edu/">Paul G. Allen School of Computer Science & Engineering, University of Washington</a>, working with <a href="https://homes.cs.washington.edu/~lsz/">Luke Zettlemoyer</a> and <a href="https://homes.cs.washington.edu/~mernst/">Michael D. Ernst</a>
-                        on <a href="pubs/tellina_tr170510.pdf">data-driven natural language programming</a>. We develop natural language based programming assistant tools for non-expert programmers by automatically learning from experts and the web.
+                        on <a href="pubs/tellina_tr170510.pdf">data-driven natural language programming</a>. <!-- We develop natural language based programming assistant tools for non-expert programmers by automatically learning from experts and the web.-->
                      </p>
                   </div>
                   <div class="section">
@@ -141,11 +141,11 @@
                        </div>
                        <div>
                           <p>
-                             Photon is a deep learning powered cross-domain natural language interface to structured data.
+                              Photon is a deep learning powered <span class="dotted-underline">cross-domain</span> <span class="dotted-underline">natural language interface to structured data</span> that focuses on <span class="dotted-underline">factual lookups</span>.
                              It allows end users to query a number of relational databases in natural language, including DBs it has never been trained on.
                              The core of the system is a strong neural text-to-SQL semantic parser trained using thousands of NL-SQL pairs grounded to hundreds of relational DBs.
-                             Photon adopts the principle of “better saying nothing than making a mistake”, and does a series of checks before returning an answer to the user.
-                              Ask <a href="http://naturalsql.com">Photon</a> any questions about the data and tease out its power.
+                              Photon adopts the principle of <span class="dotted-underline">better saying nothing than making a mistake</span>, and does a series of checks before returning an answer to the user.<br>
+                              Ask <a href="http://naturalsql.com">Photon</a> questions about the data and tease out its power.
                              <span style="font-size: 12px">[<a href="pubs/photon-acl2020.pdf">ACL'20 System Demonstration</a>]</span>
                           </p>
                         </div>
@@ -157,10 +157,10 @@
                        </div>
                        <div>
                           <p>
-                             Tellina is an end-user scripting assistant that can be queried via natural language.
+                              Tellina is an <span class="dotted-underline">end-user scripting assistant</span> that can be queried via natural language.
                              It translates a natural language sentence typed by the user into a piece of short, executable script.
-                             The underlying models are neural encoder-decoders trained on text-script pairs.
-                             Currently, the <a href="http://tellina.rocks">prototype</a> is instantiated in the Bash domain.<br>
+                              The underlying models are neural encoder-decoders trained on NL-script pairs <span class="dotted-underline">collected by programming experts from online tutorials and question-answering forums</span>.
+                             We instantiate the <a href="http://tellina.rocks">prototype</a> in Bash.<br>
                              <!-- Instantiating neural MT approaches for scripting languages is challenging due to irregularities in the target language design and more importantly the lack of parallel data. -->
                              <!-- We are developing hybrid translation models and expert annotation pipelines that scale to address
                                 irregularities in the target language and the lack of parallel training data.-->
