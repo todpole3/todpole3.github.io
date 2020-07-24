@@ -2,4 +2,4 @@
 
 ## Personal Homepage
 
-If you use this website template, it would be great if you could acknowledge our design 😃
+If you use this website template, we appreciate if you acknowledge our design on your new page. 😃
