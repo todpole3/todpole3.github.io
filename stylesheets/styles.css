@@ -370,7 +370,7 @@ footer {
 }
 
 .review-table-column {
-    align: center;
+    text-align: center;
 }
 
 .tooltip.top .tooltip-inner{
