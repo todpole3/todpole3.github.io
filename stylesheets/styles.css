@@ -381,6 +381,12 @@ footer {
   border: solid 1px #ccc;
 }
 
+.btn-slides-events {
+  background-color: #8BBAC7;
+  color: #ffffff;
+  font-size: 12px;
+}
+
 .btn-outline {
     background-color: transparent;
     color: inherit;
