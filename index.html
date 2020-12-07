@@ -65,7 +65,7 @@
                               <li><img src="img/icons/right-arrow.svg" width="10">&nbsp;&nbsp;&nbsp;&nbsp;<span class="event-date">Oct. 2, 2020</span> We released the preprint of <a href="https://arxiv.org/pdf/2009.13845.pdf">GraPPa</a> (led by <a href="https://taoyds.github.io/">Tao Yu</a>), a pre-trained joint representation for text and tables with injected compositional inductive bias.</li>
                               <li><img src="img/icons/right-arrow.svg" width="10">&nbsp;&nbsp;&nbsp;&nbsp;<span class="event-date">Sep. 30, 2020</span> I'm serving as a system demonstration co-chair for <a href="https://2021.naacl.org/">NAACL 2021</a>.</li>
                               <!--<li><img src="img/icons/right-arrow.svg" width="10">&nbsp;&nbsp;&nbsp;&nbsp;<span class="event-date">Sep. 29, 2020</span> Paper "<a href="pubs/colloql_intex_sempar_2020.pdf">ColloQL: Robust Cross-Domain Text-to-SQL Over Search Queries</a>" (led by <a href="http://karthikradhakrishnan.com/">Karthik Radhakrishnan</a>) is accepted to <a href="https://intex-sempar.github.io/">INT-EX: Interactive and Executable Semantic Parsing</a> at <a href="https://2020.emnlp.org/">EMNLP 2020</a>.</li>-->
-                              <li><img src="img/icons/right-arrow.svg" width="10">&nbsp;&nbsp;&nbsp;&nbsp;<span class="event-date">Sep. 14, 2020</span> Our paper "<a href="">Bridging Textual and Tabular Data for Cross-Domain Text-to-SQL Semantic Parsing.</a>" is accepted to Findings of <a href="https://2020.emnlp.org/">EMNLP 2020</a>.</li>
+                              <li><img src="img/icons/right-arrow.svg" width="10">&nbsp;&nbsp;&nbsp;&nbsp;<span class="event-date">Sep. 14, 2020</span> Our paper "<a href="pubs/bridge-emnlp2020.pdf">Bridging Textual and Tabular Data for Cross-Domain Text-to-SQL Semantic Parsing.</a>" is accepted to Findings of <a href="https://2020.emnlp.org/">EMNLP 2020</a>.</li>
                               <li><img src="img/icons/right-arrow.svg" width="10">&nbsp;&nbsp;&nbsp;&nbsp;<span class="event-date">Aug 26, 2020</span> Our blog post, <a href="https://blog.einstein.ai/talk-to-your-data-one-model-any-database/">Talk to Your Data: One Model, Any Relational Database</a>, is in the <a href="https://news.ycombinator.com/item?id=24283687">Hacker News Front Page</a>.</li>
                               <!--<li><img src="img/icons/right-arrow.svg" width="10">&nbsp;&nbsp;&nbsp;&nbsp;<span class="event-date">July 06, 2020</span> Excited to release the live demo of <a href="http://naturalsql.com">Photon</a>, a deep-learning powered cross-domain natural language interface to data systems. Please join our ACL 2020 <a href="https://virtual.acl2020.org/paper_demo.130.html">live Q&A sessions</a> on July 7 at 10-11 PDT and 13-14 PDT.</li>-->
                              <!--<li><img src="img/icons/right-arrow.svg" width="10">&nbsp;&nbsp;&nbsp;&nbsp;<span class="event-date">July 01, 2020</span> The <a href="https://clai-home.mybluemix.net/">CLAI team</a> from IBM Research is organizing an exciting <a href="http://nlc2cmd.us-east.mybluemix.net/#/">NLC2CMD Challenge</a> at <a href="https://neurips.cc/Conferences/2020/CompetitionTrack">NeurIPS 2020</a>. <a href="http://kirin.cs.washington.edu:8000/">Tellina</a> serves as the baseline system of the challenge and <a href="https://github.com/TellinaTool/nl2bash">NL2Bash</a> is one of the designated training sets.</li>-->
@@ -152,11 +152,11 @@
                        <div>
                           <p>
                               Photon is a deep learning based <span class="dotted-underline">cross-domain</span> <span class="dotted-underline">natural language interface to databases</span> that focuses on <span class="dotted-underline">factual lookups</span>.
-                             It allows end users to query a number of relational DBs in natural language, including DBs it has never been trained on.
-                             The core of the system is a strong neural text-to-SQL semantic parser trained using thousands of NL-SQL pairs grounded to hundreds of DBs.
+                              It allows end users to query a number of relational DBs in natural language, including DBs it has never been trained on.
+                              The core of the system is a strong neural text-to-SQL semantic parser trained using thousands of NL-SQL pairs grounded to hundreds of DBs.
                               Photon adopts the principle of <span class="dotted-underline">better saying no than making a mistake</span> and validates the input question before executing the neural semantic parser, which significantly improves its robustness.<br>
                               Ask <a href="http://naturalsql.com">Photon</a> questions about the data and tease out its power.
-                             <span style="font-size: 12px">[<a href="pubs/photon-acl2020.pdf">ACL'20 System Demonstration</a>]</span>
+                              <span style="font-size: 12px">[<a href="pubs/bridge-emnlp2020.pdf">EMNLP'20 Findings</a>, <a href="pubs/photon-acl2020.pdf">ACL'20 System Demonstration</a>]</span>
                           </p>
                         </div>
                      </div>
@@ -198,22 +198,36 @@
                            </span><br>
                             <span class="venuetype"></span><span class="venue">EMNLP 2020 <i>Findings</i>.</span><br>
                            <span class="links btn-group">
-                               <a class="btn btn-default btn-xs btn-pub" href="">
-                                   <i class="fa fa-download"></i> To Appear</a>
+                               <a class="btn btn-default btn-xs btn-pub" href="pubs/bridge-emnlp2020.pdf">
+                                   <i class="fa fa-download"></i> PDF</a>
                                <a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_lin20_bridge').slideToggle('fast');return false;">
                                    <i class="fa fa-file-text-o"></i> Abstract</a>
                                <a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#bibtex_lin20_bridge').slideToggle('fast');return false;">
                                <i class="fa fa-quote-left"></i> Bibtex</a>
                            </span>
                                <div id="abstract_lin20_bridge" class="abstract well">
+                                   We present BRIDGE, a powerful sequential architecture for modeling dependencies between natural language questions and relational databases in cross-DB semantic parsing. BRIDGE represents the question and DB schema in a tagged sequence where a subset of the fields are augmented with cell values mentioned in the question. The hybrid sequence is encoded by BERT with minimal subsequent layers and the text-DB contextualization is realized via the fine-tuned deep attention in BERT. Combined with a pointergenerator decoder with schema-consistency driven search space pruning, BRIDGE attained state-of-the-art performance on the well-studied Spider benchmark (65.5% dev, 59.2% test), despite being much simpler than most recently proposed models for this task. Our analysis shows that BRIDGE effectively captures the desired cross-modal dependencies and has the potential to generalize to more text-DB related tasks. Our implementation is available at https://github.com/ salesforce/TabularSemanticParsing.
                                </div>
                                <div id="bibtex_lin20_bridge" style="display:none">
-                                  <pre>@inproceedings{LinRX2018:MultiHopKG,
-  author = {Xi Victoria Lin and Richard Socher and Caiming Xiong},
-  title = {Bridging Textual and Tabular Data for Cross-Domain Text-to-SQL Semantic Parsing},
-  booktitle = {Findings of the 2020 Conference on Empirical Methods in Natural
-               Language Processing, {EMNLP Findings} 2020, November 16th-20th, 2020},
-  year = {2020}
+                                  <pre>@inproceedings{DBLP:conf/emnlp/LinSX20,
+  author    = {Xi Victoria Lin and
+               Richard Socher and
+               Caiming Xiong},
+  editor    = {Trevor Cohn and
+               Yulan He and
+               Yang Liu},
+  title     = {Bridging Textual and Tabular Data for Cross-Domain Text-to-SQL Semantic
+               Parsing},
+  booktitle = {Proceedings of the 2020 Conference on Empirical Methods in Natural
+               Language Processing: Findings, {EMNLP} 2020, Online Event, 16-20 November
+               2020},
+  pages     = {4870--4888},
+  publisher = {Association for Computational Linguistics},
+  year      = {2020},
+  url       = {https://www.aclweb.org/anthology/2020.findings-emnlp.438/},
+  timestamp = {Thu, 12 Nov 2020 17:18:16 +0100},
+  biburl    = {https://dblp.org/rec/conf/emnlp/LinSX20.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
 }</pre>
                                </div>
                         </div>
