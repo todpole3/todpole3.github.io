@@ -6,3 +6,8 @@
 .icon-event {
   color: #5786b0;
 }
+
+.invited-talk {
+    font-weight: bold;
+    color: #404040;
+}
