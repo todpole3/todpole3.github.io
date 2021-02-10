@@ -310,7 +310,7 @@ footer {
 }
 
 .news-body ul li {
-  margin: 10px 0 0 0;
+  margin: 10px 0px 14px 0px;
 }
 
 .event-date {
@@ -383,7 +383,8 @@ footer {
 .btn-slides-events {
   background-color: #8BBAC7;
   color: #ffffff;
-  font-size: 12px;
+  font-size: 11px;
+  padding: 0px 3px 0px 3px;
 }
 
 .btn-outline {
