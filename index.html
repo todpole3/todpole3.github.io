@@ -60,8 +60,8 @@
                       <div class="news-body">
                           <ul style="padding-left: 6px; list-style-type: none;">
                               <li><img src="img/icons/right-arrow.svg" width="10">&nbsp;&nbsp;&nbsp;&nbsp;<span class="event-date">Jan. 11, 2021</span> <span style="font-weight: 400"><i>I joined <a href="https://ai.facebook.com/">Facebook AI</a>, Menlo Park, CA as a research scientist.</i></span></li>
-                              <li><img src="img/icons/right-arrow.svg" width="10">&nbsp;&nbsp;&nbsp;&nbsp;<span class="event-date">Mar 10, 2020</span> Paper <a href="">"Learning to Synthesize Data for Semantic Parsing"</a> (led by <a href="https://berlino.github.io/">Bailin Wang</a> during his internship at Salesforce Research), is accepted to <a href="https://2021.naacl.org/">NAACL 2021</a>.</li>
-                              <li><img src="img/icons/right-arrow.svg" width="10">&nbsp;&nbsp;&nbsp;&nbsp;<span class="event-date">Mar 10, 2020</span> Paper <a href="">"DART: Open-Domain Structured Data Record to Text Generation"</a> (led by <a href="https://linyongnan.github.io/">Linyong Nan</a>), is accepted to <a href="https://2021.naacl.org/">NAACL 2021</a>.</li>
+                              <li><img src="img/icons/right-arrow.svg" width="10">&nbsp;&nbsp;&nbsp;&nbsp;<span class="event-date">Mar 10, 2020</span> Paper <a href="https://arxiv.org/pdf/2104.05827.pdf">"Learning to Synthesize Data for Semantic Parsing"</a> (led by <a href="https://berlino.github.io/">Bailin Wang</a> during his internship at Salesforce Research), is accepted to <a href="https://2021.naacl.org/">NAACL 2021</a>.</li>
+                              <li><img src="img/icons/right-arrow.svg" width="10">&nbsp;&nbsp;&nbsp;&nbsp;<span class="event-date">Mar 10, 2020</span> Paper <a href="https://arxiv.org/pdf/2007.02871.pdf">"DART: Open-Domain Structured Data Record to Text Generation"</a> (led by <a href="https://linyongnan.github.io/">Linyong Nan</a>), is accepted to <a href="https://2021.naacl.org/">NAACL 2021</a>.</li>
                               <li><img src="img/icons/right-arrow.svg" width="10">&nbsp;&nbsp;&nbsp;&nbsp;<span class="event-date">Jan 12, 2020</span> Paper <a href="https://arxiv.org/pdf/2009.13845.pdf">"GraPPa: Grammar-Augmented Pre-Training for Table Semantic Parsing"</a> (led by <a href="https://taoyds.github.io/">Tao Yu</a>), is accepted to <a href="https://iclr.cc/">ICLR 2021</a>.</li>
                               <li><img src="img/icons/right-arrow.svg" width="10">&nbsp;&nbsp;&nbsp;&nbsp;<span class="event-date">Jan. 6, 2021</span> We released Photon 2.0 at <a href="http://naturalsql.com">naturalsql.com</a>.
                               <li><img src="img/icons/right-arrow.svg" width="10">&nbsp;&nbsp;&nbsp;&nbsp;<span class="event-date">Dec. 23, 2020</span> We released the <a href="https://github.com/salesforce/TabularSemanticParsing">code</a> and an <a href="pubs/bridge-emnlp2020.pdf">extended verision</a> of our EMNLP Findings 2020 paper "<a href="pubs/bridge-emnlp2020.pdf">Bridging Textual and Tabular Data for Cross-Domain Text-to-SQL Semantic Parsing</a>".
@@ -121,7 +121,7 @@
                   </div>
                   <div class="hidden-xs hidden-sm hidden-md">
                      <footer>
-                        <p><small>Last updated on <a>Jan 15, 2021</a></small></p>
+                        <p><small>Last updated on <a>May 28, 2021</a></small></p>
                      </footer>
                   </div>
                </div>
@@ -208,19 +208,39 @@
                            </span><br>
                             <span class="venuetype"></span><span class="venue">NAACL 2021 <i>short</i>.</span><br> 
                            <span class="links btn-group">
-                               <a class="btn btn-default btn-xs btn-pub" href="">
-                                   <i class="fa fa-download"></i> To Appear </a>
-                               <!--<a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_yu20_grappa').slideToggle('fast');return false;">
+                               <a class="btn btn-default btn-xs btn-pub" href="https://arxiv.org/pdf/2104.05827.pdf">
+                                   <i class="fa fa-download"></i> PDF </a>
+                               <a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_wang21_learntosyn').slideToggle('fast');return false;">
                                    <i class="fa fa-file-text-o"></i> Abstract</a>
-                               <a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#bibtex_yu20_grappa').slideToggle('fast');return false;">
-                               <i class="fa fa-quote-left"></i> Bibtex</a>-->
+                               <a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#bibtex_wang21_learntosyn').slideToggle('fast');return false;">
+                               <i class="fa fa-quote-left"></i> Bibtex</a>
+                               <span class="btn-group">
+                                  <a class="btn btn-default btn-xs btn-pub dropdown-toggles" data-toggle="dropdown">
+                                  <i class="fa fa-github"></i> Code <span class="caret"></span></a>
+                                  <ul id="code_menu_wang21_learntosyn" class="dropdown-menu details-panel" role="menu">
+                                      <li><a href="https://github.com/berlino/tensor2struct-public">Bailin's</a></li>
+                                  </ul>
+                               </span>
                            </span>
                                <div id="abstract_wang21_learntosyn" class="abstract well">
-                                   We present GraPPa, an effective pre-training approach for table semantic parsing that learns a compositional inductive bias in the joint representations of textual and tabular data. We construct synthetic question-SQL pairs over high-quality tables via a synchronous context-free grammar (SCFG) induced from existing text-to-SQL datasets. We pre-train our model on the synthetic data using a novel text-schema linking objective that predicts the syntactic role of a table field in the SQL for each question-SQL pair. To maintain the model's ability to represent real-world data, we also include masked language modeling (MLM) over several existing table-and-language datasets to regularize the pre-training process. On four popular fully supervised and weakly supervised table semantic parsing benchmarks, GraPPa significantly outperforms RoBERTa-large as the feature representation layers and establishes new state-of-the-art results on all of them.
+                                   Synthesizing data for semantic parsing has gained increasing attention recently. However, most methods require handcrafted (high-precision) rules in their generative process, hindering the exploration of diverse unseen data. In this work, we propose a generative model which features a (non-neural) PCFG that models the composition of programs (e.g., SQL), and a BART-based translation model that maps a program to an utterance. Due to the simplicity of PCFG and pre-trained BART, our generative model can be efficiently learned from existing data at hand. Moreover, explicitly modeling compositions using PCFG leads to better exploration of unseen programs, thus generate more diverse data. We evaluate our method in both in-domain and out-of-domain settings of text-to-SQL parsing on the standard benchmarks of GeoQuery and Spider, respectively. Our empirical results show that the synthesized data generated from our model can substantially help a semantic parser achieve better compositional and domain generalization.
                                </div>
                                <div id="bibtex_wang21_learntosyn" style="display:none">
-                                  <pre>
-</pre>
+                                  <pre>@inproceedings{wang-etal-2021-learning-synthesize,
+    title = "Learning to Synthesize Data for Semantic Parsing",
+    author = "Wang, Bailin  and
+      Yin, Wenpeng  and
+      Lin, Xi Victoria  and
+      Xiong, Caiming",
+    booktitle = "Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+    month = jun,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/2021.naacl-main.220",
+    pages = "2760--2766",
+    abstract = "Synthesizing data for semantic parsing has gained increasing attention recently. However, most methods require handcrafted (high-precision) rules in their generative process, hindering the exploration of diverse unseen data. In this work, we propose a generative model which features a (non-neural) PCFG that models the composition of programs (e.g., SQL), and a BART-based translation model that maps a program to an utterance. Due to the simplicity of PCFG and pre-trained BART, our generative model can be efficiently learned from existing data at hand. Moreover, explicitly modeling compositions using PCFG leads to better exploration of unseen programs, thus generate more diverse data. We evaluate our method in both in-domain and out-of-domain settings of text-to-SQL parsing on the standard benchmarks of GeoQuery and Spider, respectively. Our empirical results show that the synthesized data generated from our model can substantially help a semantic parser achieve better compositional and domain generalization.",
+}</pre>
                                </div>
                         </div>
 
@@ -233,19 +253,59 @@
                            </span><br>
                             <span class="venuetype"></span><span class="venue">NAACL 2021.</span><br>
                            <span class="links btn-group">
-                               <a class="btn btn-default btn-xs btn-pub" href="">
-                                   <i class="fa fa-download"></i> To Appear </a>
-                               <!--<a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_yu20_grappa').slideToggle('fast');return false;">
+                               <a class="btn btn-default btn-xs btn-pub" href="https://arxiv.org/pdf/2007.02871.pdf">
+                                   <i class="fa fa-download"></i> PDF </a>
+                               <a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_nan21_dart').slideToggle('fast');return false;">
                                    <i class="fa fa-file-text-o"></i> Abstract</a>
-                               <a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#bibtex_yu20_grappa').slideToggle('fast');return false;">
-                               <i class="fa fa-quote-left"></i> Bibtex</a>-->
+                               <a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#bibtex_nan21_dart').slideToggle('fast');return false;">
+                               <i class="fa fa-quote-left"></i> Bibtex</a>
+                               <span class="btn-group">
+                                  <a class="btn btn-default btn-xs btn-pub dropdown-toggles" data-toggle="dropdown">
+                                  <i class="fa fa-github"></i> Code <span class="caret"></span></a>
+                                  <ul id="code_menu_nan21_dart" class="dropdown-menu details-panel" role="menu">
+                                      <li><a href="https://github.com/Yale-LILY/dart">Rui's</a></li>
+                                  </ul>
+                               </span>
                            </span>
                                <div id="abstract_nan21_dart" class="abstract well">
-                                   We present GraPPa, an effective pre-training approach for table semantic parsing that learns a compositional inductive bias in the joint representations of textual and tabular data. We construct synthetic question-SQL pairs over high-quality tables via a synchronous context-free grammar (SCFG) induced from existing text-to-SQL datasets. We pre-train our model on the synthetic data using a novel text-schema linking objective that predicts the syntactic role of a table field in the SQL for each question-SQL pair. To maintain the model's ability to represent real-world data, we also include masked language modeling (MLM) over several existing table-and-language datasets to regularize the pre-training process. On four popular fully supervised and weakly supervised table semantic parsing benchmarks, GraPPa significantly outperforms RoBERTa-large as the feature representation layers and establishes new state-of-the-art results on all of them.
+                                    We present DART, an open domain structured DAta Record to Text generation dataset with over 82k instances (DARTs). Data-to-text annotations can be a costly process, especially when dealing with tables which are the major source of structured data and contain nontrivial structures. To this end, we propose a procedure of extracting semantic triples from tables that encodes their structures by exploiting the semantic dependencies among table headers and the table title. Our dataset construction framework effectively merged heterogeneous sources from open domain semantic parsing and spoken dialogue systems by utilizing techniques including tree ontology annotation, question-answer pair to declarative sentence conversion, and predicate unification, all with minimum post-editing. We present systematic evaluation on DART as well as new state-of-the-art results on WebNLG 2017 to show that DART (1) poses new challenges to existing data-to-text datasets and (2) facilitates out-of-domain generalization. Our data and code can be found at https://github.com/Yale-LILY/dart.
                                </div>
                                <div id="bibtex_nan21_dart" style="display:none">
-                                  <pre>
-</pre>
+                                  <pre>@inproceedings{nan-etal-2021-dart,
+    title = "{DART}: Open-Domain Structured Data Record to Text Generation",
+    author = "Nan, Linyong  and
+      Radev, Dragomir  and
+      Zhang, Rui  and
+      Rau, Amrit  and
+      Sivaprasad, Abhinand  and
+      Hsieh, Chiachun  and
+      Tang, Xiangru  and
+      Vyas, Aadit  and
+      Verma, Neha  and
+      Krishna, Pranav  and
+      Liu, Yangxiaokang  and
+      Irwanto, Nadia  and
+      Pan, Jessica  and
+      Rahman, Faiaz  and
+      Zaidi, Ahmad  and
+      Mutuma, Mutethia  and
+      Tarabar, Yasin  and
+      Gupta, Ankit  and
+      Yu, Tao  and
+      Tan, Yi Chern  and
+      Lin, Xi Victoria  and
+      Xiong, Caiming  and
+      Socher, Richard  and
+      Rajani, Nazneen Fatema",
+    booktitle = "Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+    month = jun,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/2021.naacl-main.37",
+    pages = "432--447",
+    abstract = "We present DART, an open domain structured DAta Record to Text generation dataset with over 82k instances (DARTs). Data-to-text annotations can be a costly process, especially when dealing with tables which are the major source of structured data and contain nontrivial structures. To this end, we propose a procedure of extracting semantic triples from tables that encodes their structures by exploiting the semantic dependencies among table headers and the table title. Our dataset construction framework effectively merged heterogeneous sources from open domain semantic parsing and spoken dialogue systems by utilizing techniques including tree ontology annotation, question-answer pair to declarative sentence conversion, and predicate unification, all with minimum post-editing. We present systematic evaluation on DART as well as new state-of-the-art results on WebNLG 2017 to show that DART (1) poses new challenges to existing data-to-text datasets and (2) facilitates out-of-domain generalization. Our data and code can be found at https://github.com/Yale-LILY/dart.",
+}</pre>
                                </div>
                         </div>
 
@@ -264,17 +324,79 @@
                                    <i class="fa fa-file-text-o"></i> Abstract</a>
                                <a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#bibtex_yu20_grappa').slideToggle('fast');return false;">
                                <i class="fa fa-quote-left"></i> Bibtex</a>
+                               <a class="btn btn-default btn-xs btn-pub" href="https://huggingface.co/Salesforce/grappa_large_jnt">
+                               <img src="img/icons/huggingface.svg" width="12"> HuggingFace </a>
                            </span>
                                <div id="abstract_yu20_grappa" class="abstract well">
                                    We present GraPPa, an effective pre-training approach for table semantic parsing that learns a compositional inductive bias in the joint representations of textual and tabular data. We construct synthetic question-SQL pairs over high-quality tables via a synchronous context-free grammar (SCFG) induced from existing text-to-SQL datasets. We pre-train our model on the synthetic data using a novel text-schema linking objective that predicts the syntactic role of a table field in the SQL for each question-SQL pair. To maintain the model's ability to represent real-world data, we also include masked language modeling (MLM) over several existing table-and-language datasets to regularize the pre-training process. On four popular fully supervised and weakly supervised table semantic parsing benchmarks, GraPPa significantly outperforms RoBERTa-large as the feature representation layers and establishes new state-of-the-art results on all of them.
                                </div>
                                <div id="bibtex_yu20_grappa" style="display:none">
-                                  <pre>@article{yu2020grappa,
-  title={GraPPa: Grammar-Augmented Pre-Training for Table Semantic Parsing},
-  author={Yu, Tao and Wu, Chien-Sheng and Lin, Xi Victoria and Wang, Bailin and Tan, Yi Chern and Yang, Xinyi and Radev, Dragomir and Socher, Richard and Xiong, Caiming},
-  journal={arXiv preprint arXiv:2009.13845},
-  year={2020}
-}</pre>
+                                  <pre>@article{DBLP:journals/corr/abs-2009-13845,
+  author    = {Tao Yu and
+               Chien{-}Sheng Wu and
+               Xi Victoria Lin and
+               Bailin Wang and
+               Yi Chern Tan and
+               Xinyi Yang and
+               Dragomir R. Radev and
+               Richard Socher and
+               Caiming Xiong},
+  title     = {GraPPa: Grammar-Augmented Pre-Training for Table Semantic Parsing},
+  journal   = {CoRR},
+  volume    = {abs/2009.13845},
+  year      = {2020},
+  url       = {https://arxiv.org/abs/2009.13845},
+  archivePrefix = {arXiv},
+  eprint    = {2009.13845},
+  timestamp = {Wed, 12 May 2021 16:44:19 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2009-13845.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+                                      }</pre>
+                               </div>
+                        </div>
+
+                        <div class="publication">
+                           <span class="pubtitle">
+                               NeurIPS 2020 <span class="dataset">NLC2CMD</span> Competition: Translating Natural Language to Bash Commands.
+                           </span><br>
+                           <span class="authors">
+                               Mayank Agarwal, Tathagata Chakraborti, Quchen Fu, David Gros, <span class="author-me">Xi Victoria Lin</span>, Jaron Maene, Kartik Talamadupula, Zhongwei Teng, Jules White.
+                           </span><br>
+                            <span class="venuetype"></span><span class="venue">PMLR post proceedings volume associated to the Competition Track @ NeurIPS2020.</span><br>
+                           <span class="links btn-group">
+                               <a class="btn btn-default btn-xs btn-pub" href="">
+                                   <i class="fa fa-download"></i> To Appear </a>
+                               <a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_agarwal21_nlc2cmd').slideToggle('fast');return false;">
+                                   <i class="fa fa-file-text-o"></i> Abstract</a>
+                               <a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#bibtex_agarwal21_nlc2cmd').slideToggle('fast');return false;">
+                               <i class="fa fa-quote-left"></i> Bibtex</a>
+                           </span>
+                               <div id="abstract_agarwal21_nlc2cmd" class="abstract well">
+                                   The NLC2CMD Competition hosted at NeurIPS 2020 aimed to bring the power of natural language processing to the command line. Participants were tasked with building models that can transform descriptions of command line tasks in English to their Bash syntax. This is a report on the competition with details of the task, metrics, data, attempted solutions, and lessons learned.
+                               </div>
+                               <div id="bibtex_agarwal21_nlc2cmd" style="display:none">
+                                  <pre>@article{DBLP:journals/corr/abs-2103-02523,
+  author    = {Mayank Agarwal and
+               Tathagata Chakraborti and
+               Quchen Fu and
+               David Gros and
+               Xi Victoria Lin and
+               Jaron Maene and
+               Kartik Talamadupula and
+               Zhongwei Teng and
+               Jules White},
+  title     = {NeurIPS 2020 {NLC2CMD} Competition: Translating Natural Language to
+               Bash Commands},
+  journal   = {CoRR},
+  volume    = {abs/2103.02523},
+  year      = {2021},
+  url       = {https://arxiv.org/abs/2103.02523},
+  archivePrefix = {arXiv},
+  eprint    = {2103.02523},
+  timestamp = {Thu, 04 Mar 2021 17:00:40 +0100},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2103-02523.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+                                      }</pre>
                                </div>
                         </div>
 
@@ -996,7 +1118,7 @@ We evaluate our approach on the SParC dataset and demonstrate the benefit of edi
          <div class="hidden-lg hidden-xl">
             <div style="display: inline-block;">
                <footer>
-                  <p><small>Last updated on <a>Jan 15, 2021</a></small></p>
+                  <p><small>Last updated on <a>May 28, 2021</a></small></p>
                </footer>
             </div>
          </div>
