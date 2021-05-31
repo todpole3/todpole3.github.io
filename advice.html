@@ -39,9 +39,13 @@
                         <span class="first-letter">G</span>iven two people with exactly the same ability, the one person who manages day in and day out to get in one more hour of thinking will be tremendously more productive over a lifetime.
                         <span style="float: right">-- <a class="advice-author" href="https://history.computer.org/pioneers/hamming.html">Richard Hamming</a></span>
                     </div>
-                    <div class="well blackboard">
+                    <!--<div class="well blackboard d-hide">
                         <span class="first-letter">G</span>ive your dreams all you've got and you'll be amazed at the energy that comes out of you.
                         <span style="float: right">-- <a class="advice-author" href="https://en.wikipedia.org/wiki/William_James">William James</a></span>
+                    </div>-->
+                    <div class="well blackboard">
+                        <span class="first-letter">I</span>f you move fast enough, you don't feel the pain of nostalgia. If you feel it, you aren't moving fast enough.<br>
+                        <span style="float: right">-- Anonymous</span>
                     </div>
                     <div class="well blackboard d-hide" id="random-slogan-1">
                         <span class="chinese-calligraphy">千万不要放纵自己，给自己找借口。对自己严格一点儿，时间长了，自律便成为一种习惯，一种生活方式，你的人格和智慧也因此变得更加完美。</span>
@@ -96,6 +100,10 @@
                     <div class="well blackboard d-hide" id="random-slogan-11">
                         <span class="first-letter">Y</span>ou have to neglect things if you intend to get what you want done. There's no question about this.
                         <span style="float: right">-- Richard Hamming</span>
+                    </div>
+                    <div class="well blackboard d-hide" id="random-slogan-12">
+                        <span class="first-letter">G</span>ive your dreams all you've got and you'll be amazed at the energy that comes out of you.
+                        <span style="float: right">-- <a class="advice-author" href="https://en.wikipedia.org/wiki/William_James">William James</a></span>
                     </div>
                     <hr>
 
@@ -1059,7 +1067,7 @@
               return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
             }
 
-            $('#random-slogan-' + getRandomInt(1, 12)).removeClass('d-hide');
+            $('#random-slogan-' + getRandomInt(1, 13)).removeClass('d-hide');
         </script>
    </body>
 </html>
