@@ -425,6 +425,10 @@ footer {
   border-bottom: 1px dotted;
 }
 
+.award-note {
+    color: #A42A04 !important;
+    font-weight: 400
+}
 
 
 
