@@ -9,6 +9,10 @@
     color: #577492;
 }
 
+.author-list-long {
+    font-size: 15px;
+}
+
 .bibtex{
 	font-family: "Gill Sans", sans-serif;
     display:none;
@@ -61,7 +65,7 @@
     font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
 
-  .authors {
+  .author-list {
     font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 300;
   }
