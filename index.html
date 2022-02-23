@@ -170,9 +170,10 @@
                        <div>
                           <p>
                               Large-scale autoregressive language models primarily trained on a high-resource language such as English have demonstrated remarkable few-shot learning capabilities.
-                              However, among the 7,000 languages spoken in the world, only a small proportion of them have language models trained at scale. <span class="dotted-underline">Developing individual models for different languages are extremely costly.</span>
-                              We aim to solve this problem by <span class="dotted-underline">training multilingual language models (XGLMs) on a large, balanced corpus of diverse set of languages extracted from the web</span>.
-                              Our largest model with 7.5 billion parameters <span class="dotted-underline">enabled few-shot learning in 20+ languages on text completion and inference tasks</span>, while <span class="dotted-underline">demonstrating strong cross-lingual transfer and establishing new state-of-the-art on few-short machine translation in lower-resourced languages</span>.
+                              However, among the over 7,000 languages spoken in the world, only a small proportion of them have language models trained at scale. <span class="dotted-underline">Developing language models for individual languages is extremely costly.</span>
+
+                              We address this problem by <span class="dotted-underline">training multilingual language models (XGLMs) on a large web corpus consisting of a diverse set of languages, where we up-sampled the lower-resourced languages to ensure they have significant presense</span>.
+                              Our largest model with 7.5 billion parameters <span class="dotted-underline">enabled few-shot learning in 20+ languages on text completion and language inference tasks</span>. The model also <span class="dotted-underline">demonstrates strong cross-lingual transfer and established new state-of-the-art on few-short machine translation in the lower-resourced languages</span>.
 
                               <span style="font-size: 12px">[<a href="https://arxiv.org/pdf/2112.10668.pdf">ArXiv'21</a>]</span>
                           </p>
