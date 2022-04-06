@@ -426,12 +426,18 @@ footer {
 }
 
 .award-note {
-    color: #A42A04 !important;
+    color: #6c6c6c !important;
     font-weight: 400;
-    font-style: italic;
 }
 
-
+.btn-best-paper {
+  font-weight: 400;
+  color: #cd5c5c;
+  border: 1px solid #cd5c5c;
+  background: #ffffff;
+  box-sizing: content-box;
+  shadow: none;
+}
 
 @media print, screen and (max-width: 960px) {
 
