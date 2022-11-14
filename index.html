@@ -224,7 +224,41 @@
                      </h3>
 
                      <div class="pub-section">
-                        <h4>Preprints</h4>
+                         <h4>Preprints</h4>
+                         <h4>2022</h4>
+
+                         <div class="publication">
+                           <span class="pubtitle">
+                               OPT: Open Pre-trained Transformer Language Models.
+                           </span><br>
+                           <span class="author-list author-list-long">
+                               Susan Zhang*, Stephen Roller*, Naman Goyal*, Mikel Artetxe, Moya Chen, Shuohui Chen, Christopher Dewan, Mona Diab, Xian Li, <span class="author-me">Xi Victoria Lin</span>, Todor Mihaylov, Myle Ott, Sam Shleifer, Kurt Shuster, Daniel Simig, Punit Singh Koura, Anjali Sridhar, Tianlu Wang, Luke Zettlemoyer.
+                           </span><br>
+                           <span style="font-size: 14px">* Equal Contribution</span><br>
+                           <span class="venuetype"></span><span class="venue">Technical Report 2022.</span><br>
+                           <span class="links btn-group">
+                               <a class="btn btn-default btn-xs btn-pub" href="https://arxiv.org/pdf/2205.01068.pdf">
+                                   <i class="fa fa-download"></i> PDF </a>
+                               <a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_zhang22_opt').slideToggle('fast');return false;">
+                                   <i class="fa fa-file-text-o"></i> Abstract</a>
+                               <a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#bibtex_zhang22_opt').slideToggle('fast');return false;">
+                               <i class="fa fa-quote-left"></i> Bibtex</a>
+                               <a class="btn btn-default btn-xs btn-pub" href="https://ai.facebook.com/blog/democratizing-access-to-large-scale-language-models-with-opt-175b/">
+                               <i class="fa fa-pencil-square-o"></i> Blog </a>
+                               <a class="btn btn-default btn-xs btn-pub" href="https://github.com/facebookresearch/metaseq">
+                               <i class="fa fa-github"></i> Checkpoints & Code </a>
+                               <a class="btn btn-default btn-xs btn-pub" href="https://huggingface.co/docs/transformers/model_doc/opt">
+                               <img src="img/icons/huggingface.svg" width="12"> HuggingFace </a>
+                               <a class="btn btn-default btn-xs btn-pub" href="https://docs.google.com/forms/d/e/1FAIpQLSe4IP4N6JkCEMpCP-yY71dIUPHngVReuOmQKDEI1oHFUaVg7w/viewform">
+                               <i class="fa fa-user-circle"></i> OPT-175B Request Form </a>
+                           </span>
+                               <div id="abstract_zhang22_opt" class="abstract well">
+                                   Large language models, which are often trained for hundreds of thousands of compute days, have shown remarkable capabilities for zero- and few-shot learning. Given their computational cost, these models are difficult to replicate without significant capital. For the few that are available through APIs, no access is granted to the full model weights, making them difficult to study. We present Open Pre-trained Transformers (OPT), a suite of decoder-only pre-trained transformers ranging from 125M to 175B parameters, which we aim to fully and responsibly share with interested researchers. We show that OPT-175B is comparable to GPT-3, while requiring only 1/7th the carbon footprint to develop. We are also releasing our logbook detailing the infrastructure challenges we faced, along with code for experimenting with all of the released models.
+                               </div>
+                               <div id="bibtex_zhang22_opt" style="display:none">
+                                  <pre></pre>
+                               </div>
+                        </div>
 
                          <div class="publication">
                            <span class="pubtitle">
@@ -234,7 +268,7 @@
                                <span class="author-me">Xi Victoria Lin*</span>, Todor Mihaylov, Mikel Artetxe, Tianlu Wang, Shuohui Chen, Daniel Simig, Myle Ott, Naman Goyal, Shruti Bhosale, Jingfei Du, Ramakanth Pasunuru, Sam Shleifer, Punit Singh Koura, Vishrav Chaudhary, Brian O'Horo, Jeff Wang, Luke Zettlemoyer, Zornitsa Kozareva, Mona Diab, Veselin Stoyanov, Xian Li*.
                            </span><br>
                            <span style="font-size: 14px">* Equal Contribution</span><br>
-                           <span class="venuetype"></span><span class="venue">ArXiv 2021.</span><br>
+                           <span class="venuetype"></span><span class="venue">EMNLP 2022.</span><br>
                            <span class="links btn-group">
                                <a class="btn btn-default btn-xs btn-pub" href="https://arxiv.org/pdf/2112.10668.pdf">
                                    <i class="fa fa-download"></i> PDF </a>
@@ -243,7 +277,7 @@
                                <a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#bibtex_lin21_xglm').slideToggle('fast');return false;">
                                <i class="fa fa-quote-left"></i> Bibtex</a>
                                <a class="btn btn-default btn-xs btn-pub" href="https://github.com/pytorch/fairseq/tree/main/examples/xglm">
-                               <i class="fa fa-github"></i> Code </a>
+                               <i class="fa fa-github"></i> Checkpoints & Code </a>
                                <a class="btn btn-default btn-xs btn-pub" href="https://huggingface.co/models?other=xglm">
                                <img src="img/icons/huggingface.svg" width="12"> HuggingFace </a>
                            </span>
@@ -287,7 +321,7 @@
                                </div>
                         </div>
 
-                        <div class="publication">
+                         <div class="publication">
                            <span class="pubtitle">
                                Efficient Large Scale Language Modeling with Mixtures of Experts.
                            </span><br>
@@ -295,7 +329,7 @@
                                Mikel Artetxe*, Shruti Bhosale*, Naman Goyal*, Todor Mihaylov*, Myle Ott*, Sam Shleifer*, <span class="author-me">Xi Victoria Lin</span>, Jingfei Du, Srinivasan Iyer, Ramakanth Pasunuru, Giri Anantharaman, Xian Li, Shuohui Chen, Halil Akin, Mandeep Baines, Louis Martin, Xing Zhou, Punit Singh Koura, Brian O'Horo, Jeff Wang, Luke Zettlemoyer, Mona Diab, Zornitsa Kozareva, Ves Stoyanov.
                            </span><br>
                            <span style="font-size: 14px">* Equal Contribution</span><br>
-                           <span class="venuetype"></span><span class="venue">ArXiv 2021.</span><br>
+                           <span class="venuetype"></span><span class="venue">EMNLP 2022.</span><br>
                            <span class="links btn-group">
                                <a class="btn btn-default btn-xs btn-pub" href="https://arxiv.org/pdf/2112.10684.pdf">
                                    <i class="fa fa-download"></i> PDF </a>
@@ -304,7 +338,7 @@
                                <a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#bibtex_artetxe21_moe').slideToggle('fast');return false;">
                                <i class="fa fa-quote-left"></i> Bibtex</a>
                                <a class="btn btn-default btn-xs btn-pub" href="https://github.com/pytorch/fairseq/tree/main/examples/moe_lm">
-                               <i class="fa fa-github"></i> Code </a>
+                               <i class="fa fa-github"></i> Checkpoints & Code </a>
                            </span>
                                <div id="abstract_artetxe21_moe" class="abstract well">
                                    Mixture of Experts layers (MoEs) enable efficient scaling of language models through conditional computation. This paper presents a detailed empirical study of how autoregressive MoE language models scale in comparison with dense models in a wide range of settings: in- and out-of-domain language modeling, zero- and few-shot priming, and full fine-tuning. With the exception of fine-tuning, we find MoEs to be substantially more compute efficient. At more modest training budgets, MoEs can match the performance of dense models using ∼4 times less compute. This gap narrows at scale, but our largest MoE model (1.1T parameters) consistently outperforms a compute-equivalent dense model (6.7B parameters). Overall, this performance gap varies greatly across tasks and domains, suggesting that MoE and dense models generalize differently in ways that are worthy of future study. We make our code and models publicly available for research use.
@@ -349,9 +383,113 @@
                                </div>
                         </div>
 
-                        <h4>2022</h4>
+                         <div class="publication">
+                           <span class="pubtitle">
+                               Lifting the Curse of Multilinguality by Pre-training Modular Transformers.
+                           </span><br>
+                           <span class="author-list">
+                               Jonas Pfeiffer, Naman Goyal, <span class="author-me">Xi Victoria Lin</span>, Xian Li, James Cross, Sebastian Riedel, Mikel Artetxe.
+                           </span><br>
+                           <span class="venuetype"></span><span class="venue">NAACL 2022.</span><br>
+                           <span class="links btn-group">
+                               <a class="btn btn-default btn-xs btn-pub" href="https://arxiv.org/pdf/2205.06266.pdf">
+                                   <i class="fa fa-download"></i> PDF </a>
+                               <a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_pfeiffer22_lifting').slideToggle('fast');return false;">
+                                   <i class="fa fa-file-text-o"></i> Abstract</a>
+                               <a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#bibtex_pfeiffer22_lifting').slideToggle('fast');return false;">
+                               <i class="fa fa-quote-left"></i> Bibtex</a><span class="btn-group">
+                                  <a class="btn btn-default btn-xs btn-pub dropdown-toggles" data-toggle="dropdown">
+                                  <i class="fa fa-github"></i> Code <span class="caret"></span></a>
+                                  <ul id="code_menu_pfeiffer22_lifting" class="dropdown-menu details-panel" role="menu">
+                                      <li><a href="https://github.com/facebookresearch/fairseq/tree/main/examples/xmod">Jonas'</a></li>
+                                  </ul>
+                               </span>
+                           </span>
+                               <div id="abstract_pfeiffer22_lifting" class="abstract well">
+                                   Multilingual pre-trained models are known to suffer from the curse of multilinguality, which causes per-language performance to drop as they cover more languages. We address this issue by introducing language-specific modules, which allows us to grow the total capacity of the model, while keeping the total number of trainable parameters per language constant. In contrast with prior work that learns language-specific components post-hoc, we pre-train the modules of our Cross-lingual Modular (X-Mod) models from the start. Our experiments on natural language inference, named entity recognition and question answering show that our approach not only mitigates the negative interference between languages, but also enables positive transfer, resulting in improved monolingual and cross-lingual performance. Furthermore, our approach enables adding languages post-hoc with no measurable drop in performance, no longer limiting the model usage to the set of pre-trained languages.
+                               </div>
+                               <div id="bibtex_pfeiffer22_lifting" style="display:none">
+                                  <pre>@inproceedings{DBLP:conf/naacl/PfeifferGLLC0A22,
+  author    = {Jonas Pfeiffer and
+               Naman Goyal and
+               Xi Victoria Lin and
+               Xian Li and
+               James Cross and
+               Sebastian Riedel and
+               Mikel Artetxe},
+  editor    = {Marine Carpuat and
+               Marie{-}Catherine de Marneffe and
+               Iv{\'{a}}n Vladimir Meza Ru{\'{\i}}z},
+  title     = {Lifting the Curse of Multilinguality by Pre-training Modular Transformers},
+  booktitle = {Proceedings of the 2022 Conference of the North American Chapter of
+               the Association for Computational Linguistics: Human Language Technologies,
+               {NAACL} 2022, Seattle, WA, United States, July 10-15, 2022},
+  pages     = {3479--3495},
+  publisher = {Association for Computational Linguistics},
+  year      = {2022},
+  url       = {https://doi.org/10.18653/v1/2022.naacl-main.255},
+  doi       = {10.18653/v1/2022.naacl-main.255},
+  timestamp = {Mon, 01 Aug 2022 16:28:01 +0200},
+  biburl    = {https://dblp.org/rec/conf/naacl/PfeifferGLLC0A22.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}</pre>
+                               </div>
+                        </div>
 
-                        <div class="publication">
+                         <div class="publication">
+                           <span class="pubtitle">
+                               On Continual Model Refinement in Out-of-Distribution Data Streams.
+                           </span><br>
+                           <span class="author-list">
+                               Bill Yuchen Lin, Sida Wang, <span class="author-me">Xi Victoria Lin</span>, Robin Jia, Lin Xiao, Xiang Ren, Scott Wen-tau Yih.
+                           </span><br>
+                           <span class="venuetype"></span><span class="venue">ACL 2022.</span><br>
+                           <span class="links btn-group">
+                               <a class="btn btn-default btn-xs btn-pub" href="https://arxiv.org/pdf/2205.02014.pdf">
+                                   <i class="fa fa-download"></i> PDF </a>
+                               <a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_lin22_cmr').slideToggle('fast');return false;">
+                                   <i class="fa fa-file-text-o"></i> Abstract</a>
+                               <a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#bibtex_lin22_cmr').slideToggle('fast');return false;">
+                               <i class="fa fa-quote-left"></i> Bibtex</a><span class="btn-group">
+                                  <a class="btn btn-default btn-xs btn-pub dropdown-toggles" data-toggle="dropdown">
+                                  <i class="fa fa-github"></i> Dataset & Code <span class="caret"></span></a>
+                                  <ul id="code_menu_lin22_cmr" class="dropdown-menu details-panel" role="menu">
+                                      <li><a href="https://cmr-nlp.github.io/">Bill's</a></li>
+                                  </ul>
+                               </span>
+                           </span>
+                               <div id="abstract_lin22_cmr" class="abstract well">
+                                    Real-world natural language processing (NLP) models need to be continually updated to fix the prediction errors in out-of-distribution (OOD) data streams while overcoming catastrophic forgetting. However, existing continual learning (CL) problem setups cannot cover such a realistic and complex scenario. In response to this, we propose a new CL problem formulation dubbed continual model refinement (CMR). Compared to prior CL settings, CMR is more practical and introduces unique challenges (boundary-agnostic and non-stationary distribution shift, diverse mixtures of multiple OOD data clusters, error-centric streams, etc.). We extend several existing CL approaches to the CMR setting and evaluate them extensively. For benchmarking and analysis, we propose a general sampling algorithm to obtain dynamic OOD data streams with controllable non-stationarity, as well as a suite of metrics measuring various aspects of online performance. Our experiments and detailed analysis reveal the promise and challenges of the CMR problem, supporting that studying CMR in dynamic OOD streams can benefit the longevity of deployed NLP models in production.
+                               </div>
+                               <div id="bibtex_lin22_cmr" style="display:none">
+                                  <pre>@inproceedings{DBLP:conf/acl/LinWLJXRY22,
+  author    = {Bill Yuchen Lin and
+               Sida Wang and
+               Xi Victoria Lin and
+               Robin Jia and
+               Lin Xiao and
+               Xiang Ren and
+               Scott Yih},
+  editor    = {Smaranda Muresan and
+               Preslav Nakov and
+               Aline Villavicencio},
+  title     = {On Continual Model Refinement in Out-of-Distribution Data Streams},
+  booktitle = {Proceedings of the 60th Annual Meeting of the Association for Computational
+               Linguistics (Volume 1: Long Papers), {ACL} 2022, Dublin, Ireland,
+               May 22-27, 2022},
+  pages     = {3128--3139},
+  publisher = {Association for Computational Linguistics},
+  year      = {2022},
+  url       = {https://doi.org/10.18653/v1/2022.acl-long.223},
+  doi       = {10.18653/v1/2022.acl-long.223},
+  timestamp = {Mon, 01 Aug 2022 16:27:42 +0200},
+  biburl    = {https://dblp.org/rec/conf/acl/LinWLJXRY22.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}</pre>
+                               </div>
+                        </div>
+
+                         <div class="publication">
                            <span class="pubtitle">
                                Pretty Princess vs. Successful Leader: Gender Roles in Greeting Card Messages.
                            </span><br>
@@ -379,27 +517,94 @@
                                     People write personalized greeting cards on various occasions. While prior work has studied gender roles in greeting card messages, systematic analysis at scale and tools for raising the awareness of gender stereotyping remain under-investigated. To this end, we collect a large greeting card message corpus covering three different occasions (birthday, Valentine's Day and wedding) from three sources (exemplars from greeting message websites, real-life greetings from social media and language model generated ones). We uncover a wide range of gender stereotypes in this corpus via topic modeling, odds ratio and Word Embedding Association Test (WEAT). We further conduct a survey to understand people's perception of gender roles in messages from this corpus and if gender stereotyping is a concern. The results show that people want to be aware of gender roles in the messages, but remain unconcerned unless the perceived gender roles conflict with the recipient's true personality. In response, we developed GreetA, an interactive visualization and writing assistant tool to visualize fine-grained topics in greeting card messages drafted by the users and the associated gender perception scores, but without suggesting text changes as an intervention.
                                </div>
                                <div id="bibtex_sun22_greeta" style="display:none">
-                                  <pre>@article{DBLP:journals/corr/abs-2112-13980,
+                                  <pre>@inproceedings{DBLP:conf/chi/SunWJALY22,
   author    = {Jiao Sun and
                Tongshuang Wu and
                Yue Jiang and
                Ronil Awalegaonkar and
                Xi Victoria Lin and
                Diyi Yang},
+  editor    = {Simone D. J. Barbosa and
+               Cliff Lampe and
+               Caroline Appert and
+               David A. Shamma and
+               Steven Mark Drucker and
+               Julie R. Williamson and
+               Koji Yatani},
   title     = {Pretty Princess vs. Successful Leader: Gender Roles in Greeting Card
                Messages},
-  journal   = {CoRR},
-  volume    = {abs/2112.13980},
-  year      = {2021},
-  url       = {https://arxiv.org/abs/2112.13980},
-  eprinttype = {arXiv},
-  eprint    = {2112.13980},
-  timestamp = {Tue, 04 Jan 2022 15:59:27 +0100},
-  biburl    = {https://dblp.org/rec/journals/corr/abs-2112-13980.bib},
+  booktitle = {{CHI} '22: {CHI} Conference on Human Factors in Computing Systems,
+               New Orleans, LA, USA, 29 April 2022 - 5 May 2022},
+  pages     = {398:1--398:15},
+  publisher = {{ACM}},
+  year      = {2022},
+  url       = {https://doi.org/10.1145/3491102.3502114},
+  doi       = {10.1145/3491102.3502114},
+  timestamp = {Fri, 29 Apr 2022 17:07:24 +0200},
+  biburl    = {https://dblp.org/rec/conf/chi/SunWJALY22.bib},
   bibsource = {dblp computer science bibliography, https://dblp.org}
 }</pre>
                                </div>
                         </div>
+
+                         <div class="publication">
+                           <span class="pubtitle">
+                               <span class="dataset">FeTaQA:</span> Free-form Table Question Answering.
+                           </span><br>
+                           <span class="author-list author-list-long">
+                               Linyong Nan, Chiachun Hsieh, Ziming Mao, <span class="author-me">Xi Victoria Lin</span>, Neha Verma, Rui Zhang, Wojciech Kryściński, Nick Schoelkopf, Riley Kong, Xiangru Tang, Murori Mutuma, Ben Rosand, Isabel Trindade, Renusree Bandaru, Jacob Cunningham, Caiming Xiong, Dragomir Radev.
+                           </span><br>
+                            <span class="venuetype"></span><span class="venue">TACL 2022.</span><br>
+                           <span class="links btn-group">
+                               <a class="btn btn-default btn-xs btn-pub" href="https://arxiv.org/pdf/2104.00369.pdf">
+                                   <i class="fa fa-download"></i> PDF </a>
+                               <a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_nan21_fetaqa').slideToggle('fast');return false;">
+                                   <i class="fa fa-file-text-o"></i> Abstract</a>
+                               <a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#bibtex_nan21_fetaqa').slideToggle('fast');return false;">
+                               <i class="fa fa-quote-left"></i> Bibtex</a>
+                               <span class="btn-group">
+                                  <a class="btn btn-default btn-xs btn-pub dropdown-toggles" data-toggle="dropdown">
+                                  <i class="fa fa-github"></i> Code <span class="caret"></span></a>
+                                  <ul id="code_menu_nan21_fetaqa" class="dropdown-menu details-panel" role="menu">
+                                      <li><a href="https://github.com/Yale-LILY/FeTaQA">Linyong's</a></li>
+                                  </ul>
+                               </span>
+                           </span>
+                               <div id="abstract_nan21_fetaqa" class="abstract well">
+                                    Existing table question answering datasets contain abundant factual questions that primarily evaluate the query and schema comprehension capability of a system, but they fail to include questions that require complex reasoning and integration of information due to the constraint of the associated short-form answers. To address these issues and to demonstrate the full challenge of table question answering, we introduce FeTaQA, a new dataset with 10K Wikipedia-based {table, question, free-form answer, supporting table cells} pairs. FeTaQA yields a more challenging table question answering setting because it requires generating free-form text answers after retrieval, inference, and integration of multiple discontinuous facts from a structured knowledge source. Unlike datasets of generative QA over text in which answers are prevalent with copies of short text spans from the source, answers in our dataset are human-generated explanations involving entities and their high-level relations. We provide two benchmark methods for the proposed task: a pipeline method based on semantic-parsing-based QA systems and an end-to-end method based on large pretrained text generation models, and show that FeTaQA poses a challenge for both methods.                               </div>
+                               <div id="bibtex_nan21_fetaqa" style="display:none">
+                                  <pre>@article{DBLP:journals/tacl/NanHMLVZKSKTMRT22,
+  author    = {Linyong Nan and
+               Chiachun Hsieh and
+               Ziming Mao and
+               Xi Victoria Lin and
+               Neha Verma and
+               Rui Zhang and
+               Wojciech Kryscinski and
+               Hailey Schoelkopf and
+               Riley Kong and
+               Xiangru Tang and
+               Mutethia Mutuma and
+               Ben Rosand and
+               Isabel Trindade and
+               Renusree Bandaru and
+               Jacob Cunningham and
+               Caiming Xiong and
+               Dragomir R. Radev},
+  title     = {FeTaQA: Free-form Table Question Answering},
+  journal   = {Trans. Assoc. Comput. Linguistics},
+  volume    = {10},
+  pages     = {35--49},
+  year      = {2022},
+  url       = {https://doi.org/10.1162/tacl\_a\_00446},
+  doi       = {10.1162/tacl\_a\_00446},
+  timestamp = {Thu, 22 Sep 2022 17:53:14 +0200},
+  biburl    = {https://dblp.org/rec/journals/tacl/NanHMLVZKSKTMRT22.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}</pre>
+                               </div>
+                        </div>
+
 
                         <h4>2021</h4>
 
@@ -448,64 +653,6 @@
     doi = "10.18653/v1/2021.eval4nlp-1.8",
     pages = "73--83",
     abstract = "The benchmark performance of cross-database semantic parsing has climbed steadily in recent years, catalyzed by the wide adoption of pre-trained language models. Yet existing work have shown that state-of-the-art cross-database semantic parsers struggle to generalize to novel user utterances, databases and query structures. To obtain transparent details on the strengths and limitation of these models, we propose a diagnostic testing approach based on controlled synthesis of canonical natural language and SQL pairs. Inspired by the CheckList, we characterize a set of essential capabilities for cross-database semantic parsing models, and detailed the method for synthesizing the corresponding test data. We evaluated a variety of high performing models using the proposed approach, and identified several non-obvious weaknesses across models (e.g. unable to correctly select many columns). Our dataset and code are released as a test suite at http://github.com/hclent/BehaviorCheckingSemPar.",
-}</pre>
-                               </div>
-                        </div>
-
-                        <div class="publication">
-                           <span class="pubtitle">
-                               <span class="dataset">FeTaQA:</span> Free-form Table Question Answering.
-                           </span><br>
-                           <span class="author-list author-list-long">
-                               Linyong Nan, Chiachun Hsieh, Ziming Mao, <span class="author-me">Xi Victoria Lin</span>, Neha Verma, Rui Zhang, Wojciech Kryściński, Nick Schoelkopf, Riley Kong, Xiangru Tang, Murori Mutuma, Ben Rosand, Isabel Trindade, Renusree Bandaru, Jacob Cunningham, Caiming Xiong, Dragomir Radev.
-                           </span><br>
-                            <span class="venuetype"></span><span class="venue">TACL 2021.</span><br>
-                           <span class="links btn-group">
-                               <a class="btn btn-default btn-xs btn-pub" href="https://arxiv.org/pdf/2104.00369.pdf">
-                                   <i class="fa fa-download"></i> PDF </a>
-                               <a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_nan21_fetaqa').slideToggle('fast');return false;">
-                                   <i class="fa fa-file-text-o"></i> Abstract</a>
-                               <a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#bibtex_nan21_fetaqa').slideToggle('fast');return false;">
-                               <i class="fa fa-quote-left"></i> Bibtex</a>
-                               <span class="btn-group">
-                                  <a class="btn btn-default btn-xs btn-pub dropdown-toggles" data-toggle="dropdown">
-                                  <i class="fa fa-github"></i> Code <span class="caret"></span></a>
-                                  <ul id="code_menu_nan21_fetaqa" class="dropdown-menu details-panel" role="menu">
-                                      <li><a href="https://github.com/Yale-LILY/FeTaQA">Linyong's</a></li>
-                                  </ul>
-                               </span>
-                           </span>
-                               <div id="abstract_nan21_fetaqa" class="abstract well">
-                                    Existing table question answering datasets contain abundant factual questions that primarily evaluate the query and schema comprehension capability of a system, but they fail to include questions that require complex reasoning and integration of information due to the constraint of the associated short-form answers. To address these issues and to demonstrate the full challenge of table question answering, we introduce FeTaQA, a new dataset with 10K Wikipedia-based {table, question, free-form answer, supporting table cells} pairs. FeTaQA yields a more challenging table question answering setting because it requires generating free-form text answers after retrieval, inference, and integration of multiple discontinuous facts from a structured knowledge source. Unlike datasets of generative QA over text in which answers are prevalent with copies of short text spans from the source, answers in our dataset are human-generated explanations involving entities and their high-level relations. We provide two benchmark methods for the proposed task: a pipeline method based on semantic-parsing-based QA systems and an end-to-end method based on large pretrained text generation models, and show that FeTaQA poses a challenge for both methods.                               </div>
-                               <div id="bibtex_nan21_fetaqa" style="display:none">
-                                  <pre>@article{DBLP:journals/corr/abs-2104-00369,
-  author    = {Linyong Nan and
-               Chiachun Hsieh and
-               Ziming Mao and
-               Xi Victoria Lin and
-               Neha Verma and
-               Rui Zhang and
-               Wojciech Kryscinski and
-               Nick Schoelkopf and
-               Riley Kong and
-               Xiangru Tang and
-               Murori Mutuma and
-               Ben Rosand and
-               Isabel Trindade and
-               Renusree Bandaru and
-               Jacob Cunningham and
-               Caiming Xiong and
-               Dragomir R. Radev},
-  title     = {FeTaQA: Free-form Table Question Answering},
-  journal   = {CoRR},
-  volume    = {abs/2104.00369},
-  year      = {2021},
-  url       = {https://arxiv.org/abs/2104.00369},
-  archivePrefix = {arXiv},
-  eprint    = {2104.00369},
-  timestamp = {Mon, 12 Apr 2021 16:14:56 +0200},
-  biburl    = {https://dblp.org/rec/journals/corr/abs-2104-00369.bib},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
 }</pre>
                                </div>
                         </div>
@@ -1144,6 +1291,14 @@ We evaluate our approach on the SParC dataset and demonstrate the benefit of edi
                             <i class="fa fa-file-text-o"></i> Abstract</a>
                             <a class="btn btn-default btn-xs btn-pub" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#bibtex_lin18_nl2bash').slideToggle('fast');return false;">
                             <i class="fa fa-quote-left"></i> Bibtex</a>
+                            <span class="btn-group">
+                              <a class="btn btn-default btn-xs btn-pub dropdown-toggles" data-toggle="dropdown">
+                              <i class="glyphicon glyphicon-blackboard"></i> Slides <span class="caret"></span></a>
+                              <ul id="slides_menu_lin18_nl2bash" class="dropdown-menu details-panel" role="menu">
+                                <li><a href="pubs/tellina_talk_nl4se_aaai.pdf">PDF version</a></li>
+                                <li><a href="pubs/tellina_talk_nl4se_aaai.key">Keynote version</a></li>
+                              </ul>
+                            </span>
                             <a class="btn btn-default btn-xs btn-pub" href="https://github.com/TellinaTool/nl2bash">
                             <i class="fa fa-github"></i> Dataset & Code </a>
                             </span>
