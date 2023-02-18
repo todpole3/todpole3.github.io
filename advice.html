@@ -22,7 +22,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
    </head>
    <body>
-        <div class="container">
+        <div class="container">、
             <div class="row" style="padding: 0 10px 0 30px">
                 <div class="side-bar col-md-2 col-xs-12">
                 </div>
@@ -128,6 +128,10 @@
                     <div class="well blackboard d-hide" id="random-slogan-16">
                         <span class="first-letter">I</span>f you want to work and continue to work, you must continually dedicate yourself to retaining your individual competitive advantage.
                         <span style="float: right">-- <a class="advice-author">Andrew S. Grove</a></span>
+                    </div>
+                    <div class="well blackboard d-hide" id="random-slogan-17">
+                        <span class="first-letter">Y</span>ou are always one decision away from a totally different life: you can dwell on what you've lost and be a victim of what tried to break you, or you can transform your pain into power, expand past your edges and rise up. The choice is yours.
+                        <span style="float: right">-- <a class="advice-author">Anonymous</a></span>
                     </div>
                     <hr>
 
@@ -1260,7 +1264,7 @@
               return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
             }
 
-            $('#random-slogan-' + getRandomInt(1, 17)).removeClass('d-hide');
+            $('#random-slogan-' + getRandomInt(1, 18)).removeClass('d-hide');
         </script>
    </body>
 </html>
