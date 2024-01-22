@@ -437,6 +437,15 @@ footer {
   shadow: none;
 }
 
+.btn-oral {
+  font-weight: 400;
+  color: #7699a2;
+  border: 1px solid #7699a2;
+  background: #ffffff;
+  box-sizing: content-box;
+  shadow: none;
+}
+
 @media print, screen and (max-width: 960px) {
 
   div.wrapper {
