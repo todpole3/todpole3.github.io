@@ -81,7 +81,7 @@
             <div class="hidden-xs hidden-sm hidden-md">
               <footer>
                 <p>
-                  <small>Last updated on <a>Jul 31, 2024</a>
+                  <small>Last updated on <a>Dec 1, 2024</a>
                   </small>
                 </p>
               </footer>
@@ -100,60 +100,7 @@
               <p> Previously I was a senior research scientist at <a href="https://einstein.ai/">Salesforce Research</a>. I obtained my PhD from the <a href="https://www.cs.washington.edu/">Paul G. Allen School of Computer Science & Engineering, University of Washington</a>, advised by <a href="https://homes.cs.washington.edu/~lsz/">Luke Zettlemoyer</a>. I was co-advised by <a href="https://homes.cs.washington.edu/~mernst/">Michael D. Ernst</a> on <a href="https://arxiv.org/abs/1802.08979">code generation with neural networks</a>. </p>
               <p> Please refer to my <a href="files/cv.pdf">CV</a> for a comprehensive overview of my experience. </p>
             </div>
-            <div class="section" style="display: none">
-              <h3>
-                <a id="research-projects" class="anchor" href="#research-projects" aria-hidden="true">
-                  <span aria-hidden="true" class="octicon octicon-link"></span>
-                </a>Project Highlights
-              </h3>
-              <div class="project-snapshot">
-                <div class="project-logo">
-                  <a href="https://github.com/facebookresearch/metaseq/tree/main/projects/OPT-IML">
-                    <img class="btn-svg-lg" src="img/icons/conversation.png" alt="Photon Logo" />
-                  </a>
-                </div>
-                <div>
-                  <p> Large-scale causal language models have demonstrated impressive few-shot learning capabilities. These models have been primarily built for English and a few other high-resource languages. <span class="dotted-underline">Given there are over 7,000 languages in the world, developing language models for each of them is expensive and neglects the positive transfer between related languages.</span> We address this problem by <span class="dotted-underline">training multilingual language models (XGLMs) on a mixture of diverse languages, where significant presense of the lower-resourced languages is achieved via up-sampling</span>. Our largest model with 7.5 billion parameters <span class="dotted-underline">enabled few-shot learning in 20+ languages on text completion and language inference tasks</span>. It also <span class="dotted-underline">demonstrates strong cross-lingual transfer and sets new state-of-the-art in few-short machine translation in the lower-resourced regime</span>. <span style="font-size: 12px">[ <a href="https://arxiv.org/pdf/2112.10668.pdf">ArXiv'21</a>] </span>
-                  </p>
-                </div>
-              </div>
-              <hr />
-              <div class="project-snapshot">
-                <div class="project-logo">
-                  <a href="https://github.com/pytorch/fairseq/tree/main/examples/xglm">
-                    <img class="btn-svg-lg" src="https://upload.wikimedia.org/wikipedia/commons/6/60/Simple_Globe.svg" alt="Photon Logo" />
-                  </a>
-                </div>
-                <div>
-                  <p> Large-scale causal language models have demonstrated impressive few-shot learning capabilities. These models have been primarily built for English and a few other high-resource languages. <span class="dotted-underline">Given there are over 7,000 languages in the world, developing language models for each of them is expensive and neglects the positive transfer between related languages.</span> We address this problem by <span class="dotted-underline">training multilingual language models (XGLMs) on a mixture of diverse languages, where significant presense of the lower-resourced languages is achieved via up-sampling</span>. Our largest model with 7.5 billion parameters <span class="dotted-underline">enabled few-shot learning in 20+ languages on text completion and language inference tasks</span>. It also <span class="dotted-underline">demonstrates strong cross-lingual transfer and sets new state-of-the-art in few-short machine translation in the lower-resourced regime</span>. <span style="font-size: 12px">[ <a href="https://arxiv.org/pdf/2112.10668.pdf">ArXiv'21</a>] </span>
-                  </p>
-                </div>
-              </div>
-              <hr />
-              <!--<div class="project-snapshot"><div class="project-logo"><a href="http://naturalsql.com"><img class="btn-svg-lg" src="img/logos/photon.svg" alt="Photon Logo"></a></div><div><p>
-                              Photon is a <span class="dotted-underline">cross-domain</span><span class="dotted-underline">natural language interface to databases (X-NLIDB)</span> that handles <span class="dotted-underline">factual look-up queries</span>.
-                              It allows end users to query a large number of relational DBs in natural language, including DBs it has never been trained on.
-                              The core of the system is a strong neural text-to-SQL semantic parser trained using thousands of NL-SQL pairs grounded to hundreds of DBs.
-                              Photon adopts the principle of <span class="dotted-underline">better saying no than making a mistake</span>, and verifies the input question is indeed translatable to a structured query language before executing the neural semantic parser, which effectively improves its robustness.<br>
-                              Ask <a href="http://naturalsql.com">Photon</a> questions about the data and tease out its power.
-                              <span style="font-size: 12px">[<a href="pubs/bridge-emnlp2020.pdf">EMNLP'20 Findings</a>, <a href="pubs/photon-acl2020.pdf">ACL'20 System Demonstration</a>]</span></p></div></div><hr>-->
-              <div class="project-snapshot">
-                <div class="project-logo">
-                  <a href="http://tellina.rocks/developers">
-                    <img class="btn-svg-lg" src="img/logos/tellina_v1.5.svg" alt="Tellina Logo" />
-                  </a>
-                </div>
-                <div>
-                  <p> Tellina is an <span class="dotted-underline">end-user scripting assistant</span> that can be queried via natural language. It translates a natural language sentence typed by the user into a piece of short, executable script. The underlying models are neural encoder-decoders trained on NL-script pairs <span class="dotted-underline">collected by programming experts from online tutorials and question-answering forums</span>. We instantiate the <a href="http://tellina.rocks">prototype</a> in Bash. <br />
-                    <!-- Instantiating neural MT approaches for scripting languages is challenging due to irregularities in the target language design and more importantly the lack of parallel data. -->
-                    <!-- We are developing hybrid translation models and expert annotation pipelines that scale to address
-                                irregularities in the target language and the lack of parallel training data.--> This work poses several challenges including scalable data collection, never-ending learning and personalization, most of which are central to all practical semantic parsing systems.
-                    <!-- <i>How to scale up the data collection process or adopt zero-shot learning to achieve proper semantic coverage of the domain? </i> -->
-                    <span style="font-size: 12px">[ <a href="pubs/nl2bash.pdf">LREC'18</a>, <a href="pubs/tellina_tr170510.pdf">UW-CSE-TR'17</a>] </span>
-                  </p>
-                </div>
-              </div>
-            </div>
+
             <div class="section">
               <h3>
                 <a id="publication" class="anchor" href="#publication" aria-hidden="true">
@@ -164,7 +111,6 @@
                 </span>
               </h3>
               <img src="img/icons/scroll.png" width="16" />
-              <i class="fa fa-scroll"></i>
               <span style="font-weight: 400; font-size: 14.5px">
                 <i>Please refer to my <a href="https://scholar.google.com/citations?hl=en&user=gYUOJwMAAAAJ&view_op=list_works&sortby=pubdate">Google Scholar page</a> for a complete list of publications. </i>
               </span>
@@ -217,7 +163,7 @@
 
                 <div class="publication">
                   <span class="pubtitle">
-                    Chameleon: Mixed-Modal Early-Fusion Foundation Models. </span>
+                    <span class="dataset">Chameleon:</span> Mixed-Modal Early-Fusion Foundation Models. </span>
                   <br />
                   <span class="author-list"> Chameleon Team </span>
                   <br />
@@ -294,7 +240,7 @@
 
                 <div class="publication">
                   <span class="pubtitle">
-                    Branch-Train-MiX: Mixing Expert LLMs into a Mixture-of-Experts LLM. </span>
+                    <span class="dataset">Branch-Train-MiX:</span> Mixing Expert LLMs into a Mixture-of-Experts LLM. </span>
                   <br />
                   <span class="author-list">
                     Sainbayar Sukhbaatar, Olga Golovneva, Vasu Sharma, Hu Xu, <span class="author-me">Xi Victoria Lin</span>, Baptiste Rozière, Jacob Kahn, Shang-Wen Daniel Li, Scott Wen-tau Yih, Jason Weston, Xian Li
@@ -1968,154 +1914,34 @@
                 </div>
               </div>
             </div>
+
             <div class="section">
               <h3>
-                <a id="service" class="anchor" href="#services" ria-hidden="true">
+                <a id="mentorship" class="anchor" href="#mentorship" ria-hidden="true">
                   <span aria-hidden="true" class="octicon octicon-link"></span>
-                </a>Service
+                </a>Mentorship
               </h3>
+              <p style="font-weight: 400; font-size: 14.5px"><i>I am very fortunate to have hosted the following talented interns.</i></p>
               <div>
                 <div>
-                  <img src="img/icons/diamond.svg" width="10" />&nbsp;&nbsp;&nbsp;&nbsp;NAACL 2021 System Demonstration Track Co-chair
+                  <img src="img/icons/diamond.svg" width="10" />&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://scholar.google.com/citations?user=ZxdpWo4AAAAJ&hl=en">Heather Lent</a> (Salesforce Research, 2020)
+                  <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: 14.5px"><i>Testing Cross-Database Semantic Parsers Using Canonical Utterances.</i> <a href="https://aclanthology.org/2021.eval4nlp-1.8/"><img src="img/icons/scroll.png" width="14.5"/></a></span>
                 </div>
                 <div>
-                  <img src="img/icons/diamond.svg" width="10" />&nbsp;&nbsp;&nbsp;&nbsp;Organizing Committee <table class="table table-condensed review-table">
-                    <thead class="review-table-header">
-                      <tr>
-                        <th class="review-venue-column"></th>
-                        <th class="review-table-column">2020</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td class="review-venue-column">
-                          <a href="https://intex-sempar.github.io/">INT&#8209;EX&nbsp;</a>
-                        </td>
-                        <td class="review-table-column">&#9725;</td>
-                      </tr>
-                      <tr>
-                        <td class="review-venue-column">
-                          <a href="http://nlc2cmd.us-east.mybluemix.net/">NLC2CMD&nbsp;</a>
-                        </td>
-                        <td class="review-table-column">&#9725;</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <img src="img/icons/diamond.svg" width="10" />&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://niansong1996.github.io/">Ansong Ni</a> (FAIR at Meta, 2022)
+                  <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: 14.5px"><i>Learning to Verify Language-to-Code Generation with Execution.</i> <a href="https://arxiv.org/abs/2302.08468"><img src="img/icons/scroll.png" width="14.5"/></a></span>
                 </div>
                 <div>
-                  <img src="img/icons/diamond.svg" width="10" />&nbsp;&nbsp;&nbsp;&nbsp;Program Committee
-                  <!-- <a href="https://icml.cc/" data-toggle="tooltip" data-placement="top" title="2019">ICML</a>,
-                             <a href="https://aclanthology.info/venues/acl" data-toggle="tooltip" data-placement="top" title="2017-2019">ACL</a>,
-                             <a href="https://aclanthology.info/venues/emnlp" data-toggle="tooltip" data-placement="top" title="2015-2018">EMNLP</a>,
-                             <a href="http://naacl.org/" data-toggle="tooltip" data-placement="top" title="2019">NAACL</a>,
-                             <a href="https://aclanthology.info/venues/coling" data-toggle="tooltip" data-placement="top" title="2018">COLING</a>,
-                             <a href="http://www.conll.org" data-toggle="tooltip" data-placement="top" title="2018">CoNLL</a>. -->
-                  <table class="table table-condensed review-table">
-                    <thead class="review-table-header">
-                      <tr>
-                        <th class="review-venue-column"></th>
-                        <th class="review-table-column">2020</th>
-                        <th class="review-table-column">2019</th>
-                        <th class="review-table-column">2018</th>
-                        <th class="review-table-column">2017</th>
-                        <th class="review-table-column">2016</th>
-                        <th class="review-table-column">2015</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td class="review-venue-column">
-                          <a href="https://icml.cc/">ICML&nbsp;</a>
-                        </td>
-                        <td class="review-table-column"></td>
-                        <td class="review-table-column">&#9725;</td>
-                        <td class="review-table-column"></td>
-                        <td class="review-table-column"></td>
-                        <td class="review-table-column"></td>
-                        <td class="review-table-column"></td>
-                      </tr>
-                      <tr>
-                        <td class="review-venue-column">
-                          <a href="https://aclanthology.info/venues/acl">ACL&nbsp;</a>
-                        </td>
-                        <td class="review-table-column">&#9725;</td>
-                        <td class="review-table-column">&#9725;</td>
-                        <td class="review-table-column">&#9725;</td>
-                        <td class="review-table-column">&#9725;</td>
-                        <td class="review-table-column"></td>
-                        <td class="review-table-column"></td>
-                      </tr>
-                      <tr>
-                        <td class="review-venue-column">
-                          <a href="https://aclanthology.info/venues/emnlp">EMNLP&nbsp;</a>
-                        </td>
-                        <td class="review-table-column">&#9725;</td>
-                        <td class="review-table-column"></td>
-                        <td class="review-table-column">&#9725;</td>
-                        <td class="review-table-column">&#9725;</td>
-                        <td class="review-table-column">&#9725;</td>
-                        <td class="review-table-column">&#9725;</td>
-                      </tr>
-                      <tr>
-                        <td class="review-venue-column">
-                          <a href="http://naacl.org/">NAACL&nbsp;</a>
-                        </td>
-                        <td class="review-table-column"></td>
-                        <td class="review-table-column">&#9725;</td>
-                        <td class="review-table-column"></td>
-                        <td class="review-table-column"></td>
-                        <td class="review-table-column"></td>
-                        <td class="review-table-column"></td>
-                      </tr>
-                      <tr>
-                        <td class="review-venue-column">
-                          <a href="http://aacl2020.org/">AACL&nbsp;</a>
-                        </td>
-                        <td class="review-table-column">&#9725;</td>
-                        <td class="review-table-column"></td>
-                        <td class="review-table-column"></td>
-                        <td class="review-table-column"></td>
-                        <td class="review-table-column"></td>
-                        <td class="review-table-column"></td>
-                      </tr>
-                      <tr>
-                        <td class="review-venue-column">
-                          <a href="https://aclanthology.info/venues/coling">COLING&nbsp;</a>
-                        </td>
-                        <td class="review-table-column"></td>
-                        <td class="review-table-column"></td>
-                        <td class="review-table-column">&#9725;</td>
-                        <td class="review-table-column"></td>
-                        <td class="review-table-column"></td>
-                        <td class="review-table-column"></td>
-                      </tr>
-                      <tr>
-                        <td class="review-venue-column">
-                          <a href="http://www.conll.org">CoNLL&nbsp;</a>
-                        </td>
-                        <td class="review-table-column"></td>
-                        <td class="review-table-column"></td>
-                        <td class="review-table-column">&#9725;</td>
-                        <td class="review-table-column"></td>
-                        <td class="review-table-column"></td>
-                        <td class="review-table-column"></td>
-                      </tr>
-                      <tr>
-                        <td class="review-venue-column">
-                          <a href="https://nli-acl2020.github.io/">NLI&nbsp;</a>
-                        </td>
-                        <td class="review-table-column">&#9725;</td>
-                        <td class="review-table-column"></td>
-                        <td class="review-table-column"></td>
-                        <td class="review-table-column"></td>
-                        <td class="review-table-column"></td>
-                        <td class="review-table-column"></td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <img src="img/icons/diamond.svg" width="10" />&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://alexlimh.github.io/">Minghan Li</a> (FAIR at Meta, 2023)
+                  <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: 14.5px"><i>Nearest Neighbor Speculative Decoding for LLM Generation and Attribution.</i> <a href="https://arxiv.org/abs/2405.19325"><img src="img/icons/scroll.png" width="14.5"/></a></span>
+                </div>
+                <div>
+                  <img src="img/icons/diamond.svg" width="10" />&nbsp;&nbsp;&nbsp;&nbsp;Weixin Liang (FAIR at Meta, 2024)
+                  <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: 14.5px"><i>Mixture-of-Transformers: A Sparse and Scalable Architecture for Multi-Modal Foundation Models.</i> <a href="https://arxiv.org/abs/2411.04996"><img src="img/icons/scroll.png" width="14.5"/></a></span>
                 </div>
               </div>
             </div>
+
             <div class="section">
               <h3>
                 <a id="misc" class="anchor" href="#misc" aria-hidden="true">
@@ -2161,7 +1987,7 @@
         <div style="display: inline-block">
           <footer>
             <p>
-              <small>Last updated on <a>Jul 31, 2024</a>
+              <small>Last updated on <a>Dec 1, 2024</a>
               </small>
             </p>
           </footer>
