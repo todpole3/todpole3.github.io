@@ -272,6 +272,7 @@ footer {
     margin: 0;
     padding: 0;
     flex-shrink: 0;
+    max-width: none !important;
 }
 
 .btn-svg:hover {
