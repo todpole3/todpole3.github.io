@@ -258,11 +258,19 @@ footer {
 
 .contacts .social-networks {
     margin: 8px 0px 0px -2px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 4px;
+    align-items: center;
 }
 
 .btn-svg {
     filter: invert(50%) sepia(80%) saturate(100%) hue-rotate(165deg) brightness(100%) contrast(100%);
     transition: all .1s;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    flex-shrink: 0;
 }
 
 .btn-svg:hover {
@@ -526,6 +534,10 @@ footer {
   .side-bar-panel {
     float: left;
     width: 100%;
+  }
+
+  .contacts .social-networks {
+    gap: 2px;
   }
 
   .news {
