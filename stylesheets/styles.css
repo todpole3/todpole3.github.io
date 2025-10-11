@@ -253,7 +253,8 @@ footer {
 }
 
 .contacts .email {
-  font-size: 14px;
+  margin-top: 8px;
+  font-size: 12.8px;
 }
 
 .contacts .social-networks {
