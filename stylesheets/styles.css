@@ -260,7 +260,7 @@ footer {
 .contacts .social-networks {
     margin: 8px 0px 0px -2px;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 4px;
     align-items: center;
 }
@@ -572,5 +572,12 @@ footer {
 
   footer {
     padding: 20px 0 0 12px;
+  }
+}
+
+/* Ensure single row on larger screens */
+@media screen and (min-width: 769px) {
+  .contacts .social-networks {
+    flex-wrap: nowrap;
   }
 }
