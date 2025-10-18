@@ -456,6 +456,13 @@ footer {
   shadow: none;
 }
 
+/* Bootstrap sm and xs screens (matches col-sm-* and col-xs-*) */
+@media print, screen and (max-width: 991px) {
+  .about-me-section {
+    padding-top: 20px;
+  }
+}
+
 @media print, screen and (max-width: 960px) {
 
   div.wrapper {
@@ -499,6 +506,10 @@ footer {
     display: block;
     margin-top: 12px;
   }
+
+  .contacts .social-networks {
+    flex-wrap: wrap !important;
+  }
 }
 
 @media print, screen and (max-width: 720px) {
@@ -539,6 +550,7 @@ footer {
   }
 
   .contacts .social-networks {
+    flex-wrap: wrap !important;
     gap: 1.5px;
   }
 
