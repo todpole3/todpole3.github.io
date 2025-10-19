@@ -559,24 +559,14 @@ footer {
     width: 100%;
   }
 
-  .contacts {
-    width: 100%;
-    max-width: 100%;
-  }
-
   .contacts .social-networks {
     flex-wrap: wrap !important;
     gap: 6px;
-    width: 100%;
     justify-content: flex-start;
   }
 
   .contacts .social-networks a {
     flex-shrink: 1;
-  }
-
-  .contacts .social-networks img {
-    width: 22px !important;
   }
 
   .news {
