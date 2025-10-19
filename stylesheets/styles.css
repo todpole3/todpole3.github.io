@@ -265,6 +265,11 @@ footer {
     align-items: center;
 }
 
+.contacts .social-networks a {
+    display: inline-flex;
+    flex-shrink: 0;
+}
+
 .btn-svg {
     filter: invert(50%) sepia(80%) saturate(100%) hue-rotate(165deg) brightness(100%) contrast(100%);
     transition: all .1s;
@@ -509,6 +514,11 @@ footer {
 
   .contacts .social-networks {
     flex-wrap: wrap !important;
+    justify-content: flex-start;
+  }
+
+  .contacts .social-networks a {
+    flex-shrink: 1;
   }
 }
 
@@ -549,9 +559,24 @@ footer {
     width: 100%;
   }
 
+  .contacts {
+    width: 100%;
+    max-width: 100%;
+  }
+
   .contacts .social-networks {
     flex-wrap: wrap !important;
-    gap: 1.5px;
+    gap: 6px;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .contacts .social-networks a {
+    flex-shrink: 1;
+  }
+
+  .contacts .social-networks img {
+    width: 22px !important;
   }
 
   .news {
