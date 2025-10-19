@@ -561,7 +561,7 @@ footer {
 
   .contacts .social-networks {
     flex-wrap: wrap !important;
-    gap: 6px;
+    gap: 3.5px;
     justify-content: flex-start;
   }
 
