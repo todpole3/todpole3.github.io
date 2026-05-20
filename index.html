@@ -18,8 +18,8 @@
       rel="stylesheet"
       href="lib/academicons-1.8.6-2/css/academicons.min.css"
     />
-    <link rel="stylesheet" href="stylesheets/styles.css" />
-    <link rel="stylesheet" href="stylesheets/pub-styles.css" />
+    <link rel="stylesheet" href="stylesheets/styles.css?v=20260520-7" />
+    <link rel="stylesheet" href="stylesheets/pub-styles.css?v=20260520" />
     <!-- [if lt IE 9]
          <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
          [endif] -->
@@ -32,85 +32,21 @@
       <div class="row">
         <div class="side-bar col-md-4 col-sm-12 col-xs-12">
           <div class="side-bar-panel">
-            <div>
-              <h1>
-                <span class="english-name">Victoria Lin</span>&nbsp;&nbsp;&nbsp;
-                <span lang="zh-Hans" class="chinese-name">林曦</span>
-              </h1>
-              <div class="row name-card">
-                <div class="col-md-6 col-sm-3 col-xs-5">
-                  <div class="sketch">
-                    <div class="img-blur">
-                      <img
-                        src="img/me-sketch-2020.png"
-                        alt="Sketch of me"
-                        class="img-responsive"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 col-sm-9 col-xs-7 contacts">
-                  <div class="title">
-                    Research Scientist
-                    <!--<br /> Meta <br />-->
-                  </div>
-                  <div class="address">
-                    <i class="fa fa-map-marker" aria-hidden="true"></i> San
-                    Francisco, CA<br />
-                  </div>
-                  <div class="email">
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                    <a
-                      href="mailto:victoriaxlin.ai{AT}gmail.com"
-                      style="font-family: Lato, sans-serif; font-weight: 400"
-                      >victoriaxlin.ai@gmail.com</a
-                    >
-                  </div>
-                  <div class="social-networks">
-                    <a href="https://twitter.com/VictoriaLinML">
-                      <img
-                        class="btn-svg"
-                        alt="Twitter"
-                        src="img/icons/twitter-social-logotype.svg"
-                        width="24.5"
-                    /></a>
-                    <a href="https://www.linkedin.com/in/VictoriaLinML">
-                      <img
-                        class="btn-svg"
-                        alt="LinkedIn"
-                        src="img/icons/linkedin-logo.svg"
-                        width="24.5"
-                    /></a>
-                    <a href="https://github.com/todpole3">
-                      <img
-                        class="btn-svg"
-                        alt="Github"
-                        src="img/icons/github-circular.svg"
-                        width="24.5"
-                    /></a>
-                    <a
-                      href="https://scholar.google.com/citations?user=gYUOJwMAAAAJ&hl=en"
-                    >
-                      <img
-                        class="btn-svg"
-                        alt="Google Scholar"
-                        src="img/icons/googlescholar.svg"
-                        width="24.5"
-                    /></a>
-                    <a href="https://www.semanticscholar.org/author/143724481">
-                      <img
-                        class="btn-svg"
-                        alt="Semantic Scholar"
-                        src="img/icons/semantic-scholar.svg"
-                        width="24.5"
-                    /></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="navbar hidden-xs hidden-sm">
+            <div class="navbar">
               <h4>Navigation</h4>
-              <ul style="padding-left: 16px; list-style-type: none">
+              <button
+                class="nav-toggle"
+                type="button"
+                aria-controls="site-navigation"
+                aria-expanded="false"
+              >
+                <i class="fa fa-bars" aria-hidden="true"></i>
+                <span class="sr-only">Navigation</span>
+              </button>
+              <ul
+                id="site-navigation"
+                style="padding-left: 16px; list-style-type: none"
+              >
                 <!--<li class="li-relaxed"><img
                     src="img/icons/curriculum.svg"
                     width="16"
@@ -119,8 +55,14 @@
                   <img
                     src="img/icons/curriculum.svg"
                     width="16"
+                  />&nbsp;&nbsp;&nbsp;&nbsp; <a href="#about-me">About Me</a>
+                </li>
+                <li class="li-relaxed">
+                  <img
+                    src="img/icons/scroll.png"
+                    width="16"
                   />&nbsp;&nbsp;&nbsp;&nbsp;
-                  <a href="event_announcements.html">What's New</a>
+                  <a href="#publication">Publications</a>
                 </li>
                 <li class="li-relaxed">
                   <img
@@ -145,13 +87,81 @@
               </footer>
             </div>
           </div>
+          <div class="identity-row">
+            <h1>
+              <span class="english-name">Victoria Lin</span>
+            </h1>
+            <div class="contact-card">
+              <img
+                class="profile-avatar"
+                src="img/me_avatar_2026.jpg"
+                alt="Victoria Lin"
+              />
+              <div class="contacts">
+                <div class="title">
+                  Research Scientist
+                  <!--<br /> Meta <br />-->
+                </div>
+                <div class="address">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i> San
+                  Francisco, CA<br />
+                </div>
+                <div class="email">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                  <a
+                    href="mailto:victoriaxlin.ai{AT}gmail.com"
+                    style="font-family: Lato, sans-serif; font-weight: 400"
+                    >victoriaxlin.ai@gmail.com</a
+                  >
+                </div>
+                <div class="social-networks">
+                  <a href="https://twitter.com/VictoriaLinML">
+                    <img
+                      class="btn-svg"
+                      alt="Twitter"
+                      src="img/icons/twitter-social-logotype.svg"
+                      width="24.5"
+                  /></a>
+                  <a href="https://www.linkedin.com/in/VictoriaLinML">
+                    <img
+                      class="btn-svg"
+                      alt="LinkedIn"
+                      src="img/icons/linkedin-logo.svg"
+                      width="24.5"
+                  /></a>
+                  <a href="https://github.com/todpole3">
+                    <img
+                      class="btn-svg"
+                      alt="Github"
+                      src="img/icons/github-circular.svg"
+                      width="24.5"
+                  /></a>
+                  <a
+                    href="https://scholar.google.com/citations?user=gYUOJwMAAAAJ&hl=en"
+                  >
+                    <img
+                      class="btn-svg"
+                      alt="Google Scholar"
+                      src="img/icons/googlescholar.svg"
+                      width="24.5"
+                  /></a>
+                  <a href="https://www.semanticscholar.org/author/143724481">
+                    <img
+                      class="btn-svg"
+                      alt="Semantic Scholar"
+                      src="img/icons/semantic-scholar.svg"
+                      width="24.5"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="col-md-8 col-sm-12 col-xs-12 main-body">
           <div>
             <div class="section about-me-section">
-              <h3>
+              <h3 id="about-me">
                 <a
-                  id="about-me"
                   class="anchor"
                   href="#about-me"
                   aria-hidden="true"
@@ -163,12 +173,10 @@
                 >About Me
               </h3>
               <p>
-                I am a research scientist at <a href="https://thinkingmachines.ai">Thinking Machines Lab</a>. I am passionate about building
-                general intelligent systems that process information at scale
-                and assist humans in various knowledge-intensive tasks.
+                I am a research scientist at <a href="https://thinkingmachines.ai">Thinking Machines Lab</a>, where my work focuses on native multimodal intelligence. My research is driven by a broader interest in building general intelligent systems that process information at scale and assist humans in complex, knowledge-intensive tasks.
               </p>
               <p>
-                Previously I was at
+                Previously I worked at
                 <a
                   href="https://ai.meta.com/people/791994286528464/victoria-lin/"
                   >Meta SuperIntelligence Labs</a
@@ -199,9 +207,8 @@
             </div>
 
             <div class="section">
-              <h3>
+              <h3 id="publication">
                 <a
-                  id="publication"
                   class="anchor"
                   href="#publication"
                   aria-hidden="true"
@@ -4175,117 +4182,96 @@
                   interns.</i
                 >
               </p>
-              <div>
-                <div>
-                  <img
-                    src="img/icons/diamond.svg"
-                    width="10"
-                  />&nbsp;&nbsp;&nbsp;&nbsp;<a
-                    href="https://tonylian.com/"
-                    >Long Lian</a
-                  >&nbsp;&nbsp;<span style="font-weight: 350; font-size: 14.5px"
-                    ><i class="fa fa-graduation-cap"></i> University of California, Berkeley&nbsp;&nbsp;<i class="fa fa-home"></i> Meta GenAI,
-                    2025</span
-                  >
-                  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
-                    href="https://threadweaver-parallel.github.io/assets/paper.pdf"
-                    ><img src="img/icons/scroll.png" width="14.5"
-                  /></a>
-                  <span style="font-size: 14.5px"
-                    ><i
-                      >ThreadWeaver: Adapative Threading for Efficient Parallel Reasoning in Language Models.</i
-                    ></span
-                  >
+              <div class="mentorship-list">
+                <div class="mentorship-item">
+                  <img class="mentor-marker" src="img/icons/diamond.svg" alt="" />
+                  <a class="mentor-name" href="https://tonylian.com/">Long Lian</a>
+                  <span class="mentor-meta">
+                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                    <span>University of California, Berkeley</span>
+                  </span>
+                  <span class="mentor-meta">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    <span>Meta GenAI, 2025</span>
+                  </span>
+                  <span class="mentor-paper-line">
+                    <a class="mentor-paper-icon" href="https://threadweaver-parallel.github.io/assets/paper.pdf">
+                      <img src="img/icons/scroll.png" alt="" />
+                    </a>
+                    <span class="mentor-paper"><i>ThreadWeaver: Adapative Threading for Efficient Parallel Reasoning in Language Models.</i></span>
+                  </span>
                 </div>
-                <div>
-                  <img
-                    src="img/icons/diamond.svg"
-                    width="10"
-                  />&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ai.stanford.edu/~wxliang/">Weixin Liang</a>&nbsp;&nbsp;<span
-                    style="font-weight: 350; font-size: 14.5px"
-                    ><i class="fa fa-graduation-cap"></i> Stanford
-                    University&nbsp;&nbsp;<i class="fa fa-home"></i> Meta FAIR,
-                    2024</span
-                  >
-                  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
-                    href="https://arxiv.org/abs/2411.04996"
-                    ><img src="img/icons/scroll.png" width="14.5"
-                  /></a>
-                  <span style="font-size: 14.5px"
-                    ><i
-                      >Mixture-of-Transformers: A Sparse and Scalable
-                      Architecture for Multi-Modal Foundation Models.</i
-                    ></span
-                  >
+                <div class="mentorship-item">
+                  <img class="mentor-marker" src="img/icons/diamond.svg" alt="" />
+                  <a class="mentor-name" href="https://ai.stanford.edu/~wxliang/">Weixin Liang</a>
+                  <span class="mentor-meta">
+                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                    <span>Stanford University</span>
+                  </span>
+                  <span class="mentor-meta">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    <span>Meta FAIR, 2024</span>
+                  </span>
+                  <span class="mentor-paper-line">
+                    <a class="mentor-paper-icon" href="https://arxiv.org/abs/2411.04996">
+                      <img src="img/icons/scroll.png" alt="" />
+                    </a>
+                    <span class="mentor-paper"><i>Mixture-of-Transformers: A Sparse and Scalable Architecture for Multi-Modal Foundation Models.</i></span>
+                  </span>
                 </div>
-                <div>
-                  <img
-                    src="img/icons/diamond.svg"
-                    width="10"
-                  />&nbsp;&nbsp;&nbsp;&nbsp;<a
-                    href="https://alexlimh.github.io/"
-                    >Minghan Li</a
-                  >&nbsp;&nbsp;<span style="font-weight: 350; font-size: 14.5px"
-                    ><i class="fa fa-graduation-cap"></i> University of
-                    Waterloo&nbsp;&nbsp;<i class="fa fa-home"></i> Meta FAIR,
-                    2023</span
-                  >
-                  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
-                    href="https://arxiv.org/abs/2405.19325"
-                    ><img src="img/icons/scroll.png" width="14.5"
-                  /></a>
-                  <span style="font-size: 14.5px"
-                    ><i
-                      >Nearest Neighbor Speculative Decoding for LLM Generation
-                      and Attribution.</i
-                    ></span
-                  >
+                <div class="mentorship-item">
+                  <img class="mentor-marker" src="img/icons/diamond.svg" alt="" />
+                  <a class="mentor-name" href="https://alexlimh.github.io/">Minghan Li</a>
+                  <span class="mentor-meta">
+                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                    <span>University of Waterloo</span>
+                  </span>
+                  <span class="mentor-meta">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    <span>Meta FAIR, 2023</span>
+                  </span>
+                  <span class="mentor-paper-line">
+                    <a class="mentor-paper-icon" href="https://arxiv.org/abs/2405.19325">
+                      <img src="img/icons/scroll.png" alt="" />
+                    </a>
+                    <span class="mentor-paper"><i>Nearest Neighbor Speculative Decoding for LLM Generation and Attribution.</i></span>
+                  </span>
                 </div>
-                <div>
-                  <img
-                    src="img/icons/diamond.svg"
-                    width="10"
-                  />&nbsp;&nbsp;&nbsp;&nbsp;<a
-                    href="https://niansong1996.github.io/"
-                    >Ansong Ni</a
-                  >&nbsp;&nbsp;<span style="font-weight: 350; font-size: 14.5px"
-                    ><i class="fa fa-graduation-cap"></i> Yale
-                    University&nbsp;&nbsp;<i class="fa fa-home"></i> Meta FAIR,
-                    2022</span
-                  >
-                  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
-                    href="https://arxiv.org/abs/2302.08468"
-                    ><img src="img/icons/scroll.png" width="14.5"
-                  /></a>
-                  <span style="font-size: 14.5px"
-                    ><i
-                      >Learning to Verify Language-to-Code Generation with
-                      Execution.</i
-                    ></span
-                  >
+                <div class="mentorship-item">
+                  <img class="mentor-marker" src="img/icons/diamond.svg" alt="" />
+                  <a class="mentor-name" href="https://niansong1996.github.io/">Ansong Ni</a>
+                  <span class="mentor-meta">
+                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                    <span>Yale University</span>
+                  </span>
+                  <span class="mentor-meta">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    <span>Meta FAIR, 2022</span>
+                  </span>
+                  <span class="mentor-paper-line">
+                    <a class="mentor-paper-icon" href="https://arxiv.org/abs/2302.08468">
+                      <img src="img/icons/scroll.png" alt="" />
+                    </a>
+                    <span class="mentor-paper"><i>Learning to Verify Language-to-Code Generation with Execution.</i></span>
+                  </span>
                 </div>
-                <div>
-                  <img
-                    src="img/icons/diamond.svg"
-                    width="10"
-                  />&nbsp;&nbsp;&nbsp;&nbsp;<a
-                    href="https://scholar.google.com/citations?user=ZxdpWo4AAAAJ&hl=en"
-                    >Heather Lent</a
-                  >&nbsp;&nbsp;<span style="font-weight: 350; font-size: 14.5px"
-                    ><i class="fa fa-graduation-cap"></i> University of
-                    Copenhagen&nbsp;&nbsp;<i class="fa fa-home"></i> Salesforce
-                    Research, 2020</span
-                  >
-                  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
-                    href="https://aclanthology.org/2021.eval4nlp-1.8/"
-                    ><img src="img/icons/scroll.png" width="14.5"
-                  /></a>
-                  <span style="font-size: 14.5px"
-                    ><i
-                      >Testing Cross-Database Semantic Parsers Using Canonical
-                      Utterances.</i
-                    ></span
-                  >
+                <div class="mentorship-item">
+                  <img class="mentor-marker" src="img/icons/diamond.svg" alt="" />
+                  <a class="mentor-name" href="https://scholar.google.com/citations?user=ZxdpWo4AAAAJ&hl=en">Heather Lent</a>
+                  <span class="mentor-meta">
+                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                    <span>University of Copenhagen</span>
+                  </span>
+                  <span class="mentor-meta">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    <span>Salesforce Research, 2020</span>
+                  </span>
+                  <span class="mentor-paper-line">
+                    <a class="mentor-paper-icon" href="https://aclanthology.org/2021.eval4nlp-1.8/">
+                      <img src="img/icons/scroll.png" alt="" />
+                    </a>
+                    <span class="mentor-paper"><i>Testing Cross-Database Semantic Parsers Using Canonical Utterances.</i></span>
+                  </span>
                 </div>
               </div>
             </div>
@@ -4339,49 +4325,6 @@
                 </span>
               </div>
             </div>
-            <div class="section hidden-md hidden-lg hidden-xl">
-              <h3>
-                <a
-                  id="navigation"
-                  class="anchor"
-                  href="#navigation"
-                  aria-hidden="true"
-                >
-                  <span
-                    aria-hidden="true"
-                    class="octicon octicon-link"
-                  ></span> </a
-                >Navigation
-              </h3>
-              <ul style="padding-left: 16px; list-style-type: none">
-                <li class="li-relaxed">
-                  <img
-                    src="img/icons/curriculum.svg"
-                    width="18"
-                  />&nbsp;&nbsp;&nbsp;&nbsp; <a href="files/cv.pdf">CV</a>
-                </li>
-                <li class="li-relaxed">
-                  <img
-                    src="img/icons/tools.svg"
-                    width="16"
-                  />&nbsp;&nbsp;&nbsp;&nbsp;
-                  <a href="event_announcements.html">News</a>
-                </li>
-                <li class="li-relaxed">
-                  <img
-                    src="img/icons/pencil.svg"
-                    width="16"
-                  />&nbsp;&nbsp;&nbsp;&nbsp; <a href="">Blog (coming soon!)</a>
-                </li>
-                <li class="li-relaxed">
-                  <img
-                    src="img/icons/tools.svg"
-                    width="16"
-                  />&nbsp;&nbsp;&nbsp;&nbsp;
-                  <a href="resources.html">Resources</a>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>
@@ -4400,13 +4343,37 @@
     <script src="javascripts/scale.fix.js"></script>
     <script src="javascripts/inline-svg.js"></script>
     <script>
-      document.body.style.zoom = "110%";
       $(".btn-pub").mouseup(function () {
         this.blur();
       });
       $(function () {
         $('[data-toggle="tooltip"]').tooltip();
       });
+      document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+        link.addEventListener("click", function (event) {
+          var target = document.querySelector(link.getAttribute("href"));
+          if (!target) return;
+          event.preventDefault();
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
+          history.pushState(null, "", link.getAttribute("href"));
+        });
+      });
+      var navToggle = document.querySelector(".nav-toggle");
+      var navBar = document.querySelector(".navbar");
+      if (navToggle && navBar) {
+        navToggle.addEventListener("click", function () {
+          var isOpen = navBar.classList.toggle("is-open");
+          navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+          document.body.classList.toggle("nav-open", isOpen);
+        });
+        navBar.querySelectorAll("a").forEach(function (link) {
+          link.addEventListener("click", function () {
+            navBar.classList.remove("is-open");
+            navToggle.setAttribute("aria-expanded", "false");
+            document.body.classList.remove("nav-open");
+          });
+        });
+      }
     </script>
   </body>
 </html>
