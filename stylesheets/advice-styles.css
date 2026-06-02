@@ -56,3 +56,14 @@
 .d-hide {
     display: none;
 }
+
+@media print, screen and (max-width: 768px) {
+    .advice-page .side-bar {
+        display: none;
+        padding-top: 0;
+    }
+
+    .advice-page .main-body {
+        clear: none;
+    }
+}

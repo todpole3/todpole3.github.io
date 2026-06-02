@@ -672,6 +672,125 @@ body {
   clear: none;
 }
 
+.resources-page .main-body,
+.talks-page .main-body {
+  padding: 28px 0 44px;
+}
+
+.resources-page .main-body > h3,
+.talks-page .main-body > h3,
+.modern-secondary-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 18px;
+  padding: 0 0 16px;
+  border-bottom: 3px solid var(--rule);
+  color: var(--accent);
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.resources-page .main-body > h3:before,
+.talks-page .main-body > h3:before,
+.modern-secondary-title:before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  flex: 0 0 auto;
+  background: var(--ink);
+}
+
+.modern-subpage-title {
+  display: flex;
+  align-items: center;
+  margin: 0 0 18px;
+  padding: 0 0 16px;
+  border-bottom: 3px solid var(--rule);
+  color: var(--accent);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.resources-page .resource-panel,
+.talks-page .resource-panel {
+  margin: 0;
+  padding: 22px 0 20px;
+  border-top: 1px solid var(--faint);
+}
+
+.resources-page .resource-panel:first-of-type,
+.talks-page .resource-panel:first-of-type {
+  border-top-color: var(--rule);
+}
+
+.resources-page .resource-panel > h4,
+.talks-page .resource-panel > h4 {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin: 0 0 11px;
+  color: var(--ink);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.32;
+  letter-spacing: 0;
+}
+
+.resources-page .resource-panel > h4:before,
+.talks-page .resource-panel > h4:before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  flex: 0 0 auto;
+  transform: translateY(-1px);
+  background: var(--ink);
+}
+
+.resources-page .resource-panel > h4 i,
+.talks-page .resource-panel > h4 i {
+  font-style: normal;
+}
+
+.resources-page .resource-panel > p,
+.talks-page .resource-panel > p {
+  margin: 0 0 6px;
+  padding-left: 17px !important;
+  color: var(--ink);
+  font-family: inherit;
+  font-size: 15.5px;
+  line-height: 1.55;
+}
+
+.resources-page .resource-panel > hr,
+.resources-page .resource-panel > br,
+.talks-page .resource-panel > hr,
+.talks-page .resource-panel > br {
+  display: none;
+}
+
+.resources-page .main-body > div:last-child a,
+.talks-page .main-body > div:last-child a,
+.modern-back-link {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 26px;
+  padding-top: 10px;
+  border-top: 1px solid var(--rule);
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
 .side-bar-panel {
   margin: 0;
   padding: 0 0 12px;
@@ -1119,6 +1238,26 @@ pre {
     clear: none;
   }
 
+  .resources-page .main-body,
+  .talks-page .main-body {
+    padding: 22px 0 38px;
+  }
+
+  .resources-page .main-body > h3,
+  .talks-page .main-body > h3,
+  .modern-secondary-title {
+    font-size: 23px;
+  }
+
+  .modern-subpage-title {
+    font-size: 21px;
+  }
+
+  .resources-page .resource-panel > h4,
+  .talks-page .resource-panel > h4 {
+    font-size: 16px;
+  }
+
   .side-bar-panel {
     float: none;
     position: fixed;
@@ -1268,6 +1407,16 @@ pre {
 
   .section h3 {
     font-size: 18px;
+  }
+
+  .resources-page .main-body > h3,
+  .talks-page .main-body > h3,
+  .modern-secondary-title {
+    font-size: 23px;
+  }
+
+  .modern-subpage-title {
+    font-size: 21px;
   }
 
   .pub-section h4 {
