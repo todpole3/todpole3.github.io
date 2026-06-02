@@ -654,10 +654,6 @@ body {
   padding: 0;
 }
 
-body.secondary-page {
-  padding-top: 0;
-}
-
 .secondary-page .container {
   width: min(920px, calc(100% - 44px));
 }
@@ -1095,10 +1091,6 @@ pre {
 
   .container {
     width: min(100% - 24px, 680px);
-  }
-
-  body.secondary-page {
-    padding-top: 0;
   }
 
   .secondary-page .container {
