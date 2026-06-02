@@ -1083,6 +1083,20 @@ pre {
   }
 }
 
+@media print, screen and (min-width: 769px) and (max-width: 991px) {
+  .navbar ul {
+    gap: 20px;
+  }
+
+  .navbar .li-relaxed {
+    font-size: 14px;
+  }
+
+  .navbar .li-relaxed:before {
+    margin-right: 6px;
+  }
+}
+
 @media print, screen and (max-width: 768px) {
   body {
     padding: 20px 0 42px;
