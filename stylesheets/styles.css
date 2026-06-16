@@ -998,6 +998,10 @@ a:focus {
   color: var(--ink);
 }
 
+.navbar .li-relaxed.mobile-only-small {
+  display: none !important;
+}
+
 footer {
   margin-top: 18px;
   color: var(--muted);
@@ -1217,6 +1221,10 @@ pre {
 }
 
 @media print, screen and (max-width: 768px) {
+  html {
+    scroll-padding-top: 120px;
+  }
+
   body {
     padding: 20px 0 42px;
     font-weight: 400;
@@ -1333,7 +1341,7 @@ pre {
 
   .section h3 {
     background: transparent;
-    scroll-margin-top: 118px;
+    scroll-margin-top: 120px;
   }
 
   .navbar {
@@ -1378,6 +1386,10 @@ pre {
 
   .navbar .li-relaxed:last-child {
     margin-bottom: 0;
+  }
+
+  .navbar.is-open ul .li-relaxed.mobile-only-small {
+    display: block !important;
   }
 }
 
@@ -1437,4 +1449,9 @@ pre {
   .mentor-paper-line {
     grid-column: 2;
   }
+
+  body.nav-open .side-bar {
+    padding-top: 216px;
+  }
+
 }
