@@ -1008,6 +1008,15 @@ footer {
   text-align: right;
 }
 
+.page-bottom-updated-footer {
+  display: block;
+  text-align: center;
+}
+
+.page-bottom-updated-footer footer {
+  text-align: center;
+}
+
 .main-body {
   max-width: 920px;
   margin: 0 auto;
@@ -1187,10 +1196,6 @@ pre {
   border: 1px solid var(--faint);
   border-radius: 0;
   background: #fbfbfb;
-}
-
-.hidden-xs.hidden-sm.hidden-md footer {
-  display: none;
 }
 
 @media print, screen and (max-width: 991px) {

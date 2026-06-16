@@ -32,6 +32,10 @@
     padding-top: 20px;
 }
 
+.section > .pub-section:last-child > .publication:last-child {
+    border-bottom: 0;
+}
+
 .pubtitle {
     display: inline-block;
     margin-bottom: 2px;
